@@ -1,0 +1,20 @@
+body {
+	background: #2e2e2e;
+	color: #ececec
+}
+
+
+.ingredient-container {
+	position: relative;
+}
+.ingredient-category {
+	display: inline-block;
+	padding: 15px;
+	border: 1px solid #888;
+	margin: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+.ingredient-category:active {
+	background-color: rgba(0,0,0,0.2)
+}

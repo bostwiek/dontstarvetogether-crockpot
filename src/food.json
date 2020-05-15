@@ -1,0 +1,317 @@
+{
+  "asparagussoup": {
+    "name" : "Asparagus Soup",
+    "hp": 20,
+    "hunger": 18.75,
+    "sanity": 5,
+    "spoil": 15
+  },
+  "baconandeggs": {
+    "name" : "Bacon and Eggs",
+    "hp": 20,
+    "hunger": 75,
+    "sanity": 5,
+    "spoil": 20
+  },
+  "bananapop": {
+    "name" : "Banana Pop",
+    "hp": 20,
+    "hunger": 12.5,
+    "sanity": 33,
+    "spoil": 10
+  },
+  "buttermuffin": {
+    "name" : "Butter Muffin",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "spoil": 15
+  },
+  "californiaroll": {
+    "name" : "California Roll",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 10,
+    "spoil": 10
+  },
+  "ceviche": {
+    "name" : "Ceviche",
+    "hp": 20,
+    "hunger": 25,
+    "sanity": 5,
+    "spoil": 10
+  },
+  "creamypotatopuree": {
+    "name" : "Creamy Potato Puree",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 33,
+    "spoil": 15
+  },
+  "dragonpie": {
+    "name" : "Dragonpie",
+    "hp": 40,
+    "hunger": 75,
+    "sanity": 5,
+    "spoil": 15
+  },
+  "fancyspiraledtubers": {
+    "name" : "Fancy Spiralled Tubers",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 15,
+    "spoil": 10
+  },
+  "fishtacos": {
+    "name" : "Fish Tacos",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "spoil": 6
+  },
+  "fishsticks": {
+    "name" : "Fish Sticks",
+    "hp": 40,
+    "hunger": 37.5,
+    "sanity": 5,
+    "spoil": 10
+  },
+  "fistfullofjam": {
+    "name" : "Fist Full of Jam",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "flowersalad": {
+    "name" : "Flower Salad",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "froggiebunwich": {
+    "name" : "Froggie Bunwich",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "fruitmedley": {
+    "name" : "Fruit Medley",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "guacomole": {
+    "name" : "Guacamole",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "honeyham": {
+    "name" : "Honey Ham",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "honeynuggets": {
+    "name" : "Honey Nuggets",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "icecream": {
+    "name" : "Ice Cream",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "jellybeans": {
+    "name" : "Jelly Beans",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "kabobs": {
+    "name" : "Kabobs",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "lobsterbisque": {
+    "name" : "Lobster Bisque",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "lobsterdinner": {
+    "name" : "Lobster Dinner",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "mandrakesoup": {
+    "name" : "Mandrake Soup",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "meatballs": {
+    "name" : "Meatballs",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "meatystew": {
+    "name" : "Meaty Stew",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "melonsicle": {
+    "name" : "Melonsicle",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "monsterlasagne": {
+    "name" : "Monster Lasagna",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "pierogi": {
+    "name" : "Pierogi",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "powdercake": {
+    "name" : "Powdercake",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "pumpkincookie": {
+    "name" : "Pumpkin Cookie",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "ratatouille": {
+    "name" : "Ratatouille",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "salsafresca": {
+    "name" : "Salsa Fresca",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "seafoodgumbo": {
+    "name" : "Seafood Gumbo",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "spicychili": {
+    "name" : "Spicy Chili",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "stuffedeggplant": {
+    "name" : "Stuffed Eggplant",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "stuffedpepperpoppers": {
+    "name" : "Stuffed Pepper Poppers",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "surfnturf": {
+    "name" : "Surf n' Turf",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "taffy": {
+    "name" : "Taffy",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "trailmix": {
+    "name" : "Trail Mix",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "turkeydinner": {
+    "name" : "Turkey Dinner",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "unagi": {
+    "name" : "Unagi",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "vegetablestinger": {
+    "name" : "Vegetable Stinger",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "waffles": {
+    "name" : "Waffles",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  },
+  "wetgoop": {
+    "name" : "Wet Goop",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "spoil": 0
+  }
+}
