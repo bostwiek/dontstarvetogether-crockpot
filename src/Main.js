@@ -1,14 +1,65 @@
 import React from 'react'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Main.css'
 
-import IngredientsTable from './IngredientsTable'
-
 import food from './food'
 
-import honeyham from './images/crockpot/honeyham.webp'
+import iconHealth from './images/icons/health.webp'
+import iconHunger from './images/icons/hunger.webp'
+import iconSanity from './images/icons/sanity.webp'
+import iconRot from './images/icons/rot.webp'
+
+
+// need to add FILTER / SEARCH next
+
+
+function DisplayFullMenu() {
+	return(
+		<>
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+
+							{Object.keys(food).map(
+								(key, value) => {
+									return(
+										<table className="menu-item" key={key}>
+											<tbody>
+												<tr>
+													<td colSpan={2}>{food[key][1]}</td>
+												</tr>
+												<tr>
+													<td colSpan={2}><img src={require(`./images/crockpot/${key}.webp`)} alt={key} /></td>
+												</tr>
+												<tr>
+													<td><img src={iconHealth} className="icon-stat" alt="icon-health" /></td>
+													<td>{food[key][2]}</td>
+												</tr>
+												<tr>
+													<td><img src={iconHunger} className="icon-stat" alt="icon-hunger" /></td>
+													<td>{food[key][3]}</td>
+												</tr>
+												<tr>
+													<td><img src={iconSanity} className="icon-stat" alt="icon-sanity" /></td>
+													<td>{food[key][4]}</td>
+												</tr>
+												<tr>
+													<td><img src={iconRot} className="icon-stat" alt="icon-rot" /></td>
+													<td>{food[key][5]} days</td>
+												</tr>
+											</tbody>
+										</table>
+									)
+								}
+							)}
+
+					</div>
+				</div>
+			</div>
+		</>
+	)
+}
 
 class Main extends React.Component {
 
@@ -17,17 +68,18 @@ class Main extends React.Component {
 	}
 
 	render() {
-
-		const swapRecipe = () => {
-			if (this.state.currentRecipe == 'asparagussoup') {
-				this.setState({currentRecipe: 'lobsterdinner'})
-			} else if (this.state.currentRecipe == 'lobsterdinner') {
-				this.setState({currentRecipe: 'asparagussoup'})
-			}
-		}
 		
 		let currentRecipeState = this.state.currentRecipe;
 		let currentRecipe = food[currentRecipeState];
+
+		const swapRecipe = () => {
+			if (this.state.currentRecipe === 'asparagussoup') {
+				this.setState({currentRecipe: 'lobsterdinner'})
+			} else if (this.state.currentRecipe === 'lobsterdinner') {
+				this.setState({currentRecipe: 'asparagussoup'})
+			}
+		}
+
 
 		return(		
 
@@ -37,47 +89,9 @@ class Main extends React.Component {
 				// need to reference state inside json object query
 
 			<>
-			<table>
-				<tr>
-					<td>
-						{currentRecipe.name}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						hp: 
-					</td>
-					<td>
-						{currentRecipe.hp}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						hunger: 
-					</td>
-					<td>
-						{currentRecipe.hunger}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						sanity: 
-					</td>
-					<td>
-						{currentRecipe.sanity}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						spoil: 
-					</td>
-					<td>
-						{currentRecipe.spoil}
-					</td>
-				</tr>
-			</table>
 
-			<button onClick={swapRecipe}>Swap</button>
+			<DisplayFullMenu />
+
 			</>
 		)
 

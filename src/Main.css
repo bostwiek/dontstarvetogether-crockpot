@@ -1,6 +1,8 @@
 body {
 	background: #2e2e2e;
-	color: #ececec
+	color: #ececec;
+	font-family: monospace;
+	font-size: 1.5em;
 }
 
 
@@ -11,10 +13,22 @@ body {
 	display: inline-block;
 	padding: 15px;
 	border: 1px solid #888;
-	margin: 10px;
+	margin: 1px;
 	cursor: pointer;
 	user-select: none;
 }
 .ingredient-category:active {
 	background-color: rgba(0,0,0,0.2)
+}
+
+.menu-item {
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+	border: 1px dashed #777777;
+	margin: 0 auto;
+}
+.menu-item .icon-stat {
+	max-width: 30px;
+	max-height: 30px;
 }
