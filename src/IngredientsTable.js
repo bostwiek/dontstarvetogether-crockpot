@@ -21,13 +21,13 @@ class IngredientsTable extends React.Component {
 		
 		// need to figure out where in the array we left off... .map maybe?
 		let currentIndex = '';
-		if (ingredients[0] == '-') {
+		if (ingredients[0] === '-') {
 			currentIndex = 0;
-		} else if (ingredients[1] == '-') {
+		} else if (ingredients[1] === '-') {
 			currentIndex = 1;
-		} else if (ingredients[2] == '-') {
+		} else if (ingredients[2] === '-') {
 			currentIndex = 2;
-		} else if (ingredients[3] == '-') {
+		} else if (ingredients[3] === '-') {
 			currentIndex = 3;
 		}
 		let ingredient = {...ingredients[currentIndex]};

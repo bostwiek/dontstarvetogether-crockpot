@@ -1,407 +1,362 @@
-{
-  "asparagussoup": [
-  	0,
-    "Asparagus Soup",
-    20,
-    18.75,
-    5,
-    15,
-    "./images/crockpot/asparagussoup.webp"
-  ],
-  "baconandeggs": [
-  	1,
-    "Bacon and Eggs",
-    20,
-    75,
-    5,
-    20,
-    "./images/crockpot/baconandeggs.webp"
-  ],
-  "bananapop": [
-  	2,
-    "Banana Pop",
-    20,
-    12.5,
-    33,
-    10,
-    "./images/crockpot/bananapop.webp"
-  ],
-  "buttermuffin": [
-  	3,
-    "Butter Muffin",
-    20,
-    37.5,
-    5,
-    15,
-    "./images/crockpot/buttermuffin.webp"
-  ],
-  "californiaroll": [
-  	4,
-    "California Roll",
-    20,
-    37.5,
-    10,
-    10,
-    "./images/crockpot/californiaroll.webp"
-  ],
-  "ceviche": [
-  	5,
-    "Ceviche",
-    20,
-    25,
-    5,
-    10,
-    "./images/crockpot/ceviche.webp"
-  ],
-  "creamypotatopuree": [
-  	6,
-    "Creamy Potato Puree",
-    20,
-    37.5,
-    33,
-    15,
-    "./images/crockpot/creamypotatopuree.webp"
-  ],
-  "dragonpie": [
-  	7,
-    "Dragonpie",
-    40,
-    75,
-    5,
-    15,
-    "./images/crockpot/dragonpie.webp"
-  ],
-  "fancyspiralledtubers": [
-  	8,
-    "Fancy Spiralled Tubers",
-    3,
-    37.5,
-    15,
-    10,
-    "./images/crockpot/fancyspiraledtubers.webp"
-  ],
-  "fishtacos": [
-  	9,
-    "Fish Tacos",
-    20,
-    37.5,
-    5,
-    6,
-    "./images/crockpot/fishtacos.webp"
-  ],
-  "fishsticks": [
-  	10,
-    "Fish Sticks",
-    40,
-    37.5,
-    5,
-    10,
-    "./images/crockpot/fishsticks.webp"
-  ],
-  "fistfullofjam": [
-  	11,
-    "Fist Full of Jam",
-    3,
-    37.5,
-    5,
-    15,
-    "./images/crockpot/fistfullofjam.webp"
-  ],
-  "flowersalad": [
-  	12,
-    "Flower Salad",
-    40,
-    12.5,
-    5,
-    6,
-    "./images/crockpot/flowersalad.webp"
-  ],
-  "froggiebunwich": [
-  	13,
-    "Froggie Bunwich",
-    20,
-    37.5,
-    5,
-    15,
-    "./images/crockpot/froggiebunwich.webp"
-  ],
-  "fruitmedley": [
-  	14,
-    "Fruit Medley",
-    20,
-    25,
-    5,
-    6,
-    "./images/crockpot/fruitmedley.webp"
-  ],
-  "guacamole": [
-  	15,
-    "Guacamole",
-    20,
-    37.5,
-    0,
-    10,
-    "./images/crockpot/guacamole.webp"
-  ],
-  "honeyham": [
-  	16,
-    "Honey Ham",
-    30,
-    75,
-    5,
-    15,
-    "./images/crockpot/honeyham.webp"
-  ],
-  "honeynuggets": [
-  	17,
-    "Honey Nuggets",
-    20,
-    37.5,
-    5,
-    15,
-    "./images/crockpot/honeynuggets.webp"
-  ],
-  "icecream": [
-  	18,
-    "Ice Cream",
-    0,
-    25,
-    50,
-    3,
-    "./images/crockpot/icecream.webp"
-  ],
-  "jellybeans": [
-  	19,
-    "Jelly Beans",
-    "122 / 2 min",
-    0,
-    5,
-    "Infinite",
-    "./images/crockpot/jellybeans.webp"
-  ],
-  "kabobs": [
-  	20,
-    "Kabobs",
-    3,
-    37.5,
-    5,
-    15,
-    "./images/crockpot/kabobs.webp"
-  ],
-  "lobsterbisque": [
-  	21,
-    "Lobster Bisque",
-    60,
-    25,
-    10,
-    10,
-    "./images/crockpot/lobsterbisque.webp"
-  ],
-  "lobsterdinner": [
-  	22,
-    "Lobster Dinner",
-    60,
-    37.5,
-    50,
-    15,
-    "./images/crockpot/lobsterdinner.webp"
-  ],
-  "mandrakesoup": [
-  	23,
-    "Mandrake Soup",
-    100,
-    150,
-    5,
-    6,
-    "./images/crockpot/mandrakesoup.webp"
-  ],
-  "meatballs": [
-  	24,
-    "Meatballs",
-    3,
-    62.5,
-    5,
-    10,
-    "./images/crockpot/meatballs.webp"
-  ],
-  "meatystew": [
-  	25,
-    "Meaty Stew",
-    12,
-    150,
-    5,
-    10,
-    "./images/crockpot/meatystew.webp"
-  ],
-  "melonsicle": [
-  	26,
-    "Melonsicle",
-    3,
-    12.5,
-    20,
-    3,
-    "./images/crockpot/melonsicle.webp"
-  ],
-  "monsterlasagne": [
-  	27,
-    "Monster Lasagna",
-    -20,
-    37.5,
-    -20,
-    6,
-    "./images/crockpot/monsterlasagne.webp"
-  ],
-  "pierogi": [
-  	28,
-    "Pierogi",
-    40,
-    37.5,
-    5,
-    20,
-    "./images/crockpot/pierogi.webp"
-  ],
-  "powdercake": [
-  	29,
-    "Powdercake",
-    -3,
-    0,
-    0,
-    18750,
-    "./images/crockpot/powdercake.webp"
-  ],
-  "pumpkincookie": [
-  	30,
-    "Pumpkin Cookie",
-    0,
-    37.5,
-    15,
-    10,
-    "./images/crockpot/pumpkincookie.webp"
-  ],
-  "ratatouille": [
-  	31,
-    "Ratatouille",
-    3,
-    25,
-    5,
-    15,
-    "./images/crockpot/ratatouille.webp"
-  ],
-  "salsafresca": [
-  	32,
-    "Salsa Fresca",
-    3,
-    25,
-    33,
-    15,
-    "./images/crockpot/salsafresca.webp"
-  ],
-  "seafoodgumbo": [
-  	33,
-    "Seafood Gumbo",
-    40,
-    37.5,
-    20,
-    10,
-    "./images/crockpot/seafoodgumbo.webp"
-  ],
-  "spicychili": [
-  	34,
-    "Spicy Chili",
-    20,
-    37.5,
-    0,
-    10,
-    "./images/crockpot/spicychili.webp"
-  ],
-  "stuffedeggplant": [
-  	35,
-    "Stuffed Eggplant",
-    3,
-    37.5,
-    15,
-    6,
-    "./images/crockpot/stuffedeggplant.webp"
-  ],
-  "stuffedpepperpoppers": [
-  	36,
-    "Stuffed Pepper Poppers",
-    30,
-    25,
-    -5,
-    15,
-    "./images/crockpot/stuffedpepperpoppers.webp"
-  ],
-  "surfnturf": [
-  	37,
-    "Surf n' Turf",
-    60,
-    37.5,
-    33,
-    10,
-    "./images/crockpot/surfnturf.webp"
-  ],
-  "taffy": [
-  	38,
-    "Taffy",
-    -3,
-    25,
-    15,
-    15,
-    "./images/crockpot/taffy.webp"
-  ],
-  "trailmix": [
-  	39,
-    "Trail Mix",
-    30,
-    12.5,
-    5,
-    15,
-    "./images/crockpot/trailmix.webp"
-  ],
-  "turkeydinner": [
-  	40,
-    "Turkey Dinner",
-    20,
-    75,
-    5,
-    6,
-    "./images/crockpot/turkeydinner.webp"
-  ],
-  "unagi": [
-  	41,
-    "Unagi",
-    20,
-    18.75,
-    5,
-    10,
-    "./images/crockpot/unagi.webp"
-  ],
-  "vegetablestinger": [
-  	42,
-    "Vegetable Stinger",
-    3,
-    25,
-    33,
-    15,
-    "./images/crockpot/vegetablestinger.webp"
-  ],
-  "waffles": [
-  	43,
-    "Waffles",
-    60,
-    37.5,
-    5,
-    6,
-    "./images/crockpot/waffles.webp"
-  ],
-  "wetgoop": [
-  	44,
-    "Wet Goop",
-    0,
-    0,
-    0,
-    0,
-    "./images/crockpot/wetgoop.webp"
-  ]
-}
+[
+  {
+    "name": "Asparagus Soup",
+    "hp": 20,
+    "hunger": 18.75,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/asparagussoup.webp"
+  },
+  {
+    "name": "Bacon and Eggs",
+    "hp": 20,
+    "hunger": 75,
+    "sanity": 5,
+    "rot": 20,
+    "imgsrc": "./images/crockpot/baconandeggs.webp"
+  },
+  {
+    "name": "Banana Pop",
+    "hp": 20,
+    "hunger": 12.5,
+    "sanity": 33,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/bananapop.webp"
+  },
+  {
+    "name": "Butter Muffin",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/buttermuffin.webp"
+  },
+  {
+    "name": "California Roll",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 10,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/californiaroll.webp"
+  },
+  {
+    "name": "Ceviche",
+    "hp": 20,
+    "hunger": 25,
+    "sanity": 5,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/ceviche.webp"
+  },
+  {
+    "name": "Creamy Potato Puree",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 33,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/creamypotatopuree.webp"
+  },
+  {
+    "name": "Dragonpie",
+    "hp": 40,
+    "hunger": 75,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/dragonpie.webp"
+  },
+  {
+    "name": "Fancy Spiralled Tubers",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 15,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/fancyspiralledtubers.webp"
+  },
+  {
+    "name": "Fish Tacos",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/fishtacos.webp"
+  },
+  {
+    "name": "Fish Sticks",
+    "hp": 40,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/fishsticks.webp"
+  },
+  {
+    "name": "Fist Full of Jam",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/fistfullofjam.webp"
+  },
+  {
+    "name": "Flower Salad",
+    "hp": 40,
+    "hunger": 12.5,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/flowersalad.webp"
+  },
+  {
+    "name": "Froggie Bunwich",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/froggiebunwich.webp"
+  },
+  {
+    "name": "Fruit Medley",
+    "hp": 20,
+    "hunger": 25,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/fruitmedley.webp"
+  },
+  {
+    "name": "Guacamole",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 0,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/guacamole.webp"
+  },
+  {
+    "name": "Honey Ham",
+    "hp": 30,
+    "hunger": 75,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/honeyham.webp"
+  },
+  {
+    "name": "Honey Nuggets",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/honeynuggets.webp"
+  },
+  {
+    "name": "Ice Cream",
+    "hp": 0,
+    "hunger": 25,
+    "sanity": 50,
+    "rot": 3,
+    "imgsrc": "./images/crockpot/icecream.webp"
+  },
+  {
+    "name": "Jelly Beans",
+    "hp": "122 / 2 min",
+    "hunger": 0,
+    "sanity": 5,
+    "rot": "Infinite",
+    "imgsrc": "./images/crockpot/jellybeans.webp"
+  },
+  {
+    "name": "Kabobs",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/kabobs.webp"
+  },
+  {
+    "name": "Lobster Bisque",
+    "hp": 60,
+    "hunger": 25,
+    "sanity": 10,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/lobsterbisque.webp"
+  },
+  {
+    "name": "Lobster Dinner",
+    "hp": 60,
+    "hunger": 37.5,
+    "sanity": 50,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/lobsterdinner.webp"
+  },
+  {
+    "name": "Mandrake Soup",
+    "hp": 100,
+    "hunger": 150,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/mandrakesoup.webp"
+  },
+  {
+    "name": "Meatballs",
+    "hp": 3,
+    "hunger": 62.5,
+    "sanity": 5,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/meatballs.webp"
+  },
+  {
+    "name": "Meaty Stew",
+    "hp": 12,
+    "hunger": 150,
+    "sanity": 5,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/meatystew.webp"
+  },
+  {
+    "name": "Melonsicle",
+    "hp": 3,
+    "hunger": 12.5,
+    "sanity": 20,
+    "rot": 3,
+    "imgsrc": "./images/crockpot/melonsicle.webp"
+  },
+  {
+    "name": "Monster Lasagna",
+    "hp": -20,
+    "hunger": 37.5,
+    "sanity": -20,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/monsterlasagne.webp"
+  },
+  {
+    "name": "Pierogi",
+    "hp": 40,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 20,
+    "imgsrc": "./images/crockpot/pierogi.webp"
+  },
+  {
+    "name": "Powdercake",
+    "hp": -3,
+    "hunger": 0,
+    "sanity": 0,
+    "rot": 18750,
+    "imgsrc": "./images/crockpot/powdercake.webp"
+  },
+  {
+    "name": "Pumpkin Cookie",
+    "hp": 0,
+    "hunger": 37.5,
+    "sanity": 15,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/pumpkincookie.webp"
+  },
+  {
+    "name": "Ratatouille",
+    "hp": 3,
+    "hunger": 25,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/ratatouille.webp"
+  },
+  {
+    "name": "Salsa Fresca",
+    "hp": 3,
+    "hunger": 25,
+    "sanity": 33,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/salsafresca.webp"
+  },
+  {
+    "name": "Seafood Gumbo",
+    "hp": 40,
+    "hunger": 37.5,
+    "sanity": 20,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/seafoodgumbo.webp"
+  },
+  {
+    "name": "Spicy Chili",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 0,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/spicychili.webp"
+  },
+  {
+    "name": "Stuffed Eggplant",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 15,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/stuffedeggplant.webp"
+  },
+  {
+    "name": "Stuffed Pepper Poppers",
+    "hp": 30,
+    "hunger": 25,
+    "sanity": -5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/stuffedpepperpoppers.webp"
+  },
+  {
+    "name": "Surf n' Turf",
+    "hp": 60,
+    "hunger": 37.5,
+    "sanity": 33,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/surfnturf.webp"
+  },
+  {
+    "name": "Taffy",
+    "hp": -3,
+    "hunger": 25,
+    "sanity": 15,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/taffy.webp"
+  },
+  {
+    "name": "Trail Mix",
+    "hp": 30,
+    "hunger": 12.5,
+    "sanity": 5,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/trailmix.webp"
+  },
+  {
+    "name": "Turkey Dinner",
+    "hp": 20,
+    "hunger": 75,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/turkeydinner.webp"
+  },
+  {
+    "name": "Unagi",
+    "hp": 20,
+    "hunger": 18.75,
+    "sanity": 5,
+    "rot": 10,
+    "imgsrc": "./images/crockpot/unagi.webp"
+  },
+  {
+    "name": "Vegetable Stinger",
+    "hp": 3,
+    "hunger": 25,
+    "sanity": 33,
+    "rot": 15,
+    "imgsrc": "./images/crockpot/vegetablestinger.webp"
+  },
+  {
+    "name": "Waffles",
+    "hp": 60,
+    "hunger": 37.5,
+    "sanity": 5,
+    "rot": 6,
+    "imgsrc": "./images/crockpot/waffles.webp"
+  },
+  {
+    "name": "Wet Goop",
+    "hp": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "rot": 0,
+    "imgsrc": "./images/crockpot/wetgoop.webp"
+  }
+]

@@ -13,46 +13,60 @@ import iconRot from './images/icons/rot.webp'
 
 // need to add FILTER / SEARCH next
 
+function SearchRecipe(props) {
+	return(
+		<div className="input-group mb-3">
+			<input type="text" maxLength="99" id="search-recipe" className="form-control" onChange={props.searchUpdate} />
+		</div>
+	)
+}
 
-function DisplayFullMenu() {
+function DisplayFullMenu(props) {
+
 	return(
 		<>
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
 
-							{Object.keys(food).map(
-								(key, value) => {
+						<SearchRecipe searchUpdate={props.searchUpdate} />
+
+						<br />
+
+						{Object.keys(props.food).map(
+							(key, value) => {
+								if(props.food[key].name.toLowerCase().includes(props.searchState.toLowerCase())){
 									return(
 										<table className="menu-item" key={key}>
 											<tbody>
 												<tr>
-													<td colSpan={2}>{food[key][1]}</td>
+													<td colSpan={2}>{props.food[key].name}</td>
 												</tr>
 												<tr>
-													<td colSpan={2}><img src={require(`./images/crockpot/${key}.webp`)} alt={key} /></td>
+													<td colSpan={2}><img src={require(`${props.food[key].imgsrc}`)} alt={key} /></td>
 												</tr>
 												<tr>
 													<td><img src={iconHealth} className="icon-stat" alt="icon-health" /></td>
-													<td>{food[key][2]}</td>
+													<td>{props.food[key].hp}</td>
 												</tr>
 												<tr>
 													<td><img src={iconHunger} className="icon-stat" alt="icon-hunger" /></td>
-													<td>{food[key][3]}</td>
+													<td>{props.food[key].hunger}</td>
 												</tr>
 												<tr>
 													<td><img src={iconSanity} className="icon-stat" alt="icon-sanity" /></td>
-													<td>{food[key][4]}</td>
+													<td>{props.food[key].sanity}</td>
 												</tr>
 												<tr>
 													<td><img src={iconRot} className="icon-stat" alt="icon-rot" /></td>
-													<td>{food[key][5]} days</td>
+													<td>{props.food[key].rot} days</td>
 												</tr>
 											</tbody>
 										</table>
 									)
 								}
-							)}
+							}
+						)}
 
 					</div>
 				</div>
@@ -63,23 +77,22 @@ function DisplayFullMenu() {
 
 class Main extends React.Component {
 
-	state = {
-		currentRecipe: 'asparagussoup'
+	constructor() {
+		super();
+
+		this.state = {
+			search: ''
+		}
+
+		this.searchUpdate = this.searchUpdate.bind(this);
+	}
+
+	searchUpdate = x => {
+		let inputValue = document.getElementById('search-recipe').value;
+		this.setState({search: inputValue})
 	}
 
 	render() {
-		
-		let currentRecipeState = this.state.currentRecipe;
-		let currentRecipe = food[currentRecipeState];
-
-		const swapRecipe = () => {
-			if (this.state.currentRecipe === 'asparagussoup') {
-				this.setState({currentRecipe: 'lobsterdinner'})
-			} else if (this.state.currentRecipe === 'lobsterdinner') {
-				this.setState({currentRecipe: 'asparagussoup'})
-			}
-		}
-
 
 		return(		
 
@@ -90,7 +103,11 @@ class Main extends React.Component {
 
 			<>
 
-			<DisplayFullMenu />
+				<DisplayFullMenu
+					food={food}
+					searchUpdate={this.searchUpdate}
+					searchState={this.state.search}
+				/>
 
 			</>
 		)
