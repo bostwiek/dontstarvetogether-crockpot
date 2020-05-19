@@ -1,0 +1,97 @@
+body {
+	font-family: 'belisa_plumilla_manualregular';
+	color: #ffffff;
+}
+
+header {
+	width: 100%;
+	height: 120px;
+	margin: 0 auto 20px;;
+	padding: 0;
+}
+
+.logo {
+	font-size: 64px;
+	line-height: 72px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.container {
+	border: 1px solid rgba(0,0,0,0.2);
+	background: rgba(255,255,255,0.5)
+}
+.food-category-container {
+	text-align: center;
+}
+.food-category {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	font-size: 32px;
+}
+
+.search-container {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+.search-container input {
+	font-size: 24px;
+	text-align: left;
+}
+
+.card-container {
+	border: 1px solid rgba(0,0,0,0.2);
+	text-align: center;
+}
+.card {
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 10px;
+	color: #000000;
+}
+.food-img-container {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+.food-img {
+	width: 64px;
+}
+.food-name {
+	text-align: center;
+	margin: 0 auto;
+	padding: 12px 0;
+	font-size: 24px;
+	line-height: 1.4em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.food-icon-container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.food-icon {
+	display: inline-block;
+	position: relative;
+}
+.food-icon img {
+	width: 35px;
+	opacity: 0.95;
+}
+.food-icon-value {
+	position: absolute;
+	z-index: 100;
+	top: 2px;
+	left: 0;
+	right: 0;
+	font-size: 24px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000,
+							-1px 1px 1px #000000,
+							-1px -1px 1px #000000,
+							1px -1px 1px #000000;
+}
