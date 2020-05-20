@@ -12,6 +12,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.3.0",
+    "reactstrap": "^8.4.1",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
