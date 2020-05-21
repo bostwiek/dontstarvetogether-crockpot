@@ -21,10 +21,10 @@ import imgHoneyham from './images/crockpot/honeyham.webp'
 import imgMeatystew from './images/crockpot/meatystew.webp'
 import imgMeatballs from './images/crockpot/meatballs.webp'
 
-import imgFrame from './images/ingredients/frame.png'
-import imgMeats from './images/ingredients/meats.png'
-import imgAny from './images/ingredients/any.png'
-import imgInedible from './images/ingredients/inedible/twigs.webp'
+import imgFrame from './images/ingredients/frame.webp'
+import imgMeats from './images/ingredients/meats.webp'
+import imgAny from './images/ingredients/any.webp'
+import imgInedible from './images/ingredients/twigs.webp'
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -55,150 +55,44 @@ class Mockup extends React.Component {
 						<input type="text" placeholder="Search" />
 					</div>
 
-				{/*
-					Categories:
-						Sort by (each category)
-						Vegetarian
-						Meat
-						...
-				*/}
-
 					<div className="food-category-container">
-						<div className="food-category">Carnivore</div>
-						<div className="food-category">Vegetarian</div>
+						<div className="food-category">
+							Sort By...
+							<br />
+							Hunger, Health, Sanity, Spoil time
+							
+						</div>
+						<div className="food-category">
+							• Contains Meat
+							<br />
+							(true / false)
+
+						</div>
 					</div>
 
 					<div className="card-container">
 
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
-						<Card foodName="Honey Ham" foodImg={imgHoneyham} />
-						<Card foodName="Meaty Stew" foodImg={imgMeatystew} />
-						<Card foodName="Meatballs" foodImg={imgMeatballs} />
+						{Object.keys(food).map(
+								(key, value) => {
 
-					</div>
+									/*if(food[key].name.toLowerCase().includes(props.searchState.toLowerCase())){*/
 
+										return(
+											<Card
+												foodName={food[key].name}
+												foodImg={food[key].img}
+												foodHp={food[key].hp}
+												foodHunger={food[key].hunger}
+												foodSanity={food[key].sanity}
+												foodRot={food[key].rot}
+												foodRecipes={food[key].recipes}
+												foodRestrictions={food[key].restrictions}
+												foodIsMeat={food[key].ismeat}
+											/>
+										)
 
-					{/* OLD BUILDS: */}
-
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					
-					<div className="card-container row">
-
-						<div class="card" style={{'width': '18rem'}}>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="card-link">Card link</a>
-								<a href="#" class="card-link">Another link</a>
-							</div>
-						</div>
-
-
-						<div className="card col-lg-2 col-md-3 col-sm-4">
-							<div className="food-img-container">
-								<img src={imgHoneyham} className="food-img" />
-							</div>
-							<div className="food-name">Honey Ham</div>
-							<div className="food-icon-container">
-								<div className="food-icon">
-									<img src={iconHealth} />
-									<span className="food-icon-value">
-										30
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconHunger} />
-									<span className="food-icon-value">
-										75
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconSanity} />
-									<span className="food-icon-value">
-										5
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div className="card col-lg-2 col-md-3 col-sm-4">
-							<div className="food-img-container">
-								<img src={imgMeatballs} className="food-img" />
-							</div>
-							<div className="food-name">Meatballs</div>
-							<div className="food-icon-container">
-								<div className="food-icon">
-									<img src={iconHealth} />
-									<span className="food-icon-value">
-										3
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconHunger} />
-									<span className="food-icon-value">
-										62.5
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconSanity} />
-									<span className="food-icon-value">
-										5
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div className="card col-lg-2 col-md-3 col-sm-4">
-							<div className="food-img-container">
-								<img src={imgMeatystew} className="food-img" />
-							</div>
-							<div className="food-name">Meaty Stew</div>
-							<div className="food-icon-container">
-								<div className="food-icon">
-									<img src={iconHealth} />
-									<span className="food-icon-value">
-										12
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconHunger} />
-									<span className="food-icon-value">
-										150
-									</span>
-								</div>
-								<div className="food-icon">
-									<img src={iconSanity} />
-									<span className="food-icon-value">
-										5
-									</span>
-								</div>
-							</div>
-						</div>
+								}
+						)}
 
 					</div>
 				</div>

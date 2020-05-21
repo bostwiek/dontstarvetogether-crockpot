@@ -14,13 +14,76 @@ import imgHoneyham from './images/crockpot/honeyham.webp'
 import imgMeatystew from './images/crockpot/meatystew.webp'
 import imgMeatballs from './images/crockpot/meatballs.webp'
 
-import imgFrame from './images/ingredients/frame.png'
-import imgMeats from './images/ingredients/meats.png'
-import imgAny from './images/ingredients/any.png'
-import imgInedible from './images/ingredients/inedible/twigs.webp'
+import imgFrame from './images/ingredients/frame.webp'
+import imgMeats from './images/ingredients/meats.webp'
+import imgAny from './images/ingredients/any.webp'
+import imgInedible from './images/ingredients/twigs.webp'
+import { Tag } from 'reactstrap'
 
 
 class Card extends React.Component {
+
+	checkRecipes = (recipes) => {
+
+		if(!recipes) {
+			return;
+		} else {
+
+			const items = [];
+
+			for (const [key, value] of recipes.entries()) {
+				items.push(
+					<>
+						<div className="ingredient-icon">
+							<img src={require(`./images/ingredients/${value[0]}.webp`)} alt={value[0]} />
+						</div>
+						<div className="ingredient-icon">
+							<img src={require(`./images/ingredients/${value[1]}.webp`)} alt={value[1]} />
+						</div>
+						<div className="ingredient-icon">
+							<img src={require(`./images/ingredients/${value[2]}.webp`)} alt={value[2]} />
+						</div>
+						<div className="ingredient-icon">
+							<img src={require(`./images/ingredients/${value[3]}.webp`)} alt={value[3]} />
+						</div>
+					</>
+				)
+			}
+			return(
+				<>
+					{items}
+				</>
+			)
+		}
+	}
+
+	checkFoodRestrictions = (foodRestrictions) => {
+
+		if(!foodRestrictions || foodRestrictions[0] === 'none') {
+			return;
+		} else {
+
+			/* push jsx with img src into array, return array after loops */
+			const items = [];
+
+			for (const [key, value] of foodRestrictions.entries()) {
+				items.push(
+					<div className="ingredient-restriction-container" key={key}>
+						<div className="ingredient-restriction">
+							<img src={imgFrame} className="food-icon-frame" />
+							<img src={iconDonot} className="food-icon-donot" />
+							<img src={require(`./images/ingredients/${value}.webp`)} className="food-icon-restriction" />
+						</div>
+					</div>
+				)
+			}
+			return(
+				<>
+					{items}
+				</>
+			)
+		}
+	}
 
 	render() {
 
@@ -30,7 +93,7 @@ class Card extends React.Component {
 				<div className="row-top">
 
 					<div className="row-half row-left">
-						<img src={this.props.foodImg} className="food-img" />
+						<img src={require(`${this.props.foodImg}`)} className="food-img" />
 					</div>
 
 					<div className="row-half row-right">
@@ -41,14 +104,14 @@ class Card extends React.Component {
 								<div className="food-icon">
 									<img src={iconHealth} />
 									<span className="food-icon-value">
-										+12
+										{this.props.foodHp}
 									</span>
 								</div>
 
 								<div className="food-icon">
 									<img src={iconHunger} />
 									<span className="food-icon-value">
-										+150
+										{this.props.foodHunger}
 									</span>
 								</div>
 
@@ -60,14 +123,14 @@ class Card extends React.Component {
 								<div className="food-icon">
 									<img src={iconSanity} />
 									<span className="food-icon-value">
-										+5
+										{this.props.foodSanity}
 									</span>
 								</div>
 
 								<div className="food-icon">
 									<img src={iconRot} />
 									<span className="food-icon-value">
-										10
+										{this.props.foodRot}
 									</span>
 								</div>
 							</div>
@@ -82,26 +145,17 @@ class Card extends React.Component {
 					</div>
 				</div>
 
+				{/* foodRecipes[] */}
+
 				<div className="row-bot">
-					<div className="ingredient-icon">
-						<img src={imgMeats} />
-					</div>
-					<div className="ingredient-icon">
-						<img src={imgAny} />
-					</div>
-					<div className="ingredient-icon">
-						<img src={imgAny} />
-					</div>
-					<div className="ingredient-icon">
-						<img src={imgAny} />
-					</div>
-					
-					<div className="ingredient-icon ingredient-restriction">
-						<img src={imgFrame} className="food-icon-frame" />
-						<img src={iconDonot} className="food-icon-donot" />
-						<img src={imgInedible} className="food-icon-restriction" />
-					</div>
+					{this.checkRecipes(this.props.foodRecipes)}
 				</div>
+
+				
+				<div className="row-bot text-right">
+					{this.checkFoodRestrictions(this.props.foodRestrictions)}
+				</div>
+
 			</div>
 		)
 

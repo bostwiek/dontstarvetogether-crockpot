@@ -2,6 +2,12 @@ body {
 	font-family: 'Open Sans';
 	color: #ffffff;
 }
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
 
 .bg {
 	position: fixed;
@@ -11,9 +17,9 @@ body {
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
-	background-size: 100% 100%;
-	background-position: center;
-	background-size: cover;
+	background-size: auto auto;
+	background-position: bottom center;
+	background-color: #000;
 }
 .bg-gradient {
 	background: rgb(255,255,255);
@@ -23,8 +29,10 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	min-width: 100vw;
+	min-width: 90vw;
+	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 header {
@@ -60,13 +68,6 @@ header {
 	margin: 0 auto;
 	text-align: center;
 }
-
-
-.container {
-	background: rgba(255,255,255,0.9)
-}
-
-
 
 .food-category-container {
 	text-align: center;
@@ -126,6 +127,7 @@ header {
 
 .row-top, .row-mid, .row-bot {
 	vertical-align: middle;
+	width: 100%;
 }
 
 .row-half {
@@ -139,19 +141,36 @@ header {
 
 .ingredient-icon {
 	display: inline-block;
-	width: 20%;
+	width: 25%;
+	height: 40px;
 	margin: 0;
 	padding: 0;
 }
 .ingredient-icon img {
 	display: block;
-	max-height: 50px;
-	max-width: 50px;
+	max-height: 40px;
+	max-width: 40px;
 	width: 100%;
+}
+.ingredient-restriction-container {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	max-width: 40px;
+	max-height: 40px;
 }
 .ingredient-restriction {
 	position: relative;
-	background-color: rgba(255,0,0,0.2)
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	height: 40px;
+}
+.ingredient-restriction img {
+	display: block;
+	max-width: 40px;
+	max-height: 40px;
+	width: 100%;
 }
 .food-icon-frame, .food-icon-donot, .food-icon-restriction {
 	position: absolute;
@@ -179,7 +198,7 @@ header {
 	padding: 12px 0;
 	font-family: 'belisa_plumilla_manualregular';
 	font-size: 32px;
-	line-height: 1.4em;
+	line-height: 1.8em;
 	font-weight: bold;
 	vertical-align: middle;
 }
