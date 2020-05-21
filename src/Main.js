@@ -64,6 +64,8 @@ function DisplayFullMenu(props) {
 											</tbody>
 										</table>
 									)
+								} else {
+									return;
 								}
 							}
 						)}

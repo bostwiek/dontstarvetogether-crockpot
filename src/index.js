@@ -6,7 +6,7 @@ import fonts from './fonts/fonts.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Mockup />
+    <Mockup fonts={fonts} />
   </React.StrictMode>,
   document.getElementById('root')
 );

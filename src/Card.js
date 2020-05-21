@@ -2,23 +2,18 @@ import React from 'react'
 
 import './Mockup.css'
 
-import food from './food'
-
 import iconHealth from './images/icons/health.webp'
 import iconHunger from './images/icons/hunger.webp'
 import iconSanity from './images/icons/sanity.webp'
 import iconRot from './images/icons/rot.webp'
 import iconDonot from './images/icons/donot.png'
 
-import imgHoneyham from './images/crockpot/honeyham.webp'
-import imgMeatystew from './images/crockpot/meatystew.webp'
-import imgMeatballs from './images/crockpot/meatballs.webp'
-
 import imgFrame from './images/ingredients/frame.webp'
-import imgMeats from './images/ingredients/meats.webp'
-import imgAny from './images/ingredients/any.webp'
-import imgInedible from './images/ingredients/twigs.webp'
-import { Tag } from 'reactstrap'
+
+const frameStyle = {
+	backgroundSize: "cover",
+	backgroundImage: `url(${imgFrame})`
+}
 
 
 class Card extends React.Component {
@@ -33,20 +28,20 @@ class Card extends React.Component {
 
 			for (const [key, value] of recipes.entries()) {
 				items.push(
-					<>
-						<div className="ingredient-icon">
+					<div key={key}>
+						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[0]}.webp`)} alt={value[0]} />
 						</div>
-						<div className="ingredient-icon">
+						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[1]}.webp`)} alt={value[1]} />
 						</div>
-						<div className="ingredient-icon">
+						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[2]}.webp`)} alt={value[2]} />
 						</div>
-						<div className="ingredient-icon">
+						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[3]}.webp`)} alt={value[3]} />
 						</div>
-					</>
+					</div>
 				)
 			}
 			return(
@@ -70,9 +65,9 @@ class Card extends React.Component {
 				items.push(
 					<div className="ingredient-restriction-container" key={key}>
 						<div className="ingredient-restriction">
-							<img src={imgFrame} className="food-icon-frame" />
-							<img src={iconDonot} className="food-icon-donot" />
-							<img src={require(`./images/ingredients/${value}.webp`)} className="food-icon-restriction" />
+							<img src={imgFrame} className="food-icon-frame" alt="frame" />
+							<img src={iconDonot} className="food-icon-donot" alt="restriction icon" />
+							<img src={require(`./images/ingredients/${value}.webp`)} className="food-icon-restriction" alt={value} />
 						</div>
 					</div>
 				)
@@ -93,7 +88,7 @@ class Card extends React.Component {
 				<div className="row-top">
 
 					<div className="row-half row-left">
-						<img src={require(`${this.props.foodImg}`)} className="food-img" />
+						<img src={require(`${this.props.foodImg}`)} className="food-img" alt={this.props.foodName} />
 					</div>
 
 					<div className="row-half row-right">
@@ -102,14 +97,14 @@ class Card extends React.Component {
 							<div className="food-icon-container">
 								
 								<div className="food-icon">
-									<img src={iconHealth} />
+									<img src={iconHealth} alt="Health Icon" />
 									<span className="food-icon-value">
 										{this.props.foodHp}
 									</span>
 								</div>
 
 								<div className="food-icon">
-									<img src={iconHunger} />
+									<img src={iconHunger} alt="Hunger Icon" />
 									<span className="food-icon-value">
 										{this.props.foodHunger}
 									</span>
@@ -121,14 +116,14 @@ class Card extends React.Component {
 						<div className="row-btm">
 							<div className="food-icon-container">
 								<div className="food-icon">
-									<img src={iconSanity} />
+									<img src={iconSanity} alt="Sanity Icon"  />
 									<span className="food-icon-value">
 										{this.props.foodSanity}
 									</span>
 								</div>
 
 								<div className="food-icon">
-									<img src={iconRot} />
+									<img src={iconRot} alt="Rot Icon"  />
 									<span className="food-icon-value">
 										{this.props.foodRot}
 									</span>

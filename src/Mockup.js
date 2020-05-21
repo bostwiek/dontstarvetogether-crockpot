@@ -11,21 +11,6 @@ import logo from './images/icons/crockpot.webp'
 
 import background from './images/bg/1.jpg'
 
-import iconHealth from './images/icons/health.webp'
-import iconHunger from './images/icons/hunger.webp'
-import iconSanity from './images/icons/sanity.webp'
-import iconRot from './images/icons/rot.webp'
-import iconDonot from './images/icons/donot.png'
-
-import imgHoneyham from './images/crockpot/honeyham.webp'
-import imgMeatystew from './images/crockpot/meatystew.webp'
-import imgMeatballs from './images/crockpot/meatballs.webp'
-
-import imgFrame from './images/ingredients/frame.webp'
-import imgMeats from './images/ingredients/meats.webp'
-import imgAny from './images/ingredients/any.webp'
-import imgInedible from './images/ingredients/twigs.webp'
-
 const bgStyle = {
 	backgroundImage: `url(${background})`
 }
@@ -88,6 +73,7 @@ class Mockup extends React.Component {
 												foodRecipes={food[key].recipes}
 												foodRestrictions={food[key].restrictions}
 												foodIsMeat={food[key].ismeat}
+												key={key}
 											/>
 										)
 

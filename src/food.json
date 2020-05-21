@@ -23,8 +23,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/baconandeggs.webp",
 		"recipes": [
-			[ "meats", "meats", "egg", "egg"],
-			[ "morsel", "monstermeat", "tallbirdegg", "any"]
+			["meats", "meats", "egg", "egg"],
+			["morsel", "monstermeat", "tallbirdegg", "any"]
 		],
 		"restrictions": [
 			"veggies"
@@ -39,7 +39,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/bananapop.webp",
 		"recipes": [
-			[ "banana", "ice", "twigs", "any"]
+			["banana", "ice", "twigs", "any"]
 		],
 		"restrictions": [
 			"meats", "fishes"
@@ -54,7 +54,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/buttermuffin.webp",
 		"recipes": [
-			[ "butterflywings", "veggies", "any", "any"]
+			["butterflywings", "veggies", "any", "any"]
 		],
 		"restrictions": [
 			"meats"
@@ -69,7 +69,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/californiaroll.webp",
 		"recipes": [
-			[ "fishes", "seaweed", "seaweed", "any"]
+			["fishes", "seaweed", "seaweed", "any"]
 		],
 		"restrictions": [
 			"none"
@@ -84,7 +84,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/ceviche.webp",
 		"recipes": [
-			[ "fishes", "fishes", "ice", "any"]
+			["fishes", "fishes", "ice", "any"]
 		],
 		"restrictions": [
 			"none"
@@ -99,7 +99,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/creamypotatopuree.webp",
 		"recipes": [
-			[ "potato", "garlic", "any", "any"]
+			["potato", "garlic", "any", "any"]
 		],
 		"restrictions": [
 			"twigs", "meats"
@@ -114,7 +114,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/dragonpie.webp",
 		"recipes": [
-			[ "dragonfruit", "any", "any", "any"]
+			["dragonfruit", "any", "any", "any"]
 		],
 		"restrictions": [
 			"meats", "asparagus"
@@ -129,8 +129,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/fancyspiralledtubers.webp",
 		"recipes": [
-			[ "potato", "twigs", "any", "any"],
-			[ "potato", "twigs", "twigs", "any"]
+			["potato", "twigs", "any", "any"],
+			["potato", "twigs", "twigs", "any"]
 		],
 		"restrictions": [
 			"meats", "twigs", "twigs", "twigs"
@@ -145,8 +145,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/fishtacos.webp",
 		"recipes": [
-			[ "fishes", "corn", "any", "any"],
-			[ "fishes", "corn", "twigs", "twigs"]
+			["fishes", "corn", "any", "any"],
+			["fishes", "corn", "twigs", "twigs"]
 		],
 		"restrictions": [
 			"none"
@@ -161,8 +161,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/fishsticks.webp",
 		"recipes": [
-			[ "fishes", "twigs", "any", "any"],
-			[ "fishes", "twigs", "monstermeat", "monstermeat"]
+			["fishes", "twigs", "any", "any"],
+			["fishes", "twigs", "monstermeat", "monstermeat"]
 		],
 		"restrictions": [
 			"moleworm", "twigs", "twigs"
@@ -177,10 +177,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/fistfullofjam.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["fruits", "any", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "veggies", "twigs"
 		]
   },
   {
@@ -192,14 +192,14 @@
 		"ismeat": false,
 		"img": "./images/crockpot/flowersalad.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["cactusflower", "veggies", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "fruits", "egg", "twigs", "honey"
 		]
   },
   {
-    "name": "Froggie Bunwich",
+    "name": "Froggle Bunwich",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 5,
@@ -207,10 +207,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/froggiebunwich.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["froglegs", "veggies", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"egg", "honey"
 		]
   },
   {
@@ -222,10 +222,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/fruitmedley.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["fruits", "fruits", "fruits", "any"]
 		],
 		"restrictions": [
-			"none"
+			"dragonfruit", "meats", "veggies"
 		]
   },
   {
@@ -237,10 +237,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/guacamole.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["moleworm", "cactus", "any", "any"],
+			["moleworm", "stonefruit", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"fruits"
 		]
   },
   {
@@ -252,10 +253,12 @@
 		"ismeat": false,
 		"img": "./images/crockpot/honeyham.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "meats", "honey", "any"],
+			["morsel", "froglegs", "monstermeat", "honey"],
+			["meat", "monstermeat", "honey", "any"]
 		],
 		"restrictions": [
-			"none"
+			"twigs", "moleworm", "tallbirdegg"
 		]
   },
   {
@@ -267,10 +270,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/honeynuggets.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "honey", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"twigs"
 		]
   },
   {
@@ -282,25 +285,26 @@
 		"ismeat": false,
 		"img": "./images/crockpot/icecream.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["electricmilk", "honey", "ice", "any"],
+			["butter", "honey", "ice", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "egg", "veggies", "twigs"
 		]
   },
   {
     "name": "Jelly Beans",
-    "hp": "122 / 2 min",
+    "hp": "122",
     "hunger": 0,
     "sanity": 5,
-		"rot": "Infinite",
+		"rot": "N/A",
 		"ismeat": false,
 		"img": "./images/crockpot/jellybeans.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["royaljelly", "any", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"monsterfoods", "twigs"
 		]
   },
   {
@@ -312,10 +316,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/kabobs.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "twigs", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"fishes", "moleworm", "twigs", "twigs"
 		]
   },
   {
@@ -327,7 +331,9 @@
 		"ismeat": false,
 		"img": "./images/crockpot/lobsterbisque.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["wobster", "ice", "any", "any"],
+			["wobster", "ice", "twigs", "twigs"],
+			["wobster", "ice", "monstermeat", "monstermeat"]
 		],
 		"restrictions": [
 			"none"
@@ -342,10 +348,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/lobsterdinner.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["wobster", "butter", "any", "any"],
+			["wobster", "butter", "twigs", "twigs"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "fishes", "ice"
 		]
   },
   {
@@ -357,7 +364,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/mandrakesoup.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["mandrake", "any", "any", "any"]
 		],
 		"restrictions": [
 			"none"
@@ -372,10 +379,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/meatballs.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "any", "any", "any"],
+			["fishes", "any", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"twigs", "honey"
 		]
   },
   {
@@ -387,10 +395,12 @@
 		"ismeat": false,
 		"img": "./images/crockpot/meatystew.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "meats", "meats", "any"],
+			["meat", "meat", "monstermeat", "ice"],
+			["meat", "monstermeat", "morsel", "morsel"]
 		],
 		"restrictions": [
-			"none"
+			"twigs", "moleworm", "honey", "tallbirdegg"
 		]
   },
   {
@@ -402,10 +412,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/melonsicle.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["watermelon", "ice", "twigs", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "veggies", "egg"
 		]
   },
   {
@@ -417,10 +427,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/monsterlasagne.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["monsterfoods", "monsterfoods", "any", "any"],
+			["monstermeat", "durian", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"twigs"
 		]
   },
   {
@@ -432,10 +443,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/pierogi.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "egg", "veggies", "any"]
 		],
 		"restrictions": [
-			"none"
+			"moleworm", "twigs"
 		]
   },
   {
@@ -447,7 +458,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/powdercake.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["corn", "honey", "twigs", "any"]
 		],
 		"restrictions": [
 			"none"
@@ -462,7 +473,7 @@
 		"ismeat": false,
 		"img": "./images/crockpot/pumpkincookie.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["pumpkin", "honey", "honey", "any"]
 		],
 		"restrictions": [
 			"none"
@@ -477,10 +488,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/ratatouille.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["veggies", "any", "any", "any"],
+			["veggies", "ice", "ice", "ice"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "dragonfruit", "twigs", "butterflywings"
 		]
   },
   {
@@ -492,10 +504,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/salsafresca.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["toma", "garlic", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats", "egg", "twigs"
 		]
   },
   {
@@ -507,7 +519,9 @@
 		"ismeat": false,
 		"img": "./images/crockpot/seafoodgumbo.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["eel", "fishes", "any", "any"],
+			["eel", "eel", "eel", "twigs"],
+			["eel", "fishmorsel", "fishmorsel", "fishmorsel"]
 		],
 		"restrictions": [
 			"none"
@@ -522,7 +536,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/spicychili.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "meats", "veggies", "veggies"],
+			["monstermeat", "freshwaterfish", "lichen", "lichen"]
 		],
 		"restrictions": [
 			"none"
@@ -537,7 +552,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/stuffedeggplant.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["eggplant", "veggies", "any", "any"],
+			["eggplant", "lichen", "twigs", "twigs"]
 		],
 		"restrictions": [
 			"none"
@@ -552,10 +568,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/stuffedpepperpoppers.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["pepper", "meats", "any", "any"]
 		],
 		"restrictions": [
-			"none"
+			"twigs"
 		]
   },
   {
@@ -567,10 +583,13 @@
 		"ismeat": false,
 		"img": "./images/crockpot/surfnturf.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["meats", "fishes", "any", "any"],
+			["eel", "eel", "monstermeat", "monstermeat"],
+			["monstermeat", "freshwaterfish", "freshwaterfish", "freshwaterfish"],
+			["monstermeat", "fishmeat", "fishmeat", "twigs"]
 		],
 		"restrictions": [
-			"none"
+			"ice"
 		]
   },
   {
@@ -582,10 +601,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/taffy.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["honey", "honey", "honey", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats"
 		]
   },
   {
@@ -597,10 +616,13 @@
 		"ismeat": false,
 		"img": "./images/crockpot/trailmix.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["roastedbirchnut", "berries", "fruits", "any"],
+			["roastedbirchnut", "berries", "berries", "twigs"],
+			["roastedbirchnut", "roastedbirchnut", "berries", "berries"]
+
 		],
 		"restrictions": [
-			"none"
+			"meats", "veggies", "egg", "butter", "electricmilk"
 		]
   },
   {
@@ -612,10 +634,11 @@
 		"ismeat": false,
 		"img": "./images/crockpot/turkeydinner.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["drumstick", "drumstick", "meats", "veggies"],
+			["drumstick", "drumstick", "meats", "fruits"]
 		],
 		"restrictions": [
-			"none"
+			"egg", "honey", "electricmilk", "twigs"
 		]
   },
   {
@@ -627,7 +650,9 @@
 		"ismeat": false,
 		"img": "./images/crockpot/unagi.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["eel", "lichen", "any", "any"],
+			["eel", "lichen", "twigs", "twigs"],
+			["eel", "lichen", "monstermeat", "monstermeat"]
 		],
 		"restrictions": [
 			"none"
@@ -642,7 +667,8 @@
 		"ismeat": false,
 		"img": "./images/crockpot/vegetablestinger.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["asparagus", "veggies", "veggies", "ice"],
+			["toma", "veggies", "veggies", "ice"]
 		],
 		"restrictions": [
 			"none"
@@ -657,10 +683,10 @@
 		"ismeat": false,
 		"img": "./images/crockpot/waffles.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["butter", "berries", "egg", "any"]
 		],
 		"restrictions": [
-			"none"
+			"meats"
 		]
   },
   {
@@ -668,11 +694,11 @@
     "hp": 0,
     "hunger": 0,
     "sanity": 0,
-		"rot": 0,
+		"rot": 6,
 		"ismeat": false,
 		"img": "./images/crockpot/wetgoop.webp",
 		"recipes": [
-			[ "any", "any", "any", "any"]
+			["any", "any", "any", "any"]
 		],
 		"restrictions": [
 			"none"
