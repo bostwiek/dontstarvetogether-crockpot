@@ -1,115 +1,142 @@
 import React from 'react'
 
+import Card from './Card'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Main.css'
 
 import food from './food'
 
-import iconHealth from './images/icons/health.webp'
-import iconHunger from './images/icons/hunger.webp'
-import iconSanity from './images/icons/sanity.webp'
-import iconRot from './images/icons/rot.webp'
+import logo from './images/icons/crockpot.webp'
 
+import background from './images/bg/2.png'
 
-// need to add FILTER / SEARCH next
-
-function SearchRecipe(props) {
-	return(
-		<div className="input-group mb-3">
-			<input type="text" maxLength="99" id="search-recipe" className="form-control" onChange={props.searchUpdate} />
-		</div>
-	)
-}
-
-function DisplayFullMenu(props) {
-
-	return(
-		<>
-			<div className="container">
-				<div className="row">
-					<div className="col-12">
-
-						<SearchRecipe searchUpdate={props.searchUpdate} />
-
-						<br />
-
-						{Object.keys(props.food).map(
-							(key, value) => {
-								if(props.food[key].name.toLowerCase().includes(props.searchState.toLowerCase())){
-									return(
-										<table className="menu-item" key={key}>
-											<tbody>
-												<tr>
-													<td colSpan={2}>{props.food[key].name}</td>
-												</tr>
-												<tr>
-													<td colSpan={2}><img src={require(`${props.food[key].imgsrc}`)} alt={key} /></td>
-												</tr>
-												<tr>
-													<td><img src={iconHealth} className="icon-stat" alt="icon-health" /></td>
-													<td>{props.food[key].hp}</td>
-												</tr>
-												<tr>
-													<td><img src={iconHunger} className="icon-stat" alt="icon-hunger" /></td>
-													<td>{props.food[key].hunger}</td>
-												</tr>
-												<tr>
-													<td><img src={iconSanity} className="icon-stat" alt="icon-sanity" /></td>
-													<td>{props.food[key].sanity}</td>
-												</tr>
-												<tr>
-													<td><img src={iconRot} className="icon-stat" alt="icon-rot" /></td>
-													<td>{props.food[key].rot} days</td>
-												</tr>
-											</tbody>
-										</table>
-									)
-								} else {
-									return;
-								}
-							}
-						)}
-
-					</div>
-				</div>
-			</div>
-		</>
-	)
+const bgStyle = {
+	backgroundImage: `url(${background})`
 }
 
 class Main extends React.Component {
 
 	constructor() {
 		super();
-
 		this.state = {
-			search: ''
+			search: '',
+			sortBy: 'alpha-desc',
+			containsMeat: 'either'
 		}
-
 		this.searchUpdate = this.searchUpdate.bind(this);
+		this.sortByUpdate = this.sortByUpdate.bind(this);
+		this.sortContainsMeat = this.sortContainsMeat.bind(this);
 	}
 
-	searchUpdate = x => {
+	searchUpdate = () => {
 		let inputValue = document.getElementById('search-recipe').value;
 		this.setState({search: inputValue})
 	}
 
-	render() {
+	sortByUpdate = () => {
+		let selectValue = document.getElementById('sort-by').value;
+		this.setState({ sortBy: selectValue })
+		// alpha-desc, alpha-asc, hunger-desc, hunger-asc, health-desc, health-asc, sanity-desc, sanity-asc, rot-desc, rot-asc
+	}
+	sortContainsMeat = () => {
+		let selectValue = document.getElementById('contains-meat').value;
+		this.setState({ containsMeat: selectValue })
+		// either, yes, no
+	}
+
+	render() {	
 
 		return(		
-
-			// <IngredientsTable />
-
-				// cant change to a string
-				// need to reference state inside json object query
-
 			<>
 
-				<DisplayFullMenu
-					food={food}
-					searchUpdate={this.searchUpdate}
-					searchState={this.state.search}
-				/>
+				<div className="bg" style={bgStyle}></div>
+				<div className="bg-gradient"></div>
+
+				<header>
+					<div className="logo">
+						<span className="logo-subtext">Don't Starve Together</span>
+						<span className="logo-text">All Things Crockpot</span>
+						<img src={logo} alt="Crockpot Logo" />
+					</div>
+				</header>
+
+				<div className="container">
+
+					<div className="search-container">						
+						<div className="input-group mb-3">
+							<input type="text" maxLength="99" id="search-recipe" className="form-control" placeholder="Search..." onChange={this.searchUpdate} />
+						</div>
+					</div>
+
+					<div className="food-category-container">
+						<div className="food-category">
+							Sort By...
+							<br />
+							<select id="sort-by" onChange={this.sortByUpdate}>
+								<option value="alpha-desc">Alphabetically A to Z</option>
+								<option value="alpha-asc">Alphabetically Z to A</option>
+								<option value="hunger-desc">Hunger (descending)</option>
+								<option value="hunger-asc">Hunger (ascending)</option>
+								<option value="health-desc">Health (descending)</option>
+								<option value="health-asc">Health (ascending)</option>
+								<option value="sanity-desc">Sanity (descending)</option>
+								<option value="sanity-asc">Sanity (ascending)</option>
+								<option value="rot-desc">Spoil Time (descending)</option>
+								<option value="rot-asc">Spoil Time (ascending)</option>
+							</select>
+						</div>
+
+						<div className="food-category">
+							Contains Meat?
+							<br />
+							<select id="contains-meat" onChange={this.sortContainsMeat}>
+								<option value="either">Either</option>
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select>
+
+						</div>
+					</div>
+
+					<center>
+						States:<br />
+						search: {this.state.search} ... sortBy: {this.state.sortBy} ... containsMeat: {this.state.containsMeat}
+					</center>
+
+					<div className="card-container">
+
+						{/* Instead of feeding food as an object in here, have state check query for containsMeat, and return everything to a new food object to pass into args */}
+
+						{/* Can also sortBy to organize food[] results before passing into .map function */}
+
+						{Object.keys(food).map(
+								(key, value) => {
+
+									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
+
+										return(
+											<Card
+												foodName={food[key].name}
+												foodImg={food[key].img}
+												foodHp={food[key].hp}
+												foodHunger={food[key].hunger}
+												foodSanity={food[key].sanity}
+												foodRot={food[key].rot}
+												foodRecipes={food[key].recipes}
+												foodRestrictions={food[key].restrictions}
+												foodIsMeat={food[key].ismeat}
+												key={key}
+											/>
+										)
+
+									}
+
+								}
+						)}
+
+					</div>
+				</div>
 
 			</>
 		)

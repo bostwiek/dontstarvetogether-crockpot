@@ -20,7 +20,7 @@
     "hunger": 75,
     "sanity": 5,
 		"rot": 20,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/baconandeggs.webp",
 		"recipes": [
 			["meats", "meats", "egg", "egg"],
@@ -66,7 +66,7 @@
     "hunger": 37.5,
     "sanity": 10,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/californiaroll.webp",
 		"recipes": [
 			["fishes", "seaweed", "seaweed", "any"]
@@ -81,7 +81,7 @@
     "hunger": 25,
     "sanity": 5,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/ceviche.webp",
 		"recipes": [
 			["fishes", "fishes", "ice", "any"]
@@ -142,7 +142,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 6,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/fishtacos.webp",
 		"recipes": [
 			["fishes", "corn", "any", "any"],
@@ -158,7 +158,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/fishsticks.webp",
 		"recipes": [
 			["fishes", "twigs", "any", "any"],
@@ -204,7 +204,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/froggiebunwich.webp",
 		"recipes": [
 			["froglegs", "veggies", "any", "any"]
@@ -234,7 +234,7 @@
     "hunger": 37.5,
     "sanity": 0,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/guacamole.webp",
 		"recipes": [
 			["moleworm", "cactus", "any", "any"],
@@ -250,7 +250,7 @@
     "hunger": 75,
     "sanity": 5,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/honeyham.webp",
 		"recipes": [
 			["meats", "meats", "honey", "any"],
@@ -267,7 +267,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/honeynuggets.webp",
 		"recipes": [
 			["meats", "honey", "any", "any"]
@@ -313,7 +313,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/kabobs.webp",
 		"recipes": [
 			["meats", "twigs", "any", "any"]
@@ -328,7 +328,7 @@
     "hunger": 25,
     "sanity": 10,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/lobsterbisque.webp",
 		"recipes": [
 			["wobster", "ice", "any", "any"],
@@ -345,7 +345,7 @@
     "hunger": 37.5,
     "sanity": 50,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/lobsterdinner.webp",
 		"recipes": [
 			["wobster", "butter", "any", "any"],
@@ -376,7 +376,7 @@
     "hunger": 62.5,
     "sanity": 5,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/meatballs.webp",
 		"recipes": [
 			["meats", "any", "any", "any"],
@@ -392,7 +392,7 @@
     "hunger": 150,
     "sanity": 5,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/meatystew.webp",
 		"recipes": [
 			["meats", "meats", "meats", "any"],
@@ -424,7 +424,7 @@
     "hunger": 37.5,
     "sanity": -20,
 		"rot": 6,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/monsterlasagne.webp",
 		"recipes": [
 			["monsterfoods", "monsterfoods", "any", "any"],
@@ -440,7 +440,7 @@
     "hunger": 37.5,
     "sanity": 5,
 		"rot": 20,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/pierogi.webp",
 		"recipes": [
 			["meats", "egg", "veggies", "any"]
@@ -516,7 +516,7 @@
     "hunger": 37.5,
     "sanity": 20,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/seafoodgumbo.webp",
 		"recipes": [
 			["eel", "fishes", "any", "any"],
@@ -533,7 +533,7 @@
     "hunger": 37.5,
     "sanity": 0,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/spicychili.webp",
 		"recipes": [
 			["meats", "meats", "veggies", "veggies"],
@@ -565,7 +565,7 @@
     "hunger": 25,
     "sanity": -5,
 		"rot": 15,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/stuffedpepperpoppers.webp",
 		"recipes": [
 			["pepper", "meats", "any", "any"]
@@ -580,7 +580,7 @@
     "hunger": 37.5,
     "sanity": 33,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/surfnturf.webp",
 		"recipes": [
 			["meats", "fishes", "any", "any"],
@@ -631,7 +631,7 @@
     "hunger": 75,
     "sanity": 5,
 		"rot": 6,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/turkeydinner.webp",
 		"recipes": [
 			["drumstick", "drumstick", "meats", "veggies"],
@@ -647,7 +647,7 @@
     "hunger": 18.75,
     "sanity": 5,
 		"rot": 10,
-		"ismeat": false,
+		"ismeat": true,
 		"img": "./images/crockpot/unagi.webp",
 		"recipes": [
 			["eel", "lichen", "any", "any"],

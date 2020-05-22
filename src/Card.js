@@ -84,7 +84,7 @@ class Card extends React.Component {
 
 		return(
 
-			<div className="test-card">
+			<div className="food-card">
 				<div className="row-top">
 
 					<div className="row-half row-left">
