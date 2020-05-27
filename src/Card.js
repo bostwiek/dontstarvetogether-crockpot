@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './Mockup.css'
-
 import iconHealth from './images/icons/health.webp'
 import iconHunger from './images/icons/hunger.webp'
 import iconSanity from './images/icons/sanity.webp'

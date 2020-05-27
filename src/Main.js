@@ -8,7 +8,6 @@ import './Main.css'
 import food from './food'
 
 import logo from './images/icons/crockpot.webp'
-
 import background from './images/bg/2.png'
 
 const bgStyle = {
@@ -45,9 +44,45 @@ class Main extends React.Component {
 		// either, yes, no
 	}
 
-	render() {	
+	render() {
 
-		return(		
+		// sort food based on this.state.sortBy
+		switch (this.state.sortBy) {
+			case 'alpha-desc': 
+				food.sort((a, b) => (a.name > b.name) ? 1 : -1)
+				break;
+			case 'alpha-asc':
+				food.sort((a, b) => (b.name > a.name) ? 1 : -1)
+				break;
+			case 'hunger-desc':
+				food.sort((a, b) => (a.hunger < b.hunger) ? 1 : -1)
+				break;
+			case 'hunger-asc':
+				food.sort((a, b) => (b.hunger < a.hunger) ? 1 : -1)
+				break;
+			case 'health-desc':
+				food.sort((a, b) => (a.hp < b.hp) ? 1 : -1)
+				break;
+			case 'health-asc':
+				food.sort((a, b) => (b.hp < a.hp) ? 1 : -1)
+				break;
+			case 'sanity-desc':
+				food.sort((a, b) => (a.sanity < b.sanity) ? 1 : -1)
+				break;
+			case 'sanity-asc':
+				food.sort((a, b) => (b.sanity < a.sanity) ? 1 : -1)
+				break;
+			case 'rot-desc':
+				food.sort((a, b) => (a.rot < b.rot) ? 1 : -1)
+				break;
+			case 'rot-asc':
+				food.sort((a, b) => (b.rot < a.rot) ? 1 : -1)
+				break;
+			default:
+				break;
+		}
+
+		return(
 			<>
 
 				<div className="bg" style={bgStyle}></div>
@@ -99,22 +134,59 @@ class Main extends React.Component {
 						</div>
 					</div>
 
-					<center>
-						States:<br />
-						search: {this.state.search} ... sortBy: {this.state.sortBy} ... containsMeat: {this.state.containsMeat}
-					</center>
-
 					<div className="card-container">
-
-						{/* Instead of feeding food as an object in here, have state check query for containsMeat, and return everything to a new food object to pass into args */}
-
-						{/* Can also sortBy to organize food[] results before passing into .map function */}
 
 						{Object.keys(food).map(
 								(key, value) => {
 
+									// check search input for any contents
 									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
+									// check contains meat if true or false (ignore if either)
+									if(this.state.containsMeat != 'either') {
+
+										if(this.state.containsMeat === 'yes') {
+
+											// Contains Meat
+											if(food[key].ismeat === true){
+												return(
+													<Card
+														foodName={food[key].name}
+														foodImg={food[key].img}
+														foodHp={food[key].hp}
+														foodHunger={food[key].hunger}
+														foodSanity={food[key].sanity}
+														foodRot={food[key].rot}
+														foodRecipes={food[key].recipes}
+														foodRestrictions={food[key].restrictions}
+														foodIsMeat={food[key].ismeat}
+														key={key}
+													/>
+												)
+											}
+
+										} else {
+											// Does not contain meat
+											if(food[key].ismeat === false){
+												return(
+													<Card
+														foodName={food[key].name}
+														foodImg={food[key].img}
+														foodHp={food[key].hp}
+														foodHunger={food[key].hunger}
+														foodSanity={food[key].sanity}
+														foodRot={food[key].rot}
+														foodRecipes={food[key].recipes}
+														foodRestrictions={food[key].restrictions}
+														foodIsMeat={food[key].ismeat}
+														key={key}
+													/>
+												)
+											}
+										}
+
+									} else {
+										// Both meat and non-meat foods
 										return(
 											<Card
 												foodName={food[key].name}
@@ -129,10 +201,9 @@ class Main extends React.Component {
 												key={key}
 											/>
 										)
-
 									}
-
 								}
+							}
 						)}
 
 					</div>

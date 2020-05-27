@@ -1,5 +1,9 @@
 import React from 'react'
 
+
+// important functions looks like this
+import {test} from './TestFunctions';
+
 class Test extends React.Component {
 
 	constructor() {
@@ -61,6 +65,8 @@ class Test extends React.Component {
 				{this.state.sortby}
 				<br />
 				<button onClick={this.flipSortAsc}>Press me</button>
+				<br />
+				<button onClick={test}>Test</button>
 			</>
 		)
 	}
