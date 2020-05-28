@@ -94,10 +94,6 @@ class Main extends React.Component {
 						<span className="logo-text">All Things Crockpot</span>
 						<img src={process.env.PUBLIC_URL + '/images/crockpot.webp'} alt='Crockpot Logo' />
 					</div>
-					<br /><br /><br />
-					<img src="images/React.png" alt='React Logo' />
-					<br />
-					<img src={process.env.PUBLIC_URL + '/images/React.png'} alt='React Logo' />
 				</header>
 
 				<div className="container">
