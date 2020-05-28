@@ -7,7 +7,7 @@ import './Main.css'
 
 import food from './food'
 
-import logo from './images/icons/crockpot.webp'
+import logo from './images/icons/crockpot.png'
 import background from './images/bg/2.png'
 
 const bgStyle = {
@@ -92,7 +92,7 @@ class Main extends React.Component {
 					<div className="logo">
 						<span className="logo-subtext">Don't Starve Together</span>
 						<span className="logo-text">All Things Crockpot</span>
-						<img src={process.env.PUBLIC_URL + '/images/crockpot.webp'} alt='Crockpot Logo' />
+						<img src={logo} alt='Crockpot Logo' />
 					</div>
 				</header>
 

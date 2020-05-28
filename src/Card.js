@@ -1,12 +1,12 @@
 import React from 'react'
 
-import iconHealth from './images/icons/health.webp'
-import iconHunger from './images/icons/hunger.webp'
-import iconSanity from './images/icons/sanity.webp'
-import iconRot from './images/icons/rot.webp'
+import iconHealth from './images/icons/health.png'
+import iconHunger from './images/icons/hunger.png'
+import iconSanity from './images/icons/sanity.png'
+import iconRot from './images/icons/rot.png'
 import iconDonot from './images/icons/donot.png'
 
-import imgFrame from './images/ingredients/frame.webp'
+import imgFrame from './images/ingredients/frame.png'
 
 const frameStyle = {
 	backgroundSize: "cover",
@@ -32,16 +32,16 @@ class Card extends React.Component {
 				items.push(
 					<div key={key} className={displayClass}>
 						<div className="ingredient-icon" style={frameStyle}>
-							<img src={require(`./images/ingredients/${value[0]}.webp`)} alt={value[0]} />
+							<img src={require(`./images/ingredients/${value[0]}.png`)} alt={value[0]} />
 						</div>
 						<div className="ingredient-icon" style={frameStyle}>
-							<img src={require(`./images/ingredients/${value[1]}.webp`)} alt={value[1]} />
+							<img src={require(`./images/ingredients/${value[1]}.png`)} alt={value[1]} />
 						</div>
 						<div className="ingredient-icon" style={frameStyle}>
-							<img src={require(`./images/ingredients/${value[2]}.webp`)} alt={value[2]} />
+							<img src={require(`./images/ingredients/${value[2]}.png`)} alt={value[2]} />
 						</div>
 						<div className="ingredient-icon" style={frameStyle}>
-							<img src={require(`./images/ingredients/${value[3]}.webp`)} alt={value[3]} />
+							<img src={require(`./images/ingredients/${value[3]}.png`)} alt={value[3]} />
 						</div>
 					</div>
 				)
@@ -69,7 +69,7 @@ class Card extends React.Component {
 						<div className="ingredient-restriction">
 							<img src={imgFrame} className="food-icon-frame" alt="frame" />
 							<img src={iconDonot} className="food-icon-donot" alt="restriction icon" />
-							<img src={require(`./images/ingredients/${value}.webp`)} className="food-icon-restriction" alt={value} />
+							<img src={require(`./images/ingredients/${value}.png`)} className="food-icon-restriction" alt={value} />
 						</div>
 					</div>
 				)
