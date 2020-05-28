@@ -105,8 +105,8 @@ class Main extends React.Component {
 					</div>
 
 					<div className="food-category-container">
-						<div className="food-category">
-							Sort By...
+						<div className="food-category float-left">
+							<span>Sort By...</span>
 							<br />
 							<select id="sort-by" onChange={this.sortByUpdate}>
 								<option value="alpha-desc">Alphabetically A to Z</option>
@@ -122,16 +122,18 @@ class Main extends React.Component {
 							</select>
 						</div>
 
-						<div className="food-category">
-							Contains Meat?
+						<div className="food-category float-right">
+							<span>Contains Meat?</span>
 							<br />
 							<select id="contains-meat" onChange={this.sortContainsMeat}>
 								<option value="either">Either</option>
 								<option value="yes">Yes</option>
 								<option value="no">No</option>
 							</select>
-
 						</div>
+
+						<div className="clear"></div>
+
 					</div>
 
 					<div className="card-container">

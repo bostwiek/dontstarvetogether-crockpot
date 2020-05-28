@@ -3,12 +3,11 @@ body {
 	color: #000000;
 	background: #000000;
 }
-.text-left {
-	text-align: left;
-}
-.text-right {
-	text-align: right;
-}
+.text-left { text-align: left; }
+.text-right {	text-align: right; }
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
 .small-text {
 	font-size: 0.8em;
 	line-height: 0.8em;
@@ -18,15 +17,22 @@ input#search-recipe, select {
 	font-family: sans-serif;
 	font-size: 16px;
 	transition: 0.2s ease-in-out;
+	font-weight: normal;
+	border: 1px solid #555;
+	color: #fff;
+	background-color: #000;
 }
-input#search-recipe:focus {
-	font-size: 1.2em;
+select {
+	padding: 10px;
 }
-select:focus, select:focus option {
-	font-size: 20px;;
+select option {
+	/* apparently you cant style these? */
+	color: #fff;
+	background-color: #000
 }
 
 .bg {
+	display: none;
 	position: fixed;
 	z-index: -1000;
 	left: 0;
@@ -88,8 +94,11 @@ header {
 }
 
 .food-category-container {
+	margin: 0 auto;
 	text-align: center;
-	height: 100px;
+	width: 100%;
+	max-width: 720px;
+	height: 120px;
 	color: #fff;
 }
 .food-category {
@@ -98,6 +107,9 @@ header {
 	padding: 10px;
 	font-size: 22px;
 	line-height: 1em;
+}
+.food-category span {
+	line-height: 2em;
 }
 .search-container {
 	display: block;
@@ -123,8 +135,9 @@ header {
 	text-align: center;
 }
 .food-card {
-	background-color: #fff;
-	color: #000;
+	background-color: #161616;
+	background-color: rgba(255,255,255,0.1);
+	color: #ffffff;
 	width: 180px;
 	height: 308px;
 	max-height: 308px;
@@ -135,6 +148,12 @@ header {
 	position: relative;
 	vertical-align: top;
 	transition: all 0.2s ease-in-out;
+}
+.food-card:hover {
+	background-color: #ffffff;
+	background-color: rgba(255,255,255,1);
+	color: #000;
+	font-weight: bold;
 }
 
 .row-top, .row-mid, .row-bot {
@@ -220,7 +239,6 @@ header {
 	font-family: 'belisa_plumilla_manualregular';
 	font-size: 32px;
 	line-height: 1.3em;
-	font-weight: bold;
 	vertical-align: middle;
 }
 .food-icon-container {
@@ -273,3 +291,19 @@ header {
 	opacity: 1;
 }
 */
+
+/* Media */
+
+@media screen and (max-width: 575px) {
+	.food-card {
+		width: 142px;
+		height: 260px;
+		max-height: 308px;
+	}
+	.food-name {
+		font-size: 24px;
+	}
+	.ingredient-icon {
+    height: 30.5px;
+	}
+}
