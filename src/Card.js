@@ -23,10 +23,14 @@ class Card extends React.Component {
 		} else {
 
 			const items = [];
+			let i = 0;
+			let displayClass;
 
 			for (const [key, value] of recipes.entries()) {
+				i++;
+				if(i > 1) displayClass = 'ingredient-row-hide';
 				items.push(
-					<div key={key}>
+					<div key={key} className={displayClass}>
 						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[0]}.webp`)} alt={value[0]} />
 						</div>
@@ -79,6 +83,10 @@ class Card extends React.Component {
 	}
 
 	render() {
+
+		// lowers font-size for food names greater than 18 characters
+		let foodNameClass;
+		(this.props.foodName.length > 18) ? foodNameClass = 'small-text' : foodNameClass = '';
 
 		return(
 
@@ -134,7 +142,7 @@ class Card extends React.Component {
 
 				<div className="row-mid">
 					<div className="food-name">
-						{this.props.foodName}
+						<span className={foodNameClass}>{this.props.foodName}</span>
 					</div>
 				</div>
 

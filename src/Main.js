@@ -99,7 +99,7 @@ class Main extends React.Component {
 				<div className="container">
 
 					<div className="search-container">						
-						<div className="input-group mb-3">
+						<div className="input-group">
 							<input type="text" maxLength="99" id="search-recipe" className="form-control" placeholder="Search..." onChange={this.searchUpdate} />
 						</div>
 					</div>
