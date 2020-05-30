@@ -136,6 +136,8 @@ class Main extends React.Component {
 
 					</div>
 
+					<br />
+
 					<div className="card-container">
 
 						{Object.keys(food).map(

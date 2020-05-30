@@ -92,7 +92,6 @@ header {
 	text-align: center;
 	color: #fff;
 }
-
 .food-category-container {
 	margin: 0 auto;
 	text-align: center;
@@ -124,7 +123,7 @@ header {
 	min-width: 200px;
 	max-width: 440px;
 	margin: 0 auto;
-	padding: 5px 15px;
+	padding: 5px 10px;
 	font-size: 24px;
 	text-align: left;
 }
@@ -153,6 +152,8 @@ header {
 	background-color: #ffffff;
 	background-color: rgba(255,255,255,1);
 	color: #000;
+}
+.food-card:hover .food-name {
 	font-weight: bold;
 }
 
@@ -296,14 +297,33 @@ header {
 
 @media screen and (max-width: 575px) {
 	.food-card {
-		width: 142px;
-		height: 260px;
+		width: 130px;
+		height: 228px;
 		max-height: 308px;
 	}
 	.food-name {
 		font-size: 24px;
 	}
-	.ingredient-icon {
-    height: 30.5px;
+	.ingredient-icon,
+	.ingredient-restriction,
+	.ingredient-restriction-container,
+	.food-card:hover .ingredient-row-hide,
+	.food-card:active .ingredient-row-hide,
+	.food-card .row-bot div:first-child {
+    height: 27px;
+	}
+	.food-icon img {
+		width: 28px;
+	}
+	.food-category {
+		float: none !important;
+		display: block;
+		width: 100%;
+	}
+	.food-category-container {
+		height: auto;
+	}
+	.food-icon-value {
+		font-size: 20px;
 	}
 }
