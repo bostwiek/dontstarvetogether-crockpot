@@ -296,6 +296,12 @@ header {
 /* Media */
 
 @media screen and (max-width: 575px) {
+	.logo-text {
+		font-size: 52px;
+	}
+	.logo-subtext {
+		font-size: 24px;
+	}
 	.food-card {
 		width: 130px;
 		height: 228px;
@@ -303,6 +309,9 @@ header {
 	}
 	.food-name {
 		font-size: 24px;
+	}
+	.food-name.small-text {
+		font-size: 18px;
 	}
 	.ingredient-icon,
 	.ingredient-restriction,
@@ -324,6 +333,7 @@ header {
 		height: auto;
 	}
 	.food-icon-value {
-		font-size: 20px;
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
