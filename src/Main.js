@@ -147,7 +147,7 @@ class Main extends React.Component {
 									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
 									// check contains meat if true or false (ignore if either)
-									if(this.state.containsMeat != 'either') {
+									if(this.state.containsMeat !== 'either') {
 
 										if(this.state.containsMeat === 'yes') {
 
