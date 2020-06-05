@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import Card from './Card'
+import Card from './Card';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './Main.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css';
+import './Main.css';
 
-import food from './food'
+import food from './food';
 
-import logo from './images/icons/crockpot.png'
-import background from './images/bg/2.png'
+import logo from './images/icons/crockpot.png';
+import background from './images/bg/2.png';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -82,6 +83,9 @@ class Main extends React.Component {
 				break;
 		}
 
+		let animationDelay = 1;
+		
+
 		return(
 			<>
 
@@ -153,19 +157,22 @@ class Main extends React.Component {
 
 											// Contains Meat
 											if(food[key].ismeat === true){
+												animationDelay = animationDelay + 1;
 												return(
-													<Card
-														foodName={food[key].name}
-														foodImg={food[key].img}
-														foodHp={food[key].hp}
-														foodHunger={food[key].hunger}
-														foodSanity={food[key].sanity}
-														foodRot={food[key].rot}
-														foodRecipes={food[key].recipes}
-														foodRestrictions={food[key].restrictions}
-														foodIsMeat={food[key].ismeat}
-														key={key}
-													/>
+													<div className="animation-container animate__animated animate__fadeInDown animate__faster">
+														<Card
+															foodName={food[key].name}
+															foodImg={food[key].img}
+															foodHp={food[key].hp}
+															foodHunger={food[key].hunger}
+															foodSanity={food[key].sanity}
+															foodRot={food[key].rot}
+															foodRecipes={food[key].recipes}
+															foodRestrictions={food[key].restrictions}
+															foodIsMeat={food[key].ismeat}
+															key={key}
+														/>
+													</div>
 												)
 											}
 
@@ -173,18 +180,20 @@ class Main extends React.Component {
 											// Does not contain meat
 											if(food[key].ismeat === false){
 												return(
-													<Card
-														foodName={food[key].name}
-														foodImg={food[key].img}
-														foodHp={food[key].hp}
-														foodHunger={food[key].hunger}
-														foodSanity={food[key].sanity}
-														foodRot={food[key].rot}
-														foodRecipes={food[key].recipes}
-														foodRestrictions={food[key].restrictions}
-														foodIsMeat={food[key].ismeat}
-														key={key}
-													/>
+													<div className="animation-container animate__animated animate__fadeInDown animate__slower">
+														<Card
+															foodName={food[key].name}
+															foodImg={food[key].img}
+															foodHp={food[key].hp}
+															foodHunger={food[key].hunger}
+															foodSanity={food[key].sanity}
+															foodRot={food[key].rot}
+															foodRecipes={food[key].recipes}
+															foodRestrictions={food[key].restrictions}
+															foodIsMeat={food[key].ismeat}
+															key={key}
+														/>
+													</div>
 												)
 											}
 										}
@@ -192,18 +201,20 @@ class Main extends React.Component {
 									} else {
 										// Both meat and non-meat foods
 										return(
-											<Card
-												foodName={food[key].name}
-												foodImg={food[key].img}
-												foodHp={food[key].hp}
-												foodHunger={food[key].hunger}
-												foodSanity={food[key].sanity}
-												foodRot={food[key].rot}
-												foodRecipes={food[key].recipes}
-												foodRestrictions={food[key].restrictions}
-												foodIsMeat={food[key].ismeat}
-												key={key}
-											/>
+											<div className="animation-container animate__animated animate__fadeInDown animate__slower">
+												<Card
+													foodName={food[key].name}
+													foodImg={food[key].img}
+													foodHp={food[key].hp}
+													foodHunger={food[key].hunger}
+													foodSanity={food[key].sanity}
+													foodRot={food[key].rot}
+													foodRecipes={food[key].recipes}
+													foodRestrictions={food[key].restrictions}
+													foodIsMeat={food[key].ismeat}
+													key={key}
+												/>
+											</div>
 										)
 									}
 								}

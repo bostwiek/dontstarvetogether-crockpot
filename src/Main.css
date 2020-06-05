@@ -271,24 +271,75 @@ header {
 
 /* animations */
 
-/*
-.row-bot, .row-right {
-	opacity: 0.3;
-	transition: opacity 0.1s ease-in-out;
+.animation-container {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
-.food-card:hover .row-bot,
-.food-card:hover .row-right {
-	opacity: 1;
+:root {
+  --animate-duration: 300ms;
 }
-
-.food-card {
-	opacity: 1;
-	transition: opacity 0.1s ease-in-out;
-}
-.food-card:hover {
-	opacity: 1;
-}
-*/
+	/* this gets messy, but has the most graceful fallback... */
+	.animation-container:nth-child(1)  { animation-delay: 50ms   }
+	.animation-container:nth-child(2)  { animation-delay: 100ms  }
+	.animation-container:nth-child(3)  { animation-delay: 150ms  }
+	.animation-container:nth-child(4)  { animation-delay: 200ms  }
+	.animation-container:nth-child(5)  { animation-delay: 250ms  }
+	.animation-container:nth-child(6)  { animation-delay: 300ms  }
+	.animation-container:nth-child(7)  { animation-delay: 350ms  }
+	.animation-container:nth-child(8)  { animation-delay: 400ms  }
+	.animation-container:nth-child(9)  { animation-delay: 450ms  }
+	.animation-container:nth-child(10) { animation-delay: 500ms  }
+	.animation-container:nth-child(11) { animation-delay: 550ms  }
+	.animation-container:nth-child(12) { animation-delay: 600ms  }
+	.animation-container:nth-child(13) { animation-delay: 650ms  }
+	.animation-container:nth-child(14) { animation-delay: 700ms  }
+	.animation-container:nth-child(15) { animation-delay: 750ms  }
+	.animation-container:nth-child(16) { animation-delay: 800ms  }
+	.animation-container:nth-child(17) { animation-delay: 850ms  }
+	.animation-container:nth-child(18) { animation-delay: 900ms  }
+	.animation-container:nth-child(19) { animation-delay: 950ms  }
+	.animation-container:nth-child(20) { animation-delay: 1000ms }
+	.animation-container:nth-child(21) { animation-delay: 1050ms }
+	.animation-container:nth-child(22) { animation-delay: 1100ms }
+	.animation-container:nth-child(23) { animation-delay: 1150ms }
+	.animation-container:nth-child(24) { animation-delay: 1200ms }
+	.animation-container:nth-child(25) { animation-delay: 1250ms }
+	.animation-container:nth-child(26) { animation-delay: 1300ms }
+	.animation-container:nth-child(27) { animation-delay: 1350ms }
+	.animation-container:nth-child(28) { animation-delay: 1400ms }
+	.animation-container:nth-child(29) { animation-delay: 1450ms }
+	.animation-container:nth-child(30) { animation-delay: 1500ms }
+	.animation-container:nth-child(31) { animation-delay: 1550ms }
+	.animation-container:nth-child(32) { animation-delay: 1600ms }
+	.animation-container:nth-child(33) { animation-delay: 1650ms }
+	.animation-container:nth-child(34) { animation-delay: 1700ms }
+	.animation-container:nth-child(35) { animation-delay: 1750ms }
+	.animation-container:nth-child(36) { animation-delay: 1800ms }
+	.animation-container:nth-child(37) { animation-delay: 1850ms }
+	.animation-container:nth-child(38) { animation-delay: 1900ms }
+	.animation-container:nth-child(39) { animation-delay: 1950ms }
+	.animation-container:nth-child(40) { animation-delay: 2000ms }
+	.animation-container:nth-child(41) { animation-delay: 2050ms }
+	.animation-container:nth-child(42) { animation-delay: 2100ms }
+	.animation-container:nth-child(43) { animation-delay: 2150ms }
+	.animation-container:nth-child(44) { animation-delay: 2200ms }
+	.animation-container:nth-child(45) { animation-delay: 2250ms }
+	.animation-container:nth-child(46) { animation-delay: 2300ms }
+	.animation-container:nth-child(47) { animation-delay: 2350ms }
+	.animation-container:nth-child(48) { animation-delay: 2400ms }
+	.animation-container:nth-child(49) { animation-delay: 2450ms }
+	.animation-container:nth-child(50) { animation-delay: 2500ms }
+	.animation-container:nth-child(51) { animation-delay: 2550ms }
+	.animation-container:nth-child(52) { animation-delay: 2600ms }
+	.animation-container:nth-child(53) { animation-delay: 2650ms }
+	.animation-container:nth-child(54) { animation-delay: 2700ms }
+	.animation-container:nth-child(55) { animation-delay: 2750ms }
+	.animation-container:nth-child(56) { animation-delay: 2800ms }
+	.animation-container:nth-child(57) { animation-delay: 2850ms }
+	.animation-container:nth-child(58) { animation-delay: 2900ms }
+	.animation-container:nth-child(59) { animation-delay: 2950ms }
+	.animation-container:nth-child(60) { animation-delay: 2000ms }
 
 /* Media */
 
