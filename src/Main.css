@@ -32,7 +32,6 @@ select option {
 }
 
 .bg {
-	display: none;
 	position: fixed;
 	z-index: -1000;
 	left: 0;
@@ -40,10 +39,10 @@ select option {
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
-	background-size: 100% auto;
+	background-size: auto auto;
 	background-position: center center;
 	background-color: #000;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	opacity: 0.1;
 }
 .bg-gradient {
@@ -270,14 +269,24 @@ header {
 
 
 /* animations */
-
+.animated-bg {
+	animation: animated-bg 60s linear infinite;
+}
+@keyframes animated-bg {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% -100%;
+	}
+}
 .animation-container {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 }
 :root {
-  --animate-duration: 300ms;
+  --animate-duration: 1000ms;
 }
 	/* this gets messy, but has the most graceful fallback... */
 	.animation-container:nth-child(1)  { animation-delay: 50ms   }

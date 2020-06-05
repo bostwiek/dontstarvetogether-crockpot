@@ -9,7 +9,7 @@ import './Main.css';
 import food from './food';
 
 import logo from './images/icons/crockpot.png';
-import background from './images/bg/2.png';
+import background from './images/bg/4.png';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -89,7 +89,7 @@ class Main extends React.Component {
 		return(
 			<>
 
-				<div className="bg" style={bgStyle}></div>
+				<div className="bg animated-bg" style={bgStyle}></div>
 				<div className="bg-gradient"></div>
 
 				<header>
@@ -157,9 +157,8 @@ class Main extends React.Component {
 
 											// Contains Meat
 											if(food[key].ismeat === true){
-												animationDelay = animationDelay + 1;
 												return(
-													<div className="animation-container animate__animated animate__fadeInDown animate__faster">
+													<div className="animation-container animate__animated animate__fadeInDown">
 														<Card
 															foodName={food[key].name}
 															foodImg={food[key].img}
@@ -180,7 +179,7 @@ class Main extends React.Component {
 											// Does not contain meat
 											if(food[key].ismeat === false){
 												return(
-													<div className="animation-container animate__animated animate__fadeInDown animate__slower">
+													<div className="animation-container animate__animated animate__fadeInDown">
 														<Card
 															foodName={food[key].name}
 															foodImg={food[key].img}
@@ -201,7 +200,7 @@ class Main extends React.Component {
 									} else {
 										// Both meat and non-meat foods
 										return(
-											<div className="animation-container animate__animated animate__fadeInDown animate__slower">
+											<div className="animation-container animate__animated animate__fadeInDown">
 												<Card
 													foodName={food[key].name}
 													foodImg={food[key].img}
