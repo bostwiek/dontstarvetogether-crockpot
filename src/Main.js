@@ -158,7 +158,7 @@ class Main extends React.Component {
 											// Contains Meat
 											if(food[key].ismeat === true){
 												return(
-													<div className="animation-container animate__animated animate__fadeInDown">
+													<div className="animation-container animate__animated animate__fadeInUp">
 														<Card
 															foodName={food[key].name}
 															foodImg={food[key].img}
@@ -179,7 +179,7 @@ class Main extends React.Component {
 											// Does not contain meat
 											if(food[key].ismeat === false){
 												return(
-													<div className="animation-container animate__animated animate__fadeInDown">
+													<div className="animation-container animate__animated animate__fadeInUp">
 														<Card
 															foodName={food[key].name}
 															foodImg={food[key].img}
@@ -200,7 +200,7 @@ class Main extends React.Component {
 									} else {
 										// Both meat and non-meat foods
 										return(
-											<div className="animation-container animate__animated animate__fadeInDown">
+											<div className="animation-container animate__animated animate__fadeInUp">
 												<Card
 													foodName={food[key].name}
 													foodImg={food[key].img}
