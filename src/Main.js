@@ -10,6 +10,7 @@ import food from './food';
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
+import { wait } from '@testing-library/react';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -27,6 +28,7 @@ class Main extends React.Component {
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
 		this.sortContainsMeat = this.sortContainsMeat.bind(this);
+		this.refresh = this.refresh.bind(this);
 	}
 
 	searchUpdate = () => {
@@ -43,6 +45,9 @@ class Main extends React.Component {
 		let selectValue = document.getElementById('contains-meat').value;
 		this.setState({ containsMeat: selectValue })
 		// either, yes, no
+	}
+	refresh = () => {
+		alert('setstate doesnt work here, animation classes avoid state for a reason - it saves resources.  this is all i have learned in the last 3 hours of trying to brute force the animation into a workable state -- I think disabling animations altogether will result in a better experience than an ER visit because of an exploded blood vessel.')
 	}
 
 	render() {
@@ -101,6 +106,8 @@ class Main extends React.Component {
 				</header>
 
 				<div className="container">
+
+					<button onClick={this.refresh}>Refresh</button>
 
 					<div className="search-container">						
 						<div className="input-group">
