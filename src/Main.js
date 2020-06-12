@@ -10,7 +10,8 @@ import food from './food';
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
-import { wait } from '@testing-library/react';
+
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -28,7 +29,6 @@ class Main extends React.Component {
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
 		this.sortContainsMeat = this.sortContainsMeat.bind(this);
-		this.refresh = this.refresh.bind(this);
 	}
 
 	searchUpdate = () => {
@@ -45,9 +45,6 @@ class Main extends React.Component {
 		let selectValue = document.getElementById('contains-meat').value;
 		this.setState({ containsMeat: selectValue })
 		// either, yes, no
-	}
-	refresh = () => {
-		alert('setstate doesnt work here, animation classes avoid state for a reason - it saves resources.  this is all i have learned in the last 3 hours of trying to brute force the animation into a workable state -- I think disabling animations altogether will result in a better experience than an ER visit because of an exploded blood vessel.')
 	}
 
 	render() {
@@ -87,8 +84,6 @@ class Main extends React.Component {
 			default:
 				break;
 		}
-
-		let animationDelay = 1;
 		
 
 		return(
@@ -106,8 +101,6 @@ class Main extends React.Component {
 				</header>
 
 				<div className="container">
-
-					<button onClick={this.refresh}>Refresh</button>
 
 					<div className="search-container">						
 						<div className="input-group">
@@ -151,81 +144,97 @@ class Main extends React.Component {
 
 					<div className="card-container">
 
-						{Object.keys(food).map(
-								(key, value) => {
+						<TransitionGroup className="card-animation-container">
 
-									// check search input for any contents
-									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
+							{Object.keys(food).map(
+									(key, value) => {
 
-									// check contains meat if true or false (ignore if either)
-									if(this.state.containsMeat !== 'either') {
+										// check search input for any contents
+										if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
-										if(this.state.containsMeat === 'yes') {
+										// check contains meat if true or false (ignore if either)
+										if(this.state.containsMeat !== 'either') {
 
-											// Contains Meat
-											if(food[key].ismeat === true){
-												return(
-													<div className="animation-container animate__animated animate__fadeInUp">
-														<Card
-															foodName={food[key].name}
-															foodImg={food[key].img}
-															foodHp={food[key].hp}
-															foodHunger={food[key].hunger}
-															foodSanity={food[key].sanity}
-															foodRot={food[key].rot}
-															foodRecipes={food[key].recipes}
-															foodRestrictions={food[key].restrictions}
-															foodIsMeat={food[key].ismeat}
+											if(this.state.containsMeat === 'yes') {
+
+												// Contains Meat
+												if(food[key].ismeat === true){
+													return(
+														<CSSTransition
 															key={key}
-														/>
-													</div>
-												)
+															timeout={500}
+															classNames="card"
+														>
+															<Card
+																foodName={food[key].name}
+																foodImg={food[key].img}
+																foodHp={food[key].hp}
+																foodHunger={food[key].hunger}
+																foodSanity={food[key].sanity}
+																foodRot={food[key].rot}
+																foodRecipes={food[key].recipes}
+																foodRestrictions={food[key].restrictions}
+																foodIsMeat={food[key].ismeat}
+																key={key}
+															/>
+														</CSSTransition>
+													)
+												}
+
+											} else {
+												// Does not contain meat
+												if(food[key].ismeat === false){
+													return(
+														<CSSTransition
+															key={key}
+															timeout={500}
+															classNames="card"
+														>
+															<Card
+																foodName={food[key].name}
+																foodImg={food[key].img}
+																foodHp={food[key].hp}
+																foodHunger={food[key].hunger}
+																foodSanity={food[key].sanity}
+																foodRot={food[key].rot}
+																foodRecipes={food[key].recipes}
+																foodRestrictions={food[key].restrictions}
+																foodIsMeat={food[key].ismeat}
+																key={key}
+															/>
+														</CSSTransition>
+													)
+												}
 											}
 
 										} else {
-											// Does not contain meat
-											if(food[key].ismeat === false){
-												return(
-													<div className="animation-container animate__animated animate__fadeInUp">
-														<Card
-															foodName={food[key].name}
-															foodImg={food[key].img}
-															foodHp={food[key].hp}
-															foodHunger={food[key].hunger}
-															foodSanity={food[key].sanity}
-															foodRot={food[key].rot}
-															foodRecipes={food[key].recipes}
-															foodRestrictions={food[key].restrictions}
-															foodIsMeat={food[key].ismeat}
-															key={key}
-														/>
-													</div>
-												)
-											}
-										}
-
-									} else {
-										// Both meat and non-meat foods
-										return(
-											<div className="animation-container animate__animated animate__fadeInUp">
-												<Card
-													foodName={food[key].name}
-													foodImg={food[key].img}
-													foodHp={food[key].hp}
-													foodHunger={food[key].hunger}
-													foodSanity={food[key].sanity}
-													foodRot={food[key].rot}
-													foodRecipes={food[key].recipes}
-													foodRestrictions={food[key].restrictions}
-													foodIsMeat={food[key].ismeat}
+											// Both meat and non-meat foods
+											return(
+												<CSSTransition
 													key={key}
-												/>
-											</div>
-										)
+													timeout={500}
+													classNames="card"
+												>
+													<Card
+														foodName={food[key].name}
+														foodImg={food[key].img}
+														foodHp={food[key].hp}
+														foodHunger={food[key].hunger}
+														foodSanity={food[key].sanity}
+														foodRot={food[key].rot}
+														foodRecipes={food[key].recipes}
+														foodRestrictions={food[key].restrictions}
+														foodIsMeat={food[key].ismeat}
+														key={key}
+													/>
+												</CSSTransition>
+											)
+										}
 									}
 								}
-							}
-						)}
+							)}
+
+						</TransitionGroup>
 
 					</div>
 				</div>
