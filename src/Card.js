@@ -13,8 +13,13 @@ const frameStyle = {
 	backgroundImage: `url(${imgFrame})`
 }
 
-
 class Card extends React.Component {
+
+	////////////////////////////
+	//												//
+	//	Ingredients Go Here 	//
+	//												//
+	////////////////////////////
 
 	checkRecipes = (recipes) => {
 
@@ -54,13 +59,19 @@ class Card extends React.Component {
 		}
 	}
 
+
+	////////////////////////////
+	//												//
+	//	Recipe Restrictions 	//
+	//												//
+	////////////////////////////
+
 	checkFoodRestrictions = (foodRestrictions) => {
 
 		if(!foodRestrictions || foodRestrictions[0] === 'none') {
 			return;
 		} else {
 
-			/* push jsx with img src into array, return array after loops */
 			const items = [];
 
 			for (const [key, value] of foodRestrictions.entries()) {
@@ -85,6 +96,7 @@ class Card extends React.Component {
 	render() {
 
 		// lowers font-size for food names greater than 18 characters
+		//												(fixes some mobile viewport issues)
 		let foodNameClass;
 		(this.props.foodName.length > 18) ? foodNameClass = 'small-text' : foodNameClass = '';
 
@@ -145,8 +157,6 @@ class Card extends React.Component {
 						<span className={foodNameClass}>{this.props.foodName}</span>
 					</div>
 				</div>
-
-				{/* foodRecipes[] */}
 
 				<div className="row-bot">
 					{this.checkRecipes(this.props.foodRecipes)}

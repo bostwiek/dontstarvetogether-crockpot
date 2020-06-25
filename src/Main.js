@@ -29,25 +29,27 @@ class Main extends React.Component {
 		this.sortContainsMeat = this.sortContainsMeat.bind(this);
 	}
 
+	// Triggers when SEARCH input value changes
 	searchUpdate = () => {
 		let inputValue = document.getElementById('search-recipe').value;
 		this.setState({search: inputValue})
 	}
 
+	// Triggers when SORT BY select value changes
 	sortByUpdate = () => {
 		let selectValue = document.getElementById('sort-by').value;
 		this.setState({ sortBy: selectValue })
-		// alpha-desc, alpha-asc, hunger-desc, hunger-asc, health-desc, health-asc, sanity-desc, sanity-asc, rot-desc, rot-asc
 	}
+
+	// Triggers when CONTAINS MEAT select value changes
 	sortContainsMeat = () => {
 		let selectValue = document.getElementById('contains-meat').value;
 		this.setState({ containsMeat: selectValue })
-		// either, yes, no
 	}
 
 	render() {
 
-		// sort food based on this.state.sortBy
+		// switch to sort food based on {this.state.sortBy}
 		switch (this.state.sortBy) {
 			case 'alpha-desc': 
 				food.sort((a, b) => (a.name > b.name) ? 1 : -1)
@@ -81,8 +83,7 @@ class Main extends React.Component {
 				break;
 			default:
 				break;
-		}
-		
+		}		
 
 		return(
 			<>
@@ -142,18 +143,34 @@ class Main extends React.Component {
 
 					<div className="card-container">
 
-							{Object.keys(food).map(
+							{	
+
+								//////////////////////////////
+								//													//
+								//													//
+								//	Dynamic sort functions	//
+								//													//
+								//													//
+								//////////////////////////////
+
+								Object.keys(food).map(
 									(key, value) => {
 
-										// check search input for any contents
+										//
+										// checks SEARCH input first to filter out items
+										//
 										if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
-
-										// check contains meat if true or false (ignore if either)
+										
+										//
+										// check contains meat if true or false (ignores if either)
+										//
 										if(this.state.containsMeat !== 'either') {
 
 											if(this.state.containsMeat === 'yes') {
 
+												//
 												// Contains Meat
+												//
 												if(food[key].ismeat === true){
 													return(
 														<Card
@@ -172,7 +189,9 @@ class Main extends React.Component {
 												}
 
 											} else {
+												//
 												// Does not contain meat
+												//
 												if(food[key].ismeat === false){
 													return(
 														<Card
@@ -192,7 +211,9 @@ class Main extends React.Component {
 											}
 
 										} else {
+											//
 											// Both meat and non-meat foods
+											//
 											return(
 												<Card
 													foodName={food[key].name}
