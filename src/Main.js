@@ -225,6 +225,7 @@ class Main extends React.Component {
 													foodRecipes={food[key].recipes}
 													foodRestrictions={food[key].restrictions}
 													foodIsMeat={food[key].ismeat}
+													foodNotes = {food[key].notes}
 													key={key}
 												/>
 											)

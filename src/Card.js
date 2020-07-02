@@ -167,6 +167,10 @@ class Card extends React.Component {
 					{this.checkFoodRestrictions(this.props.foodRestrictions)}
 				</div>
 
+				<div>
+					{this.props.foodNotes}
+				</div>
+
 			</div>
 		)
 

@@ -13,7 +13,8 @@
 		],
 		"restrictions": [
 			"twigs"
-		]
+		],
+		"notes": "Low value food, Asparagus better used in Vegetable Stinger"
   },
   {
     "name": "Bacon and Eggs",
@@ -29,7 +30,8 @@
 		],
 		"restrictions": [
 			"veggies"
-		]
+		],
+		"notes": "Decent all round food with high stats and rot time. Wilson's favorite food."
   },
   {
     "name": "Banana Pop",
@@ -45,7 +47,8 @@
 		],
 		"restrictions": [
 			"meats", "fishes"
-		]
+		],
+		"notes": "Bring some ice down to the ruins to make these. Wendy's favorite food."
   },
   {
     "name": "Butter Muffin",
@@ -61,7 +64,8 @@
 		],
 		"restrictions": [
 			"meats"
-		]
+		],
+		"notes": "Decent healing item early-game. WX-78's favorite food."
   },
   {
     "name": "California Roll",
@@ -78,7 +82,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "Low-value food, not recommended unless you need the health."
   },
   {
     "name": "Ceviche",
@@ -94,7 +99,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "Low-value food, not recommended unless you need the health."
   },
   {
     "name": "Creamy Potato Puree",
@@ -110,7 +116,8 @@
 		],
 		"restrictions": [
 			"twigs", "meats"
-		]
+		],
+		"notes": "Low value food, just cook and eat the two potato for more hp and hunger."
   },
   {
     "name": "Dragonpie",
@@ -126,7 +133,8 @@
 		],
 		"restrictions": [
 			"meats", "asparagus"
-		]
+		],
+		"notes": "Arguably the best food in the game, dedicate your farms to dragonfruit as early as possible"
   },
   {
     "name": "Fancy Spiralled Tubers",
@@ -142,7 +150,8 @@
 		],
 		"restrictions": [
 			"meats", "twigs", "twigs", "twigs"
-		]
+		],
+		"notes": "Low value food, will not work with 3 twigs."
   },
   {
     "name": "Fish Tacos",
@@ -158,7 +167,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "Low value food, fish and corn both have more useful recipes."
   },
   {
     "name": "Fish Sticks",
@@ -174,7 +184,8 @@
 		],
 		"restrictions": [
 			"moleworm", "twigs", "twigs"
-		]
+		],
+		"notes": "Great health recovery food, one of the few recipes that works with two monster meat."
   },
   {
     "name": "Fist Full of Jam",
@@ -190,7 +201,8 @@
 		],
 		"restrictions": [
 			"meats", "veggies", "twigs"
-		]
+		],
+		"notes": "Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this."
   },
   {
     "name": "Flower Salad",
@@ -205,7 +217,8 @@
 		],
 		"restrictions": [
 			"meats", "fruits", "egg", "twigs", "honey"
-		]
+		],
+		"notes": "Not bad for health recovery, fast spoil time though."
   },
   {
     "name": "Froggle Bunwich",
@@ -221,7 +234,8 @@
 		],
 		"restrictions": [
 			"egg", "honey"
-		]
+		],
+		"notes": "Not the worst use of frog legs and a carrot, but far from the best healing food."
   },
   {
     "name": "Fruit Medley",
@@ -237,7 +251,8 @@
 		],
 		"restrictions": [
 			"dragonfruit", "meats", "veggies"
-		]
+		],
+		"notes": "Low value food, not recommended under any circumstance."
   },
   {
     "name": "Guacamole",
@@ -253,7 +268,8 @@
 		],
 		"restrictions": [
 			"fruits"
-		]
+		],
+		"notes": "Low value food, not recommended under any circumstance."
   },
   {
     "name": "Honey Ham",
@@ -269,7 +285,8 @@
 		],
 		"restrictions": [
 			"twigs", "moleworm", "tallbirdegg"
-		]
+		],
+		"notes": "One of the best foods in the game, on par with Dragonfruit Pie."
   },
   {
     "name": "Honey Nuggets",
@@ -285,7 +302,8 @@
 		],
 		"restrictions": [
 			"twigs"
-		]
+		],
+		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite food."
   },
   {
     "name": "Ice Cream",
@@ -301,7 +319,8 @@
 		],
 		"restrictions": [
 			"meats", "egg", "veggies", "twigs"
-		]
+		],
+		"notes": "Best sanity recovery item in the game, low stats across the board otherwise."
   },
   {
     "name": "Jelly Beans",
@@ -317,7 +336,8 @@
 		],
 		"restrictions": [
 			"monsterfoods", "twigs"
-		]
+		],
+		"notes": "HP bonus heals over time, very good for boss fights, and only use for royal jelly."
   },
   {
     "name": "Kabobs",
@@ -333,7 +353,8 @@
 		],
 		"restrictions": [
 			"fishes", "moleworm", "twigs", "twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Lobster Bisque",
@@ -349,7 +370,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Lobster Dinner",
@@ -365,7 +387,8 @@
 		],
 		"restrictions": [
 			"meats", "fishes", "ice"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Mandrake Soup",
@@ -381,7 +404,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Meatballs",
@@ -397,7 +421,8 @@
 		],
 		"restrictions": [
 			"twigs", "honey"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Meaty Stew",
@@ -413,7 +438,8 @@
 		],
 		"restrictions": [
 			"twigs", "moleworm", "honey", "tallbirdegg"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Melonsicle",
@@ -429,7 +455,8 @@
 		],
 		"restrictions": [
 			"meats", "veggies", "egg"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Monster Lasagna",
@@ -445,7 +472,8 @@
 		],
 		"restrictions": [
 			"twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Pierogi",
@@ -461,7 +489,8 @@
 		],
 		"restrictions": [
 			"moleworm", "twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Powdercake",
@@ -477,7 +506,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Pumpkin Cookie",
@@ -493,7 +523,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Ratatouille",
@@ -509,7 +540,8 @@
 		],
 		"restrictions": [
 			"meats", "dragonfruit", "twigs", "butterflywings"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Salsa Fresca",
@@ -525,7 +557,8 @@
 		],
 		"restrictions": [
 			"meats", "egg", "twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Seafood Gumbo",
@@ -542,7 +575,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Spicy Chili",
@@ -559,7 +593,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Stuffed Eggplant",
@@ -576,7 +611,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Stuffed Pepper Poppers",
@@ -592,7 +628,8 @@
 		],
 		"restrictions": [
 			"twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Surf n' Turf",
@@ -608,7 +645,8 @@
 		],
 		"restrictions": [
 			"ice"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Taffy",
@@ -624,7 +662,8 @@
 		],
 		"restrictions": [
 			"meats"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Trail Mix",
@@ -641,7 +680,8 @@
 		],
 		"restrictions": [
 			"meats", "veggies", "egg", "butter"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Turkey Dinner",
@@ -657,7 +697,8 @@
 		],
 		"restrictions": [
 			"egg", "honey", "electricmilk", "twigs"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Unagi",
@@ -674,7 +715,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Vegetable Stinger",
@@ -691,7 +733,8 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Waffles",
@@ -707,7 +750,8 @@
 		],
 		"restrictions": [
 			"meats"
-		]
+		],
+		"notes": "x"
   },
   {
     "name": "Wet Goop",
