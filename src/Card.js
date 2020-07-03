@@ -167,8 +167,8 @@ class Card extends React.Component {
 					{this.checkFoodRestrictions(this.props.foodRestrictions)}
 				</div>
 
-				<div>
-					{this.props.foodNotes}
+				<div className="row-bot text-left">
+					<span className="food-notes">{this.props.foodNotes}</span>
 				</div>
 
 			</div>

@@ -137,8 +137,8 @@ header {
 	background-color: rgba(255,255,255,0.1);
 	color: #ffffff;
 	width: 180px;
-	height: 308px;
-	max-height: 308px;
+	height: 408px;
+	max-height: 408px;
 	padding: 10px;
 	margin: 5px;
 	border-radius: 5px;
@@ -267,7 +267,10 @@ header {
 							-1px -1px 1px #000000,
 							1px -1px 1px #000000;
 }
-
+.food-notes {
+	font-size: 0.8em;
+	line-height: 1em;
+}
 
 /* animations */
 .animated-bg {
@@ -313,8 +316,8 @@ header {
 	}
 	.food-card {
 		width: 130px;
-		height: 228px;
-		max-height: 308px;
+		height: 328px;
+		max-height: 408px;
 	}
 	.food-name {
 		font-size: 24px;

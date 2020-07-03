@@ -31,7 +31,7 @@
 		"restrictions": [
 			"veggies"
 		],
-		"notes": "Decent all round food with high stats and rot time. Wilson's favorite food."
+		"notes": "Decent all round food with high stats and rot time. Wilson's favorite dish."
   },
   {
     "name": "Banana Pop",
@@ -48,7 +48,7 @@
 		"restrictions": [
 			"meats", "fishes"
 		],
-		"notes": "Bring some ice down to the ruins to make these. Wendy's favorite food."
+		"notes": "Bring some ice down to the ruins to make these. Wendy's favorite dish."
   },
   {
     "name": "Butter Muffin",
@@ -65,7 +65,7 @@
 		"restrictions": [
 			"meats"
 		],
-		"notes": "Decent healing item early-game. WX-78's favorite food."
+		"notes": "Decent healing item early-game. WX-78's favorite dish."
   },
   {
     "name": "California Roll",
@@ -202,7 +202,7 @@
 		"restrictions": [
 			"meats", "veggies", "twigs"
 		],
-		"notes": "Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this."
+		"notes": "Low value food. Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this."
   },
   {
     "name": "Flower Salad",
@@ -218,7 +218,7 @@
 		"restrictions": [
 			"meats", "fruits", "egg", "twigs", "honey"
 		],
-		"notes": "Not bad for health recovery, fast spoil time though."
+		"notes": "Great for health recovery, very fast spoil time though."
   },
   {
     "name": "Froggle Bunwich",
@@ -235,7 +235,7 @@
 		"restrictions": [
 			"egg", "honey"
 		],
-		"notes": "Not the worst use of frog legs and a carrot, but far from the best healing food."
+		"notes": "Mediocre health recovery food. Not the worst use of frog legs, a carrot, and two sticks."
   },
   {
     "name": "Fruit Medley",
@@ -252,7 +252,7 @@
 		"restrictions": [
 			"dragonfruit", "meats", "veggies"
 		],
-		"notes": "Low value food, not recommended under any circumstance."
+		"notes": "Low value food, do note cook this."
   },
   {
     "name": "Guacamole",
@@ -269,7 +269,7 @@
 		"restrictions": [
 			"fruits"
 		],
-		"notes": "Low value food, not recommended under any circumstance."
+		"notes": "Low value food, do not cook this."
   },
   {
     "name": "Honey Ham",
@@ -286,7 +286,7 @@
 		"restrictions": [
 			"twigs", "moleworm", "tallbirdegg"
 		],
-		"notes": "One of the best foods in the game, on par with Dragonfruit Pie."
+		"notes": "One of the best foods in the game, on par with Dragonfruit Pie with slightly more expensive ingredients."
   },
   {
     "name": "Honey Nuggets",
@@ -303,7 +303,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite food."
+		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite dish."
   },
   {
     "name": "Ice Cream",
@@ -320,7 +320,7 @@
 		"restrictions": [
 			"meats", "egg", "veggies", "twigs"
 		],
-		"notes": "Best sanity recovery item in the game, low stats across the board otherwise."
+		"notes": "Best sanity recovery item in the game, low stats across the board otherwise. Good use of electric milk. Webber's favorite dish."
   },
   {
     "name": "Jelly Beans",
@@ -337,7 +337,7 @@
 		"restrictions": [
 			"monsterfoods", "twigs"
 		],
-		"notes": "HP bonus heals over time, very good for boss fights, and only use for royal jelly."
+		"notes": "HP is restored over time, very good for boss fights. Does not spoil."
   },
   {
     "name": "Kabobs",
@@ -354,7 +354,7 @@
 		"restrictions": [
 			"fishes", "moleworm", "twigs", "twigs"
 		],
-		"notes": "x"
+		"notes": "Low value food, do not cook this."
   },
   {
     "name": "Lobster Bisque",
@@ -371,7 +371,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Very good for health recovery, two sticks or monster meats recommended as fillers. Wobster must be alive."
   },
   {
     "name": "Lobster Dinner",
@@ -388,7 +388,7 @@
 		"restrictions": [
 			"meats", "fishes", "ice"
 		],
-		"notes": "x"
+		"notes": "Very good for health recovery, butter is better on it's own though. Two sticks or monster meats recommended as fillers. Wobster must be alive. Maxwell's favorite dish."
   },
   {
     "name": "Mandrake Soup",
@@ -405,7 +405,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Does not possess Mandrake sleeping effect. Useful for speedrunners, otherwise make Pan Flutes with Mandrakes."
   },
   {
     "name": "Meatballs",
@@ -422,7 +422,7 @@
 		"restrictions": [
 			"twigs", "honey"
 		],
-		"notes": "x"
+		"notes": "High hunger food for common ingredients, cook lots of these to not starve."
   },
   {
     "name": "Meaty Stew",
@@ -439,7 +439,7 @@
 		"restrictions": [
 			"twigs", "moleworm", "honey", "tallbirdegg"
 		],
-		"notes": "x"
+		"notes": "Highest hunger food in the game, even stale these are a fantastic food."
   },
   {
     "name": "Melonsicle",
@@ -456,7 +456,7 @@
 		"restrictions": [
 			"meats", "veggies", "egg"
 		],
-		"notes": "x"
+		"notes": "Low value food. Okay sanity restoration, poor stats otherwise."
   },
   {
     "name": "Monster Lasagna",
@@ -473,7 +473,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "x"
+		"notes": "There is no reason to cook this, unless you want a hungry Vargling following you around crying."
   },
   {
     "name": "Pierogi",
@@ -490,7 +490,7 @@
 		"restrictions": [
 			"moleworm", "twigs"
 		],
-		"notes": "x"
+		"notes": "Best healing item in the game that contains meat, coupled with one of the slowest rot times."
   },
   {
     "name": "Powdercake",
@@ -507,7 +507,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Slowest spoil rate in the game. Useful for certain monster traps, or for warly to add seasonings to."
   },
   {
     "name": "Pumpkin Cookie",
@@ -524,7 +524,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Low value food, pumpkins have much better uses."
   },
   {
     "name": "Ratatouille",
@@ -541,7 +541,7 @@
 		"restrictions": [
 			"meats", "dragonfruit", "twigs", "butterflywings"
 		],
-		"notes": "x"
+		"notes": "Low value food. Unless you're Wurt, avoid making this"
   },
   {
     "name": "Salsa Fresca",
@@ -558,7 +558,7 @@
 		"restrictions": [
 			"meats", "egg", "twigs"
 		],
-		"notes": "x"
+		"notes": "Low value food with a small amount of sanity restoration."
   },
   {
     "name": "Seafood Gumbo",
@@ -576,7 +576,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Make Surf 'n Turf instead. Requires 1.5x fish meat."
   },
   {
     "name": "Spicy Chili",
@@ -594,7 +594,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Low value food, do not cook this unless you're Willow. Willow's favorite dish."
   },
   {
     "name": "Stuffed Eggplant",
@@ -612,7 +612,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Low value food, just cook and eat eggplant raw instead."
   },
   {
     "name": "Stuffed Pepper Poppers",
@@ -629,7 +629,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "x"
+		"notes": "Okay for health restoration, otherwise avoid cooking this."
   },
   {
     "name": "Surf n' Turf",
@@ -646,7 +646,7 @@
 		"restrictions": [
 			"ice"
 		],
-		"notes": "x"
+		"notes": "Amazing food item for basing near the Ruins. Best cooked with 2x Eel and 2x Monster Meat. Requires 2.5x meat, and 1.5x fish meat. Wickerbottom's favorite dish"
   },
   {
     "name": "Taffy",
@@ -663,7 +663,7 @@
 		"restrictions": [
 			"meats"
 		],
-		"notes": "x"
+		"notes": "Low value food, do not cook this."
   },
   {
     "name": "Trail Mix",
@@ -681,7 +681,7 @@
 		"restrictions": [
 			"meats", "veggies", "egg", "butter"
 		],
-		"notes": "x"
+		"notes": "Great early-game health recovery food. Walter's favorite dish."
   },
   {
     "name": "Turkey Dinner",
@@ -698,7 +698,7 @@
 		"restrictions": [
 			"egg", "honey", "electricmilk", "twigs"
 		],
-		"notes": "x"
+		"notes": "Decent stats except for the very fast spoil-time, ingredients generally better used for Meatballs unless you're Wigfried. Wigfried's favorite dish."
   },
   {
     "name": "Unagi",
@@ -716,7 +716,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Low value food, do not cook this."
   },
   {
     "name": "Vegetable Stinger",
@@ -734,7 +734,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "x"
+		"notes": "Decent sanity restoration item with long rot time, probably best use of asparagus or toma. Winona's favorite dish."
   },
   {
     "name": "Waffles",
@@ -751,7 +751,7 @@
 		"restrictions": [
 			"meats"
 		],
-		"notes": "x"
+		"notes": "Fine to make if you have the ingredients and need the health, but generally butter is better off eaten raw."
   },
   {
     "name": "Wet Goop",
@@ -767,6 +767,7 @@
 		],
 		"restrictions": [
 			"none"
-		]
+		],
+		"notes": "Either you done goofed, or you're trolling someone."
   }
 ]
