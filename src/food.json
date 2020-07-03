@@ -4,17 +4,18 @@
     "hp": 20,
     "hunger": 18.75,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/asparagussoup.png",
-		"recipes": [
-			["asparagus", "asparagus", "ice", "ice"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Low value food, Asparagus better used in Vegetable Stinger"
-  },
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/asparagussoup.png",
+	"recipes": [
+		["asparagus", "asparagus", "ice", "ice"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Low value food, Asparagus better used in Vegetable Stinger",
+	"warly": false
+},
   {
 	"name": "Asparagazpacho",
     "hp": 3,
@@ -28,41 +29,44 @@
 		["asparagus", "carrot", "redcap", "redcap"]
 	],
 	"restrictions": [],
-	"notes": "Gives immunity to overheating for 5 minutes. Warly-specific."
+	"notes": "Gives immunity to overheating for 5 minutes. Warly-specific.",
+	"warly": true
   },
   {
     "name": "Bacon and Eggs",
     "hp": 20,
     "hunger": 75,
     "sanity": 5,
-		"rot": 20,
-		"ismeat": true,
-		"img": "./images/crockpot/baconandeggs.png",
-		"recipes": [
-			["meats", "meats", "egg", "egg"],
-			["morsel", "monstermeat", "tallbirdegg", "any"]
-		],
-		"restrictions": [
-			"veggies"
-		],
-		"notes": "Decent all round food with high stats and rot time. Wilson's favorite dish."
+	"rot": 20,
+	"ismeat": true,
+	"img": "./images/crockpot/baconandeggs.png",
+	"recipes": [
+		["meats", "meats", "egg", "egg"],
+		["morsel", "monstermeat", "tallbirdegg", "any"]
+	],
+	"restrictions": [
+		"veggies"
+	],
+	"notes": "Decent all round food with high stats and rot time. Wilson's favorite dish.",
+	"warly": false
   },
   {
     "name": "Banana Pop",
     "hp": 20,
     "hunger": 12.5,
     "sanity": 33,
-		"rot": 3,
-		"ismeat": false,
-		"img": "./images/crockpot/bananapop.png",
-		"recipes": [
-			["banana", "ice", "twigs", "any"],
-			["banana", "ice", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"meats", "fishes"
-		],
-		"notes": "Bring some ice down to the ruins to make these. Wendy's favorite dish."
+	"rot": 3,
+	"ismeat": false,
+	"img": "./images/crockpot/bananapop.png",
+	"recipes": [
+		["banana", "ice", "twigs", "any"],
+		["banana", "ice", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"meats", "fishes"
+	],
+	"notes": "Bring some ice down to the ruins to make these. Wendy's favorite dish.",
+	"warly": false
   },
   {
 	"name": "Bone Bouillon",
@@ -79,7 +83,8 @@
 	"restrictions": [
 		"twigs"
 	],
-	"notes": "Excellent hunger and health recovery dish if you have the bone shards. Bonus points for cannibalism! Warly-specific."
+	"notes": "Excellent hunger and health recovery dish if you have the bone shards. Bonus points for cannibalism! Warly-specific.",
+	"warly": true
   },
   
   {
@@ -87,855 +92,920 @@
     "hp": 20,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/buttermuffin.png",
-		"recipes": [
-			["butterflywings", "veggies", "any", "any"],
-			["butterflywings", "redcap", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"meats"
-		],
-		"notes": "Decent healing item early-game. WX-78's favorite dish."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/buttermuffin.png",
+	"recipes": [
+		["butterflywings", "veggies", "any", "any"],
+		["butterflywings", "redcap", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"meats"
+	],
+	"notes": "Decent healing item early-game. WX-78's favorite dish.",
+	"warly": false
   },
   {
     "name": "California Roll",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 10,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/californiaroll.png",
-		"recipes": [
-			["fishes", "seaweed", "seaweed", "any"],
-			["freshwaterfish", "freshwaterfish", "seaweed", "seaweed"],
-			["eel", "seaweed", "seaweed", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low-value food, not recommended unless you need the health."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/californiaroll.png",
+	"recipes": [
+		["fishes", "seaweed", "seaweed", "any"],
+		["freshwaterfish", "freshwaterfish", "seaweed", "seaweed"],
+		["eel", "seaweed", "seaweed", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low-value food, not recommended unless you need the health.",
+		"warly": false
   },
   {
     "name": "Ceviche",
     "hp": 20,
     "hunger": 25,
     "sanity": 5,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/ceviche.png",
-		"recipes": [
-			["fishes", "fishes", "ice", "any"],
-			["freshwaterfish", "freshwaterfish", "ice", "berries"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low-value food, not recommended unless you need the health."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/ceviche.png",
+	"recipes": [
+		["fishes", "fishes", "ice", "any"],
+		["freshwaterfish", "freshwaterfish", "ice", "berries"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low-value food, not recommended unless you need the health.",
+	"warly": false
   },
   {
     "name": "Creamy Potato Puree",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 33,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/creamypotatopuree.png",
-		"recipes": [
-			["potato", "potato", "garlic", "any"],
-			["potato", "potato", "garlic", "honey"]
-		],
-		"restrictions": [
-			"twigs", "meats"
-		],
-		"notes": "Low value food, just cook and eat the two potato for more hp and hunger."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/creamypotatopuree.png",
+	"recipes": [
+		["potato", "potato", "garlic", "any"],
+		["potato", "potato", "garlic", "honey"]
+	],
+	"restrictions": [
+		"twigs", "meats"
+	],
+	"notes": "Low value food, just cook and eat the two potato for more hp and hunger.",
+	"warly": false
   },
   {
     "name": "Dragonpie",
     "hp": 40,
     "hunger": 75,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/dragonpie.png",
-		"recipes": [
-			["dragonfruit", "any", "any", "any"],
-			["dragonfruit", "twigs", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"meats", "asparagus"
-		],
-		"notes": "Arguably the best food in the game, dedicate your farms to dragonfruit as early as possible"
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/dragonpie.png",
+	"recipes": [
+		["dragonfruit", "any", "any", "any"],
+		["dragonfruit", "twigs", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"meats", "asparagus"
+	],
+	"notes": "Arguably the best food in the game, dedicate your farms to dragonfruit as early as possible",
+	"warly": false
   },
   {
     "name": "Fancy Spiralled Tubers",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 15,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/fancyspiralledtubers.png",
-		"recipes": [
-			["potato", "twigs", "any", "any"],
-			["potato", "twigs", "twigs", "any"]
-		],
-		"restrictions": [
-			"meats", "twigs", "twigs", "twigs"
-		],
-		"notes": "Low value food, will not work with 3 twigs."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/fancyspiralledtubers.png",
+	"recipes": [
+		["potato", "twigs", "any", "any"],
+		["potato", "twigs", "twigs", "any"]
+	],
+	"restrictions": [
+		"meats", "twigs", "twigs", "twigs"
+	],
+	"notes": "Low value food, will not work with 3 twigs.",
+	"warly": false
   },
   {
     "name": "Fish Cordon Bleu",
     "hp": 20,
     "hunger": 37.5,
     "sanity": -10,
-		"rot": 8,
-		"ismeat": true,
-		"img": "./images/crockpot/fishcordonbleu.png",
-		"recipes": [
-			["fishes", "fishes", "froglegs", "froglegs"],
-			["eel", "froglegs", "froglegs", "ice"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Gives immunity to wetness. Warly-specific."
+	"rot": 8,
+	"ismeat": true,
+	"img": "./images/crockpot/fishcordonbleu.png",
+	"recipes": [
+		["fishes", "fishes", "froglegs", "froglegs"],
+		["eel", "froglegs", "froglegs", "ice"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Gives immunity to wetness. Warly-specific.",
+	"warly": true
   },
   {
     "name": "Fish Sticks",
     "hp": 40,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/fishsticks.png",
-		"recipes": [
-			["fishes", "twigs", "any", "any"],
-			["fishes", "twigs", "monstermeat", "monstermeat"]
-		],
-		"restrictions": [
-			"moleworm", "twigs", "twigs"
-		],
-		"notes": "Great health recovery food, one of the few recipes that works with two monster meat."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/fishsticks.png",
+	"recipes": [
+		["fishes", "twigs", "any", "any"],
+		["fishes", "twigs", "monstermeat", "monstermeat"]
+	],
+	"restrictions": [
+		"moleworm", "twigs", "twigs"
+	],
+	"notes": "Great health recovery food, one of the few recipes that works with two monster meat.",
+	"warly": false
   },
   {
     "name": "Fish Tacos",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": true,
-		"img": "./images/crockpot/fishtacos.png",
-		"recipes": [
-			["fishes", "corn", "any", "any"],
-			["fishes", "corn", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low value food, fish and corn both have more useful recipes."
+	"rot": 6,
+	"ismeat": true,
+	"img": "./images/crockpot/fishtacos.png",
+	"recipes": [
+		["fishes", "corn", "any", "any"],
+		["fishes", "corn", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low value food, fish and corn both have more useful recipes.",
+	"warly": false
   },
   {
     "name": "Fist Full of Jam",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/fistfullofjam.png",
-		"recipes": [
-			["fruits", "any", "any", "any"],
-			["berries", "berries", "berries", "berries"]
-		],
-		"restrictions": [
-			"meats", "veggies", "twigs"
-		],
-		"notes": "Low value food. Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/fistfullofjam.png",
+	"recipes": [
+		["fruits", "any", "any", "any"],
+		["berries", "berries", "berries", "berries"]
+	],
+	"restrictions": [
+		"meats", "veggies", "twigs"
+	],
+	"notes": "Low value food. Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this.",
+	"warly": false
   },
   {
     "name": "Flower Salad",
     "hp": 40,
     "hunger": 12.5,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/flowersalad.png",
-		"recipes": [
-			["cactusflower", "veggies", "any", "any"]
-		],
-		"restrictions": [
-			"meats", "fruits", "egg", "twigs", "honey"
-		],
-		"notes": "Great for health recovery, very fast spoil time though."
-  },
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/flowersalad.png",
+	"recipes": [
+		["cactusflower", "veggies", "any", "any"]
+	],
+	"restrictions": [
+		"meats", "fruits", "egg", "twigs", "honey"
+	],
+	"notes": "Great for health recovery, very fast spoil time though.",
+	"warly": false
+},
   {
 	"name": "Fresh Fruit Crepes",
 	"hp": 60,
 	"hunger": 150,
 	"sanity": 15,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/freshfruitcrepes.png",
-		"recipes": [
-			["fruits", "fruits", "butter", "honey"],
-			["watermelon", "berries", "butter", "honey"]
-		],
-		"restrictions": [
-			"berries", "berries"
-		],
-		"notes": "Best use of butter, using more than one berry results in Fistful of Jam. Warly-specific. Wes' favorite dish, tragically."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/freshfruitcrepes.png",
+	"recipes": [
+		["fruits", "fruits", "butter", "honey"],
+		["watermelon", "berries", "butter", "honey"]
+	],
+	"restrictions": [
+		"berries", "berries"
+	],
+	"notes": "Best use of butter, using more than one berry results in Fistful of Jam. Warly-specific. Wes' favorite dish, tragically.",
+	"warly": true
 	},
   {
     "name": "Froggle Bunwich",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/froggiebunwich.png",
-		"recipes": [
-			["froglegs", "veggies", "any", "any"],
-			["froglegs", "carrot", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"egg", "honey"
-		],
-		"notes": "Mediocre health recovery food. Not the worst use of frog legs, a carrot, and two sticks."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/froggiebunwich.png",
+	"recipes": [
+		["froglegs", "veggies", "any", "any"],
+		["froglegs", "carrot", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"egg", "honey"
+	],
+	"notes": "Mediocre health recovery food. Not the worst use of frog legs, a carrot, and two sticks.",
+	"warly": false
   },
   {
     "name": "Fruit Medley",
     "hp": 20,
     "hunger": 25,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/fruitmedley.png",
-		"recipes": [
-			["fruits", "fruits", "fruits", "any"],
-			["durian", "durian", "durian", "twigs"]
-		],
-		"restrictions": [
-			"dragonfruit", "meats", "veggies"
-		],
-		"notes": "Low value food, do note cook this."
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/fruitmedley.png",
+	"recipes": [
+		["fruits", "fruits", "fruits", "any"],
+		["durian", "durian", "durian", "twigs"]
+	],
+	"restrictions": [
+		"dragonfruit", "meats", "veggies"
+	],
+	"notes": "Low value food, do note cook this.",
+	"warly": false
   },
   {
     "name": "Glow Berry Mousse",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 10,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/glowberrymousse.png",
-		"recipes": [
-			["lesserglowberry", "lesserglowberry", "fruits", "any"],
-			["glowberry", "berries", "berries", "egg"]
-		],
-		"restrictions": [
-			"twigs", "meats"
-		],
-		"notes": "Provides light for two days, amazing food for caves. Requires 2.0 fruit value (Berries and Lesser Glow Berries are 0.5 each). Warly-specific."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/glowberrymousse.png",
+	"recipes": [
+		["lesserglowberry", "lesserglowberry", "fruits", "any"],
+		["glowberry", "berries", "berries", "egg"]
+	],
+	"restrictions": [
+		"twigs", "meats"
+	],
+	"notes": "Provides light for two days, amazing food for caves. Requires 2.0 fruit value (Berries and Lesser Glow Berries are 0.5 each). Warly-specific.",
+	"warly": true
   },
   {
-    "name": "Guacamole",
+    "name": "Grim Gallete",
+    "hp": 1,
+    "hunger": 25,
+    "sanity": 5,
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/grimgallete.png",
+	"recipes": [
+		["nightmarefuel", "nightmarefuel", "onion", "potato"]
+	],
+	"restrictions": [],
+	"notes": "Swaps health and sanity values. Warly-specific.",
+	"warly": true
+},
+{
+"name": "Guacamole",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 0,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/guacamole.png",
-		"recipes": [
-			["moleworm", "cactus", "any", "any"],
-			["moleworm", "stonefruit", "any", "any"]
-		],
-		"restrictions": [
-			"fruits"
-		],
-		"notes": "Low value food, do not cook this."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/guacamole.png",
+	"recipes": [
+		["moleworm", "cactus", "any", "any"],
+		["moleworm", "stonefruit", "any", "any"]
+	],
+	"restrictions": [
+		"fruits"
+	],
+	"notes": "Low value food, do not cook this.",
+	"warly": false
   },
   {
     "name": "Honey Ham",
     "hp": 30,
     "hunger": 75,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/honeyham.png",
-		"recipes": [
-			["meats", "meats", "honey", "any"],
-			["meat", "monstermeat", "honey", "any"]
-		],
-		"restrictions": [
-			"twigs", "moleworm", "tallbirdegg"
-		],
-		"notes": "One of the best foods in the game, on par with Dragonfruit Pie with slightly more expensive ingredients."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/honeyham.png",
+	"recipes": [
+		["meats", "meats", "honey", "any"],
+		["meat", "monstermeat", "honey", "any"]
+	],
+	"restrictions": [
+		"twigs", "moleworm", "tallbirdegg"
+	],
+	"notes": "One of the best foods in the game, on par with Dragonfruit Pie with slightly more expensive ingredients.",
+	"warly": false
   },
   {
     "name": "Honey Nuggets",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/honeynuggets.png",
-		"recipes": [
-			["meats", "honey", "any", "any"],
-			["monstermeat", "honey", "berries", "berries"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite dish."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/honeynuggets.png",
+	"recipes": [
+		["meats", "honey", "any", "any"],
+		["monstermeat", "honey", "berries", "berries"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite dish.",
+	"warly": false
   },
   {
     "name": "Hot Dragon Chili Salad",
     "hp": -3,
     "hunger": 25,
     "sanity": 10,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/hotdragonchilisalad.png",
-		"recipes": [
-			["dragonfruit", "pepper", "any", "any"],
-			["dragonfruit", "pepper", "ice", "berries"]
-		],
-		"restrictions": [
-			"meats", "egg", "twigs"
-		],
-		"notes": "Gives immunity to freezing for 5 minutes. Does not grant immunity from Deerclops, Blue Hounds, or Ice Staff freeze effect. Warly-specific."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/hotdragonchilisalad.png",
+	"recipes": [
+		["dragonfruit", "pepper", "any", "any"],
+		["dragonfruit", "pepper", "ice", "berries"]
+	],
+	"restrictions": [
+		"meats", "egg", "twigs"
+	],
+	"notes": "Gives immunity to freezing for 5 minutes. Does not grant immunity from Deerclops, Blue Hounds, or Ice Staff freeze effect. Warly-specific.",
+	"warly": true
   },
   {
     "name": "Ice Cream",
     "hp": 0,
     "hunger": 25,
     "sanity": 50,
-		"rot": 3,
-		"ismeat": false,
-		"img": "./images/crockpot/icecream.png",
-		"recipes": [
-			["electricmilk", "honey", "ice", "any"],
-			["butter", "honey", "ice", "any"]
-		],
-		"restrictions": [
-			"meats", "egg", "veggies", "twigs"
-		],
-		"notes": "Best sanity recovery item in the game, low stats across the board otherwise. Good use of electric milk. Webber's favorite dish."
+	"rot": 3,
+	"ismeat": false,
+	"img": "./images/crockpot/icecream.png",
+	"recipes": [
+		["electricmilk", "honey", "ice", "any"],
+		["butter", "honey", "ice", "any"]
+	],
+	"restrictions": [
+		"meats", "egg", "veggies", "twigs"
+	],
+	"notes": "Best sanity recovery item in the game, low stats across the board otherwise. Good use of electric milk. Webber's favorite dish.",
+	"warly": false
   },
   {
     "name": "Jelly Beans",
     "hp": "122",
     "hunger": 0,
     "sanity": 5,
-		"rot": "N/A",
-		"ismeat": false,
-		"img": "./images/crockpot/jellybeans.png",
-		"recipes": [
-			["royaljelly", "any", "any", "any"],
-			["royaljelly", "ice", "ice", "ice"]
-		],
-		"restrictions": [
-			"monsterfoods", "twigs"
-		],
-		"notes": "HP is restored over time, very good for boss fights. Does not spoil."
+	"rot": "N/A",
+	"ismeat": false,
+	"img": "./images/crockpot/jellybeans.png",
+	"recipes": [
+		["royaljelly", "any", "any", "any"],
+		["royaljelly", "ice", "ice", "ice"]
+	],
+	"restrictions": [
+		"monsterfoods", "twigs"
+	],
+	"notes": "HP is restored over time, very good for boss fights. Does not spoil.",
+	"warly": false
   },
   {
     "name": "Kabobs",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/kabobs.png",
-		"recipes": [
-			["meats", "twigs", "any", "any"],
-			["monstermeat", "twigs", "berries", "berries"]
-		],
-		"restrictions": [
-			"fishes", "moleworm", "twigs", "twigs"
-		],
-		"notes": "Low value food, do not cook this."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/kabobs.png",
+	"recipes": [
+		["meats", "twigs", "any", "any"],
+		["monstermeat", "twigs", "berries", "berries"]
+	],
+	"restrictions": [
+		"fishes", "moleworm", "twigs", "twigs"
+	],
+	"notes": "Low value food, do not cook this.",
+	"warly": false
   },
   {
     "name": "Lobster Bisque",
     "hp": 60,
     "hunger": 25,
     "sanity": 10,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/lobsterbisque.png",
-		"recipes": [
-			["wobster", "ice", "any", "any"],
-			["wobster", "ice", "monstermeat", "monstermeat"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Very good for health recovery, two sticks or monster meats recommended as fillers. Wobster must be alive."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/lobsterbisque.png",
+	"recipes": [
+		["wobster", "ice", "any", "any"],
+		["wobster", "ice", "monstermeat", "monstermeat"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Very good for health recovery, two sticks or monster meats recommended as fillers. Wobster must be alive.",
+	"warly": false
   },
   {
     "name": "Lobster Dinner",
     "hp": 60,
     "hunger": 37.5,
     "sanity": 50,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/lobsterdinner.png",
-		"recipes": [
-			["wobster", "butter", "any", "any"],
-			["wobster", "butter", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"meats", "fishes", "ice"
-		],
-		"notes": "Very good for health recovery, butter is better on it's own though. Two sticks or monster meats recommended as fillers. Wobster must be alive. Maxwell's favorite dish."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/lobsterdinner.png",
+	"recipes": [
+		["wobster", "butter", "any", "any"],
+		["wobster", "butter", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"meats", "fishes", "ice"
+	],
+	"notes": "Very good for health recovery, butter is better on it's own though. Two sticks or monster meats recommended as fillers. Wobster must be alive. Maxwell's favorite dish.",
+	"warly": false
   },
   {
     "name": "Mandrake Soup",
     "hp": 100,
     "hunger": 150,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/mandrakesoup.png",
-		"recipes": [
-			["mandrake", "any", "any", "any"],
-			["mandrake", "twigs", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Does not possess Mandrake sleeping effect. Useful for speedrunners, otherwise make Pan Flutes with Mandrakes."
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/mandrakesoup.png",
+	"recipes": [
+		["mandrake", "any", "any", "any"],
+		["mandrake", "twigs", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Does not possess Mandrake sleeping effect. Useful for speedrunners, otherwise make Pan Flutes with Mandrakes.",
+	"warly": false
   },
   {
     "name": "Meatballs",
     "hp": 3,
     "hunger": 62.5,
     "sanity": 5,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/meatballs.png",
-		"recipes": [
-			["meats", "any", "any", "any"],
-			["fishes", "any", "any", "any"]
-		],
-		"restrictions": [
-			"twigs", "honey"
-		],
-		"notes": "High hunger food for common ingredients, cook lots of these to not starve."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/meatballs.png",
+	"recipes": [
+		["meats", "any", "any", "any"],
+		["fishes", "any", "any", "any"]
+	],
+	"restrictions": [
+		"twigs", "honey"
+	],
+	"notes": "High hunger food for common ingredients, cook lots of these to not starve.",
+	"warly": false
   },
   {
     "name": "Meaty Stew",
     "hp": 12,
     "hunger": 150,
     "sanity": 5,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/meatystew.png",
-		"recipes": [
-			["meat", "meats", "meats", "any"],
-			["meat", "meat", "monstermeat", "ice"]
-		],
-		"restrictions": [
-			"twigs", "moleworm", "honey", "tallbirdegg"
-		],
-		"notes": "Highest hunger food in the game, even stale these are a fantastic food."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/meatystew.png",
+	"recipes": [
+		["meat", "meats", "meats", "any"],
+		["meat", "meat", "monstermeat", "ice"]
+	],
+	"restrictions": [
+		"twigs", "moleworm", "honey", "tallbirdegg"
+	],
+	"notes": "Highest hunger food in the game, even stale these are a fantastic food.",
+	"warly": false
   },
   {
     "name": "Melonsicle",
     "hp": 3,
     "hunger": 12.5,
     "sanity": 20,
-		"rot": 3,
-		"ismeat": false,
-		"img": "./images/crockpot/melonsicle.png",
-		"recipes": [
-			["watermelon", "ice", "twigs", "any"],
-			["watermelon", "ice", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"meats", "veggies", "egg"
-		],
-		"notes": "Low value food. Okay sanity restoration, poor stats otherwise."
+	"rot": 3,
+	"ismeat": false,
+	"img": "./images/crockpot/melonsicle.png",
+	"recipes": [
+		["watermelon", "ice", "twigs", "any"],
+		["watermelon", "ice", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"meats", "veggies", "egg"
+	],
+	"notes": "Low value food. Okay sanity restoration, poor stats otherwise.",
+	"warly": false
   },
   {
     "name": "Monster Lasagna",
     "hp": -20,
     "hunger": 37.5,
     "sanity": -20,
-		"rot": 6,
-		"ismeat": true,
-		"img": "./images/crockpot/monsterlasagne.png",
-		"recipes": [
-			["monsterfoods", "monsterfoods", "any", "any"],
-			["monstermeat", "durian", "any", "any"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "There is no reason to cook this, unless you want a hungry Vargling following you around crying."
+	"rot": 6,
+	"ismeat": true,
+	"img": "./images/crockpot/monsterlasagne.png",
+	"recipes": [
+		["monsterfoods", "monsterfoods", "any", "any"],
+		["monstermeat", "durian", "any", "any"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "There is no reason to cook this, unless you want a hungry Vargling following you around crying.",
+	"warly": false
   },
   {
     "name": "Monster Tartare",
     "hp": -20,
     "hunger": 62.5,
     "sanity": -20,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/monstertartare.png",
-		"recipes": [
-			["monsterfoods", "monsterfoods", "any", "any"],
-			["monstermeat", "durian", "ice", "ice"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Webber should have this as his second-favorite food since he is two souls, Klei pls. Single player stats are different (restores hp and sanity). Warly-specific."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/monstertartare.png",
+	"recipes": [
+		["monsterfoods", "monsterfoods", "any", "any"],
+		["monstermeat", "durian", "ice", "ice"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Webber should have this as his second-favorite food since he is two souls, Klei pls. Single player stats are different (restores hp and sanity). Warly-specific.",
+	"warly": true
   },
   {
     "name": "Moqueca",
     "hp": 60,
     "hunger": 112.5,
     "sanity": 33,
-		"rot": 8,
-		"ismeat": true,
-		"img": "./images/crockpot/moqueca.png",
-		"recipes": [
-			["fishes", "onion", "toma", "any"],
-			["fishes", "onion", "toma", "ice"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Excellent stats across the board, aside from rot time. Warly-specific."
+	"rot": 8,
+	"ismeat": true,
+	"img": "./images/crockpot/moqueca.png",
+	"recipes": [
+		["fishes", "onion", "toma", "any"],
+		["fishes", "onion", "toma", "ice"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Excellent stats across the board, aside from rot time. Warly-specific.",
+	"warly": true
   },
   {
     "name": "Pierogi",
     "hp": 40,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 20,
-		"ismeat": true,
-		"img": "./images/crockpot/pierogi.png",
-		"recipes": [
-			["meats", "egg", "veggies", "any"],
-			["monstermeat", "egg", "carrot", "ice"]
-		],
-		"restrictions": [
-			"moleworm", "twigs"
-		],
-		"notes": "Best healing item in the game that contains meat, coupled with one of the slowest rot times."
+	"rot": 20,
+	"ismeat": true,
+	"img": "./images/crockpot/pierogi.png",
+	"recipes": [
+		["meats", "egg", "veggies", "any"],
+		["monstermeat", "egg", "carrot", "ice"]
+	],
+	"restrictions": [
+		"moleworm", "twigs"
+	],
+	"notes": "Best healing item in the game that contains meat, coupled with one of the slowest rot times.",
+	"warly": false
   },
   {
     "name": "Powdercake",
     "hp": -3,
     "hunger": 0,
     "sanity": 0,
-		"rot": 18750,
-		"ismeat": false,
-		"img": "./images/crockpot/powdercake.png",
-		"recipes": [
-			["corn", "honey", "twigs", "any"],
-			["corn", "honey", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Slowest spoil rate in the game. Useful for certain monster traps, or for warly to add seasonings to."
+	"rot": 18750,
+	"ismeat": false,
+	"img": "./images/crockpot/powdercake.png",
+	"recipes": [
+		["corn", "honey", "twigs", "any"],
+		["corn", "honey", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Slowest spoil rate in the game. Useful for certain monster traps, or for warly to add seasonings to.",
+	"warly": false
   },
   {
     "name": "Pumpkin Cookie",
     "hp": 0,
     "hunger": 37.5,
     "sanity": 15,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/pumpkincookie.png",
-		"recipes": [
-			["pumpkin", "honey", "honey", "any"],
-			["pumpkin", "honey", "honey", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low value food, pumpkins have much better uses."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/pumpkincookie.png",
+	"recipes": [
+		["pumpkin", "honey", "honey", "any"],
+		["pumpkin", "honey", "honey", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low value food, pumpkins have much better uses.",
+	"warly": false
   },
   {
     "name": "Puffed Potato Souffle",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 15,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/puffedpotatosouffle.png",
-		"recipes": [
-			["potato", "potato", "egg", "any"],
-			["potato", "potato", "egg", "ice"]
-		],
-		"restrictions": [
-			"meats", "twigs"
-		],
-		"notes": "Warly's most useless recipe, Wolfgang doesn't even benefit from it. Warly-specific."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/puffedpotatosouffle.png",
+	"recipes": [
+		["potato", "potato", "egg", "any"],
+		["potato", "potato", "egg", "ice"]
+	],
+	"restrictions": [
+		"meats", "twigs"
+	],
+	"notes": "Warly's most useless recipe, Wolfgang doesn't even benefit from it. Warly-specific.",
+	"warly": true
   },
   {
     "name": "Ratatouille",
     "hp": 3,
     "hunger": 25,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/ratatouille.png",
-		"recipes": [
-			["veggies", "any", "any", "any"],
-			["veggies", "ice", "ice", "ice"]
-		],
-		"restrictions": [
-			"meats", "dragonfruit", "twigs", "butterflywings"
-		],
-		"notes": "Low value food. Unless you're Wurt, avoid making this"
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/ratatouille.png",
+	"recipes": [
+		["veggies", "any", "any", "any"],
+		["veggies", "ice", "ice", "ice"]
+	],
+	"restrictions": [
+		"meats", "dragonfruit", "twigs", "butterflywings"
+	],
+	"notes": "Low value food. Unless you're Wurt, avoid making this",
+	"warly": false
   },
   {
     "name": "Salsa Fresca",
     "hp": 3,
     "hunger": 25,
     "sanity": 33,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/salsafresca.png",
-		"recipes": [
-			["toma", "garlic", "any", "any"],
-			["toma", "garlic", "ice", "ice"]
-		],
-		"restrictions": [
-			"meats", "egg", "twigs"
-		],
-		"notes": "Low value food with a small amount of sanity restoration."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/salsafresca.png",
+	"recipes": [
+		["toma", "garlic", "any", "any"],
+		["toma", "garlic", "ice", "ice"]
+	],
+	"restrictions": [
+		"meats", "egg", "twigs"
+	],
+	"notes": "Low value food with a small amount of sanity restoration.",
+	"warly": false
   },
   {
     "name": "Seafood Gumbo",
     "hp": 40,
     "hunger": 37.5,
     "sanity": 20,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/seafoodgumbo.png",
-		"recipes": [
-			["eel", "fishes", "any", "any"],
-			["eel", "eel", "eel", "twigs"],
-			["eel", "fishmorsel", "fishmorsel", "fishmorsel"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Make Surf 'n Turf instead. Requires 1.5x fish meat."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/seafoodgumbo.png",
+	"recipes": [
+		["eel", "fishes", "any", "any"],
+		["eel", "eel", "eel", "twigs"],
+		["eel", "fishmorsel", "fishmorsel", "fishmorsel"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Make Surf 'n Turf instead. Requires 1.5x fish meat.",
+		"warly": false
   },
   {
     "name": "Spicy Chili",
     "hp": 20,
     "hunger": 37.5,
     "sanity": 0,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/spicychili.png",
-		"recipes": [
-			["meats", "meats", "veggies", "veggies"],
-			["monstermeat", "freshwaterfish", "lichen", "lichen"],
-			["monstermeat", "froglegs", "carrot", "carrot"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low value food, do not cook this unless you're Willow. Willow's favorite dish."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/spicychili.png",
+	"recipes": [
+		["meats", "meats", "veggies", "veggies"],
+		["monstermeat", "freshwaterfish", "lichen", "lichen"],
+		["monstermeat", "froglegs", "carrot", "carrot"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low value food, do not cook this unless you're Willow. Willow's favorite dish.",
+		"warly": false
   },
   {
     "name": "Stuffed Eggplant",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 15,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/stuffedeggplant.png",
-		"recipes": [
-			["eggplant", "veggies", "any", "any"],
-			["eggplant", "lichen", "twigs", "twigs"],
-			["eggplant", "carrot", "berries", "berries"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low value food, just cook and eat eggplant raw instead."
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/stuffedeggplant.png",
+	"recipes": [
+		["eggplant", "veggies", "any", "any"],
+		["eggplant", "lichen", "twigs", "twigs"],
+		["eggplant", "carrot", "berries", "berries"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low value food, just cook and eat eggplant raw instead.",
+		"warly": false
   },
   {
     "name": "Stuffed Pepper Poppers",
     "hp": 30,
     "hunger": 25,
     "sanity": -5,
-		"rot": 15,
-		"ismeat": true,
-		"img": "./images/crockpot/stuffedpepperpoppers.png",
-		"recipes": [
-			["pepper", "meats", "any", "any"],
-			["pepper", "monstermeat", "berries", "berries"]
-		],
-		"restrictions": [
-			"twigs"
-		],
-		"notes": "Okay for health restoration, otherwise avoid cooking this."
+	"rot": 15,
+	"ismeat": true,
+	"img": "./images/crockpot/stuffedpepperpoppers.png",
+	"recipes": [
+		["pepper", "meats", "any", "any"],
+		["pepper", "monstermeat", "berries", "berries"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Okay for health restoration, otherwise avoid cooking this.",
+	"warly": false
   },
   {
     "name": "Surf n' Turf",
     "hp": 60,
     "hunger": 37.5,
     "sanity": 33,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/surfnturf.png",
-		"recipes": [
-			["meats", "fishes", "any", "any"],
-			["eel", "eel", "monstermeat", "monstermeat"]
-		],
-		"restrictions": [
-			"ice"
-		],
-		"notes": "Amazing food item for basing near the Ruins. Best cooked with 2x Eel and 2x Monster Meat. Requires 2.5x meat, and 1.5x fish meat. Wickerbottom's favorite dish"
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/surfnturf.png",
+	"recipes": [
+		["meats", "fishes", "any", "any"],
+		["eel", "eel", "monstermeat", "monstermeat"]
+	],
+	"restrictions": [
+		"ice"
+	],
+	"notes": "Amazing food item for basing near the Ruins. Best cooked with 2x Eel and 2x Monster Meat. Requires 2.5x meat, and 1.5x fish meat. Wickerbottom's favorite dish",
+	"warly": false
   },
   {
     "name": "Taffy",
     "hp": -3,
     "hunger": 25,
     "sanity": 15,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/taffy.png",
-		"recipes": [
-			["honey", "honey", "honey", "any"],
-			["honey", "honey", "honey", "twigs"]
-		],
-		"restrictions": [
-			"meats"
-		],
-		"notes": "Low value food, do not cook this."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/taffy.png",
+	"recipes": [
+		["honey", "honey", "honey", "any"],
+		["honey", "honey", "honey", "twigs"]
+	],
+	"restrictions": [
+		"meats"
+	],
+	"notes": "Low value food, do not cook this.",
+	"warly": false
   },
   {
     "name": "Trail Mix",
     "hp": 30,
     "hunger": 12.5,
     "sanity": 5,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/trailmix.png",
-		"recipes": [
-			["roastedbirchnut", "berries", "fruits", "any"],
-			["roastedbirchnut", "berries", "berries", "twigs"]
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/trailmix.png",
+	"recipes": [
+		["roastedbirchnut", "berries", "fruits", "any"],
+		["roastedbirchnut", "berries", "berries", "twigs"]
 
-		],
-		"restrictions": [
-			"meats", "veggies", "egg", "butter"
-		],
-		"notes": "Great early-game health recovery food. Walter's favorite dish."
+	],
+	"restrictions": [
+		"meats", "veggies", "egg", "butter"
+	],
+	"notes": "Great early-game health recovery food. Walter's favorite dish.",
+		"warly": false
   },
   {
     "name": "Turkey Dinner",
     "hp": 20,
     "hunger": 75,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": true,
-		"img": "./images/crockpot/turkeydinner.png",
-		"recipes": [
-			["drumstick", "drumstick", "meats", "veggies"],
-			["drumstick", "drumstick", "meats", "fruits"]
-		],
-		"restrictions": [
-			"egg", "honey", "electricmilk", "twigs"
-		],
-		"notes": "Decent stats except for the very fast spoil-time, ingredients generally better used for Meatballs unless you're Wigfried. Wigfried's favorite dish."
+	"rot": 6,
+	"ismeat": true,
+	"img": "./images/crockpot/turkeydinner.png",
+	"recipes": [
+		["drumstick", "drumstick", "meats", "veggies"],
+		["drumstick", "drumstick", "meats", "fruits"]
+	],
+	"restrictions": [
+		"egg", "honey", "electricmilk", "twigs"
+	],
+	"notes": "Decent stats except for the very fast spoil-time, ingredients generally better used for Meatballs unless you're Wigfried. Wigfried's favorite dish.",
+	"warly": false
   },
   {
     "name": "Unagi",
     "hp": 20,
     "hunger": 18.75,
     "sanity": 5,
-		"rot": 10,
-		"ismeat": true,
-		"img": "./images/crockpot/unagi.png",
-		"recipes": [
-			["eel", "lichen", "any", "any"],
-			["eel", "lichen", "twigs", "twigs"],
-			["eel", "lichen", "monstermeat", "monstermeat"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Low value food, do not cook this."
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/unagi.png",
+	"recipes": [
+		["eel", "lichen", "any", "any"],
+		["eel", "lichen", "twigs", "twigs"],
+		["eel", "lichen", "monstermeat", "monstermeat"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Low value food, do not cook this.",
+		"warly": false
   },
   {
     "name": "Vegetable Stinger",
     "hp": 3,
     "hunger": 25,
     "sanity": 33,
-		"rot": 15,
-		"ismeat": false,
-		"img": "./images/crockpot/vegetablestinger.png",
-		"recipes": [
-			["asparagus", "veggies", "veggies", "ice"],
-			["toma", "veggies", "veggies", "ice"],
-			["asparagus", "carrot", "redcap", "ice"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Decent sanity restoration item with long rot time, probably best use of asparagus or toma. Winona's favorite dish."
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/vegetablestinger.png",
+	"recipes": [
+		["asparagus", "veggies", "veggies", "ice"],
+		["toma", "veggies", "veggies", "ice"],
+		["asparagus", "carrot", "redcap", "ice"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Decent sanity restoration item with long rot time, probably best use of asparagus or toma. Winona's favorite dish.",
+		"warly": false
   },
   {
     "name": "Volt Goat Chaud-Froid",
     "hp": 3,
     "hunger": 37.5,
     "sanity": 10,
-		"rot": 10,
-		"ismeat": false,
-		"img": "./images/crockpot/voltgoatchaudfroid.png",
-		"recipes": [
-			["voltgoathorn", "honey", "honey", "ice"],
-			["voltgoathorn", "honey", "honey", "twigs"]
-		],
-		"restrictions": [
-			"meats"
-		],
-		"notes": "All attacks do 1.5x Electrical damage (2.5x to wet opponents) for 5 minutes. Damage modifier does not stack with Morning Star or Electric Darts. Warly-specific and OP af."
+	"rot": 10,
+	"ismeat": false,
+	"img": "./images/crockpot/voltgoatchaudfroid.png",
+	"recipes": [
+		["voltgoathorn", "honey", "honey", "ice"],
+		["voltgoathorn", "honey", "honey", "twigs"]
+	],
+	"restrictions": [
+		"meats"
+	],
+	"notes": "All attacks do 1.5x Electrical damage (2.5x to wet opponents) for 5 minutes. Damage modifier does not stack with Morning Star or Electric Darts. Warly-specific and OP af.",
+	"warly": true
   },
   {
     "name": "Waffles",
     "hp": 60,
     "hunger": 37.5,
     "sanity": 5,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/waffles.png",
-		"recipes": [
-			["butter", "berries", "egg", "any"],
-			["butter", "berries", "egg", "twigs"]
-		],
-		"restrictions": [
-			"meats"
-		],
-		"notes": "Fine to make if you have the ingredients and need the health, but generally butter is better off eaten raw."
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/waffles.png",
+	"recipes": [
+		["butter", "berries", "egg", "any"],
+		["butter", "berries", "egg", "twigs"]
+	],
+	"restrictions": [
+		"meats"
+	],
+	"notes": "Fine to make if you have the ingredients and need the health, but generally butter is better off eaten raw.",
+	"warly": false
   },
   {
     "name": "Wet Goop",
     "hp": 0,
     "hunger": 0,
     "sanity": 0,
-		"rot": 6,
-		"ismeat": false,
-		"img": "./images/crockpot/wetgoop.png",
-		"recipes": [
-			["any", "any", "any", "any"],
-			["twigs", "twigs", "twigs", "twigs"]
-		],
-		"restrictions": [
-			"none"
-		],
-		"notes": "Either you done goofed, or you're trolling someone."
+	"rot": 6,
+	"ismeat": false,
+	"img": "./images/crockpot/wetgoop.png",
+	"recipes": [
+		["any", "any", "any", "any"],
+		["twigs", "twigs", "twigs", "twigs"]
+	],
+	"restrictions": [
+		"none"
+	],
+	"notes": "Either you done goofed, or you're trolling someone.",
+	"warly": false
   }
 ]
