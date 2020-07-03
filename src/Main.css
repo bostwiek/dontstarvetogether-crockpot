@@ -349,3 +349,10 @@ header {
 		line-height: 24px;
 	}
 }
+
+		/* bootstrap override for desktop web: */
+@media (min-width: 1200px) {
+	body .container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 80%;
+	}
+}

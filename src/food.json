@@ -8,13 +8,27 @@
 		"ismeat": false,
 		"img": "./images/crockpot/asparagussoup.png",
 		"recipes": [
-			["asparagus", "veggies", "any", "any"],
-			["asparagus", "carrot", "redcap", "redcap"]
+			["asparagus", "asparagus", "ice", "ice"]
 		],
 		"restrictions": [
 			"twigs"
 		],
 		"notes": "Low value food, Asparagus better used in Vegetable Stinger"
+  },
+  {
+	"name": "Asparagazpacho",
+    "hp": 3,
+    "hunger": 25,
+    "sanity": 10,
+	"rot": 15,
+	"ismeat": false,
+	"img": "./images/crockpot/asparagazpacho.png",
+	"recipes": [
+		["asparagus", "veggies", "any", "any"],
+		["asparagus", "carrot", "redcap", "redcap"]
+	],
+	"restrictions": [],
+	"notes": "Gives immunity to overheating for 5 minutes. Warly-specific."
   },
   {
     "name": "Bacon and Eggs",
@@ -50,6 +64,24 @@
 		],
 		"notes": "Bring some ice down to the ruins to make these. Wendy's favorite dish."
   },
+  {
+	"name": "Bone Bouillon",
+    "hp": 32,
+    "hunger": 150,
+    "sanity": 5,
+	"rot": 10,
+	"ismeat": true,
+	"img": "./images/crockpot/bonebouillon.png",
+	"recipes": [
+		["boneshards", "boneshards", "onion", "any"],
+		["boneshards", "boneshards", "onion", "redcap"]
+	],
+	"restrictions": [
+		"twigs"
+	],
+	"notes": "Excellent hunger and health recovery dish if you have the bone shards. Bonus points for cannibalism! Warly-specific."
+  },
+  
   {
     "name": "Butter Muffin",
     "hp": 20,
@@ -154,21 +186,21 @@
 		"notes": "Low value food, will not work with 3 twigs."
   },
   {
-    "name": "Fish Tacos",
+    "name": "Fish Cordon Bleu",
     "hp": 20,
     "hunger": 37.5,
-    "sanity": 5,
-		"rot": 6,
+    "sanity": -10,
+		"rot": 8,
 		"ismeat": true,
-		"img": "./images/crockpot/fishtacos.png",
+		"img": "./images/crockpot/fishcordonbleu.png",
 		"recipes": [
-			["fishes", "corn", "any", "any"],
-			["fishes", "corn", "twigs", "twigs"]
+			["fishes", "fishes", "froglegs", "froglegs"],
+			["eel", "froglegs", "froglegs", "ice"]
 		],
 		"restrictions": [
-			"none"
+			"twigs"
 		],
-		"notes": "Low value food, fish and corn both have more useful recipes."
+		"notes": "Gives immunity to wetness. Warly-specific."
   },
   {
     "name": "Fish Sticks",
@@ -186,6 +218,23 @@
 			"moleworm", "twigs", "twigs"
 		],
 		"notes": "Great health recovery food, one of the few recipes that works with two monster meat."
+  },
+  {
+    "name": "Fish Tacos",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 5,
+		"rot": 6,
+		"ismeat": true,
+		"img": "./images/crockpot/fishtacos.png",
+		"recipes": [
+			["fishes", "corn", "any", "any"],
+			["fishes", "corn", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Low value food, fish and corn both have more useful recipes."
   },
   {
     "name": "Fist Full of Jam",
@@ -221,6 +270,23 @@
 		"notes": "Great for health recovery, very fast spoil time though."
   },
   {
+	"name": "Fresh Fruit Crepes",
+	"hp": 60,
+	"hunger": 150,
+	"sanity": 15,
+		"rot": 10,
+		"ismeat": false,
+		"img": "./images/crockpot/freshfruitcrepes.png",
+		"recipes": [
+			["fruits", "fruits", "butter", "honey"],
+			["watermelon", "berries", "butter", "honey"]
+		],
+		"restrictions": [
+			"berries", "berries"
+		],
+		"notes": "Best use of butter, using more than one berry results in Fistful of Jam. Warly-specific. Wes' favorite dish, tragically."
+	},
+  {
     "name": "Froggle Bunwich",
     "hp": 20,
     "hunger": 37.5,
@@ -253,6 +319,23 @@
 			"dragonfruit", "meats", "veggies"
 		],
 		"notes": "Low value food, do note cook this."
+  },
+  {
+    "name": "Glow Berry Mousse",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 10,
+		"rot": 10,
+		"ismeat": false,
+		"img": "./images/crockpot/glowberrymousse.png",
+		"recipes": [
+			["lesserglowberry", "lesserglowberry", "fruits", "any"],
+			["glowberry", "berries", "berries", "egg"]
+		],
+		"restrictions": [
+			"twigs", "meats"
+		],
+		"notes": "Provides light for two days, amazing food for caves. Requires 2.0 fruit value (Berries and Lesser Glow Berries are 0.5 each). Warly-specific."
   },
   {
     "name": "Guacamole",
@@ -304,6 +387,23 @@
 			"twigs"
 		],
 		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite dish."
+  },
+  {
+    "name": "Hot Dragon Chili Salad",
+    "hp": -3,
+    "hunger": 25,
+    "sanity": 10,
+		"rot": 10,
+		"ismeat": false,
+		"img": "./images/crockpot/hotdragonchilisalad.png",
+		"recipes": [
+			["dragonfruit", "pepper", "any", "any"],
+			["dragonfruit", "pepper", "ice", "berries"]
+		],
+		"restrictions": [
+			"meats", "egg", "twigs"
+		],
+		"notes": "Gives immunity to freezing for 5 minutes. Does not grant immunity from Deerclops, Blue Hounds, or Ice Staff freeze effect. Warly-specific."
   },
   {
     "name": "Ice Cream",
@@ -476,6 +576,40 @@
 		"notes": "There is no reason to cook this, unless you want a hungry Vargling following you around crying."
   },
   {
+    "name": "Monster Tartare",
+    "hp": -20,
+    "hunger": 62.5,
+    "sanity": -20,
+		"rot": 10,
+		"ismeat": true,
+		"img": "./images/crockpot/monstertartare.png",
+		"recipes": [
+			["monsterfoods", "monsterfoods", "any", "any"],
+			["monstermeat", "durian", "ice", "ice"]
+		],
+		"restrictions": [
+			"twigs"
+		],
+		"notes": "Webber should have this as his second-favorite food since he is two souls, Klei pls. Single player stats are different (restores hp and sanity). Warly-specific."
+  },
+  {
+    "name": "Moqueca",
+    "hp": 60,
+    "hunger": 112.5,
+    "sanity": 33,
+		"rot": 8,
+		"ismeat": true,
+		"img": "./images/crockpot/moqueca.png",
+		"recipes": [
+			["fishes", "onion", "toma", "any"],
+			["fishes", "onion", "toma", "ice"]
+		],
+		"restrictions": [
+			"twigs"
+		],
+		"notes": "Excellent stats across the board, aside from rot time. Warly-specific."
+  },
+  {
     "name": "Pierogi",
     "hp": 40,
     "hunger": 37.5,
@@ -525,6 +659,23 @@
 			"none"
 		],
 		"notes": "Low value food, pumpkins have much better uses."
+  },
+  {
+    "name": "Puffed Potato Souffle",
+    "hp": 20,
+    "hunger": 37.5,
+    "sanity": 15,
+		"rot": 10,
+		"ismeat": false,
+		"img": "./images/crockpot/puffedpotatosouffle.png",
+		"recipes": [
+			["potato", "potato", "egg", "any"],
+			["potato", "potato", "egg", "ice"]
+		],
+		"restrictions": [
+			"meats", "twigs"
+		],
+		"notes": "Warly's most useless recipe, Wolfgang doesn't even benefit from it. Warly-specific."
   },
   {
     "name": "Ratatouille",
@@ -735,6 +886,23 @@
 			"none"
 		],
 		"notes": "Decent sanity restoration item with long rot time, probably best use of asparagus or toma. Winona's favorite dish."
+  },
+  {
+    "name": "Volt Goat Chaud-Froid",
+    "hp": 3,
+    "hunger": 37.5,
+    "sanity": 10,
+		"rot": 10,
+		"ismeat": false,
+		"img": "./images/crockpot/voltgoatchaudfroid.png",
+		"recipes": [
+			["voltgoathorn", "honey", "honey", "ice"],
+			["voltgoathorn", "honey", "honey", "twigs"]
+		],
+		"restrictions": [
+			"meats"
+		],
+		"notes": "All attacks do 1.5x Electrical damage (2.5x to wet opponents) for 5 minutes. Damage modifier does not stack with Morning Star or Electric Darts. Warly-specific and OP af."
   },
   {
     "name": "Waffles",
