@@ -10,6 +10,7 @@ import food from './food';
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
+import Overlay from './Overlay';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -22,34 +23,61 @@ class Main extends React.Component {
 		this.state = {
 			search: '',
 			sortBy: 'alpha-desc',
-			containsMeat: 'either'
+			containsMeat: 'either',
+			warlyRecipes: 'either',
+			showOverlay: false
 		}
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
 		this.sortContainsMeat = this.sortContainsMeat.bind(this);
+		this.sortWarlyRecipes = this.sortWarlyRecipes.bind(this);
+
+		this.cardClicked = this.cardClicked.bind(this);
 	}
+
+	//////////////////////////////
+	//													//
+	//			Sort Functions			//
+	//													//
+	//////////////////////////////
 
 	// Triggers when SEARCH input value changes
 	searchUpdate = () => {
 		let inputValue = document.getElementById('search-recipe').value;
-		this.setState({search: inputValue})
+		this.setState({search: inputValue});
 	}
 
 	// Triggers when SORT BY select value changes
 	sortByUpdate = () => {
 		let selectValue = document.getElementById('sort-by').value;
-		this.setState({ sortBy: selectValue })
+		this.setState({ sortBy: selectValue });
 	}
 
 	// Triggers when CONTAINS MEAT select value changes
 	sortContainsMeat = () => {
 		let selectValue = document.getElementById('contains-meat').value;
-		this.setState({ containsMeat: selectValue })
+		this.setState({ containsMeat: selectValue });
+	}
+
+	// Triggers when WARLY RECIPES select value changes
+	sortWarlyRecipes = () => {
+		let selectValue = document.getElementById('warly-recipes').value;
+		this.setState({ warlyRecipes: selectValue });
+	}
+
+	//////////////////////////////
+	//													//
+	//			Card Functions			//
+	//													//
+	//////////////////////////////
+
+	cardClicked = () => {
+		this.setState({ showOverlay: !this.state.showOverlay });
 	}
 
 	render() {
 
-		// switch to sort food based on {this.state.sortBy}
+		// switch to sort food based on this.state.sortBy
 		switch (this.state.sortBy) {
 			case 'alpha-desc': 
 				food.sort((a, b) => (a.name > b.name) ? 1 : -1)
@@ -83,18 +111,34 @@ class Main extends React.Component {
 				break;
 			default:
 				break;
-		}		
+		}
 
 		return(
 			<>
 
 				<div className="bg animated-bg" style={bgStyle}></div>
 				<div className="bg-gradient"></div>
+				
+				<Overlay
+					foodName={'Fist Full of Jam'}
+					foodImg={'./images/crockpot/guacamole.png'}
+					foodHp={69}
+					foodHunger={420}
+					foodSanity={25}
+					foodRot={10}
+					foodRecipes={["lesserglowberry", "lesserglowberry", "fruits", "any"]}
+					foodRestrictions={'twigs'}
+					foodIsMeat={true}
+					foodNotes={'notes'}
+					cardClicked={this.cardClicked}
+					key={0}
+					visible={this.state.showOverlay}
+				/>
 
 				<header>
 					<div className="logo">
 						<span className="logo-subtext">Don't Starve Together</span>
-						<span className="logo-text">All Things Crockpot</span>
+						<span className="logo-text">All Things Crockpot {this.state.showOverlay}</span>
 						<img src={logo} alt='Crockpot Logo' />
 					</div>
 				</header>
@@ -125,13 +169,23 @@ class Main extends React.Component {
 							</select>
 						</div>
 
-						<div className="food-category float-right">
-							<span>Contains Meat?</span>
+						<div className="food-category">
+							<span>Contains Meat</span>
 							<br />
 							<select id="contains-meat" onChange={this.sortContainsMeat}>
 								<option value="either">Either</option>
 								<option value="yes">Yes</option>
 								<option value="no">No</option>
+							</select>
+						</div>
+
+						<div className="food-category float-right">
+							<span>Warly recipes</span>
+							<br />
+							<select id="warly-recipes" onChange={this.sortWarlyRecipes}>
+								<option value="either">Show</option>
+								<option value="yes">Only</option>
+								<option value="no">Hide</option>
 							</select>
 						</div>
 
@@ -143,96 +197,96 @@ class Main extends React.Component {
 
 					<div className="card-container">
 
-							{	
+						{	
 
-								//////////////////////////////
-								//													//
-								//													//
-								//	Dynamic sort functions	//
-								//													//
-								//													//
-								//////////////////////////////
+							//////////////////////////////
+							//													//
+							//	Dynamic sort functions	//
+							//													//
+							//////////////////////////////
 
-								Object.keys(food).map(
-									(key, value) => {
+							Object.keys(food).map(
+								(key, value) => {
 
-										//
-										// checks SEARCH input first to filter out items
-										//
-										if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
-										
-										//
-										// check contains meat if true or false (ignores if either)
-										//
-										if(this.state.containsMeat !== 'either') {
+									// store JSX object of food card to return later
+									const foodCardJSX = (
+										<Card
+											foodName={food[key].name}
+											foodImg={food[key].img}
+											foodHp={food[key].hp}
+											foodHunger={food[key].hunger}
+											foodSanity={food[key].sanity}
+											foodRot={food[key].rot}
+											foodRecipes={food[key].recipes}
+											foodRestrictions={food[key].restrictions}
+											foodIsMeat={food[key].ismeat}
+											foodNotes = {food[key].notes}
+											cardClicked={this.cardClicked}
+											key={key}
+										/>
+									);
 
-											if(this.state.containsMeat === 'yes') {
+									
+									// checks SEARCH input first to filter out items
+									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
-												//
-												// Contains Meat
-												//
-												if(food[key].ismeat === true){
-													return(
-														<Card
-															foodName={food[key].name}
-															foodImg={food[key].img}
-															foodHp={food[key].hp}
-															foodHunger={food[key].hunger}
-															foodSanity={food[key].sanity}
-															foodRot={food[key].rot}
-															foodRecipes={food[key].recipes}
-															foodRestrictions={food[key].restrictions}
-															foodIsMeat={food[key].ismeat}
-															key={key}
-														/>
-													)
+										// Switch for Warly-specific, and Meat/non-meat-specific recipes
+										switch(this.state.warlyRecipes) {
+
+											// Warly filter: show any
+											case 'either': {
+												if(this.state.containsMeat === 'either') {
+													return(foodCardJSX);
+												} else {
+													if(this.state.containsMeat === 'yes') {
+														if(food[key].ismeat === true) return(foodCardJSX)
+													} else {
+														if(food[key].ismeat === false) return(foodCardJSX)
+													}
 												}
-
-											} else {
-												//
-												// Does not contain meat
-												//
-												if(food[key].ismeat === false){
-													return(
-														<Card
-															foodName={food[key].name}
-															foodImg={food[key].img}
-															foodHp={food[key].hp}
-															foodHunger={food[key].hunger}
-															foodSanity={food[key].sanity}
-															foodRot={food[key].rot}
-															foodRecipes={food[key].recipes}
-															foodRestrictions={food[key].restrictions}
-															foodIsMeat={food[key].ismeat}
-															key={key}
-														/>
-													)
-												}
+												break;
 											}
 
-										} else {
-											//
-											// Both meat and non-meat foods
-											//
-											return(
-												<Card
-													foodName={food[key].name}
-													foodImg={food[key].img}
-													foodHp={food[key].hp}
-													foodHunger={food[key].hunger}
-													foodSanity={food[key].sanity}
-													foodRot={food[key].rot}
-													foodRecipes={food[key].recipes}
-													foodRestrictions={food[key].restrictions}
-													foodIsMeat={food[key].ismeat}
-													foodNotes = {food[key].notes}
-													key={key}
-												/>
-											)
+											// Warly filter: show only warly foods
+											case 'yes': {
+												if(this.state.containsMeat === 'either') {
+													if(food[key].warly === true) {
+														return(foodCardJSX);
+													}													
+												} else {
+													if(this.state.containsMeat === 'yes') {
+														if((food[key].ismeat === true) && (food[key].warly === true)) return(foodCardJSX)
+													} else {
+														if((food[key].ismeat === false) && (food[key].warly === true)) return(foodCardJSX)
+													}
+												}
+												break;
+											}
+
+											// Warly filter: show only non-warly foods
+											case 'no': {
+												if(this.state.containsMeat === 'either') {
+													if(food[key].warly === false) {
+														return(foodCardJSX);
+													}													
+												} else {
+													if(this.state.containsMeat === 'yes') {
+														if((food[key].ismeat === true) && (food[key].warly === false)) return(foodCardJSX)
+													} else {
+														if((food[key].ismeat === false) && (food[key].warly === false)) return(foodCardJSX)
+													}
+												}
+												break;
+											}
 										}
+									} else {
+										// fallback for when object does not match search query
+										return;
 									}
 								}
-							)}
+							)
+					
+						}
 
 					</div>
 				</div>

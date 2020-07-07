@@ -102,7 +102,7 @@ class Card extends React.Component {
 
 		return(
 
-			<div className="food-card">
+			<div className="food-card" onClick={this.props.cardClicked}>
 				<div className="row-top">
 
 					<div className="row-half row-left">

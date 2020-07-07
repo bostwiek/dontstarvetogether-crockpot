@@ -358,13 +358,13 @@
 	"warly": true
   },
   {
-    "name": "Grim Gallete",
+    "name": "Grim Galette",
     "hp": 1,
     "hunger": 25,
     "sanity": 5,
 	"rot": 10,
 	"ismeat": false,
-	"img": "./images/crockpot/grimgallete.png",
+	"img": "./images/crockpot/grimgalette.png",
 	"recipes": [
 		["nightmarefuel", "nightmarefuel", "onion", "potato"]
 	],
