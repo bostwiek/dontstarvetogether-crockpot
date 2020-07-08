@@ -525,8 +525,9 @@ header {
 		font-size: 20px;
 		line-height: 24px;
 	}
-	.food-card-overlay {
+	.overlay-container .food-card-overlay {
 		top: 1vh;
+		min-height: 400px;
 	}
 	.food-card-overlay .food-name {
 		font-size: 48px;

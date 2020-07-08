@@ -25,7 +25,7 @@ class Main extends React.Component {
 			sortBy: 'alpha-desc',
 			containsMeat: 'either',
 			warlyRecipes: 'either',
-			showOverlay: true
+			showOverlay: false
 		}
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
