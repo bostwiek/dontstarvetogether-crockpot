@@ -5,6 +5,8 @@ import iconHunger from './images/icons/hunger.png'
 import iconSanity from './images/icons/sanity.png'
 import iconRot from './images/icons/rot.png'
 import iconDonot from './images/icons/donot.png'
+import iconFavorite from './images/icons/heart.png'
+import iconAsterisk from './images/icons/asterisk.png'
 
 import imgFrame from './images/ingredients/frame.png'
 
@@ -133,12 +135,21 @@ class Overlay extends React.Component {
 						<div className="overlay-spacer"></div>
 
 						<div className="row portrait-row">
-							<div className="warly-icon">
-								<img src={warlyPortrait} alt="Warly icon" />
+							
+							<div className="warly-icon-container">
+								<div className="warly-icon">
+									<img src={warlyPortrait} alt="Warly icon" />
+								</div>
+								<img src={iconAsterisk} className="asterisk-icon" alt="Asterisk icon" />
 							</div>
-							<div className="favorite-food-icon">
-								<img src={require(`./images/portraits/Wilson_Portrait.png`)} alt="Wilson icon" />
+
+							<div className="favorite-food-container">
+								<div className="favorite-food-icon">
+									<img src={require(`./images/portraits/Wilson_Portrait.png`)} alt="Wilson icon" />
+								</div>
+								<img src={iconFavorite} className="favorite-icon" alt="Favorite icon" />
 							</div>
+
 						</div>
 
 					</div>

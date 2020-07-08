@@ -5,6 +5,7 @@ import iconHunger from './images/icons/hunger.png'
 import iconSanity from './images/icons/sanity.png'
 import iconRot from './images/icons/rot.png'
 import iconDonot from './images/icons/donot.png'
+import iconFavorite from './images/icons/heart.png'
 
 import imgFrame from './images/ingredients/frame.png'
 
@@ -28,14 +29,10 @@ class Card extends React.Component {
 		} else {
 
 			const items = [];
-			let i = 0;
-			let displayClass;
 
 			for (const [key, value] of recipes.entries()) {
-				i++;
-				if(i > 1) displayClass = 'ingredient-row-hide';
 				items.push(
-					<div key={key} className={displayClass}>
+					<div key={key}>
 						<div className="ingredient-icon" style={frameStyle}>
 							<img src={require(`./images/ingredients/${value[0]}.png`)} alt={value[0]} />
 						</div>
@@ -167,9 +164,9 @@ class Card extends React.Component {
 					{this.checkFoodRestrictions(this.props.foodRestrictions)}
 				</div>
 
-				<div className="row-bot text-left">
+				{/* <div className="row-bot text-left">
 					<span className="food-notes">{this.props.foodNotes}</span>
-				</div>
+				</div> */}
 
 			</div>
 		)
