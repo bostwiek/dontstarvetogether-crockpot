@@ -492,8 +492,8 @@ header {
 	}
 	.food-card {
 		width: 130px;
-		height: 328px;
-		max-height: 408px;
+		height: 228px;
+		max-height: 308px;
 	}
 	.food-name {
 		font-size: 24px;
@@ -532,7 +532,7 @@ header {
 	}
 	.food-card-overlay .food-icon-value {
 		font-size: 32px;
-		top: 10px;
+		top: 12px;
 		left: 0;
 	}
 	.food-card-overlay .food-icon img {
