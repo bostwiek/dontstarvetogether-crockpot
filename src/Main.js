@@ -25,7 +25,7 @@ class Main extends React.Component {
 			sortBy: 'alpha-desc',
 			containsMeat: 'either',
 			warlyRecipes: 'either',
-			showOverlay: false
+			showOverlay: true
 		}
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
@@ -67,7 +67,7 @@ class Main extends React.Component {
 
 	//////////////////////////////
 	//													//
-	//			Card Functions			//
+	//			Click Functions			//
 	//													//
 	//////////////////////////////
 
@@ -129,7 +129,7 @@ class Main extends React.Component {
 					foodRecipes={["lesserglowberry", "lesserglowberry", "fruits", "any"]}
 					foodRestrictions={'twigs'}
 					foodIsMeat={true}
-					foodNotes={'notes'}
+					foodNotes={'Very good for health recovery, butter is better on it\'s own though. Two sticks or monster meats recommended as fillers. Wobster must be alive. Maxwell\'s favorite dish.'}
 					cardClicked={this.cardClicked}
 					key={0}
 					visible={this.state.showOverlay}

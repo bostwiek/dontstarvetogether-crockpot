@@ -1,3 +1,9 @@
+/**************************
+*													*
+*		DOM & Macro classes		*
+*													*
+**************************/
+
 body {
 	font-family: 'Open Sans';
 	color: #000000;
@@ -11,6 +17,9 @@ body {
 .small-text {
 	font-size: 0.8em;
 	line-height: 0.8em;
+}
+.no-padding {
+	padding: 0 !important;
 }
 
 input#search-recipe, select {
@@ -30,6 +39,12 @@ select option {
 	color: #fff;
 	background-color: #000
 }
+
+/************************
+*												*
+*		Component Classes		*
+*												*
+************************/
 
 .bg {
 	position: fixed;
@@ -127,6 +142,12 @@ header {
 	text-align: left;
 }
 
+/********************
+*										*
+*			Food Card 		*
+*										*
+********************/
+
 .card-container {
 	display: block;
 	margin: 0 auto;
@@ -212,7 +233,7 @@ header {
 
 .food-icon-frame, .food-icon-donot, .food-icon-restriction {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
 }
 .food-icon-frame {
@@ -272,61 +293,125 @@ header {
 	line-height: 1em;
 }
 
+
+/************************
+*												*
+*			Overlay Card			*
+*												*
+************************/
+
 .overlay-container {
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 10000;
 	width: 100vw;
 	height: 100vh;
-	padding: 5%;
-	margin: 0;
+	margin: 0 auto;
 	box-sizing: border-box;
 }
 .food-card-overlay {
-	margin: 0 auto;
-	width: 90%;
-	max-width: 980px;
-	height: 90%;
-	max-height: 980px;
+	width: 80%;
+	min-width: 300px;
+	max-width: 440px;
+	height: 90vh;
+	max-height: 1080px;
+	margin: 5vh auto 0;
 	background-color: #ffffff;
+	max-height: 100vh; /* this could cause issues later */
+}
+.food-card-overlay .overlay-spacer {
+	margin: 0;
+	padding: 0;
+	height: 4vh;
 }
 .food-card-overlay .food-img {
-	max-width: auto;
+	width: 100%;
+	max-width: 100px;
 }
 .food-card-overlay .food-name {
-	font-size: 64px;
+	font-size: 48px;
+}
+.food-card-overlay .food-icon-stats-row {
+	width: 220px;
+	margin: 0 auto;
+}
+.food-card-overlay .food-icon {
+	max-width: 100%;
+}
+.food-card-overlay .food-icon img {
+	width: 45px;
+}
+.food-card-overlay .food-icon-value {	
+	font-size: 30px;
 }
 .food-card-overlay .ingredient-container,
 .food-card-overlay .ingredient-restriction-container {
-	width: 80%;
-	max-width: 256px;
+	max-width: 220px;
 	margin: 0 auto;	
 }
 .food-card-overlay .ingredient-icon,
 .food-card-overlay .ingredient-restriction {
 	width: 25%;
 	height: 100%;
-	max-width: 64px;
-	max-height: 65px;
+	max-width: 50px;
+	max-height: 50px;
 }
 .food-card-overlay .ingredient-icon img {
 	width: 100%;
 	height: 100%;
-	max-width: 64px;
-	max-height: 65px;
+	max-width: 50px;
+	min-height: 50px;
+	max-height: 50px;
 }
 .food-card-overlay .ingredient-restriction-container {
-	width: 80%;
-	max-width: 256px;
+	display: flex;
+	width: auto;
+	max-width: 220px;
 	margin: 0 auto;	
 }
 .food-card-overlay .ingredient-restriction-container,
 .food-card-overlay .ingredient-restriction {
-	height: auto;
+	height: 100%;
+	min-height: 65px;
 }
+.food-card-overlay .ingredient-icon .food-icon-frame {
+	/* override from normal card css */
+	position: static;
+	width: 64px;
+	height: 65px;
+}
+.food-card-overlay .food-notes {
+	font-size: 1em;
+}
+.portrait-row {
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+	height: 50px;
+}
+.food-card-overlay .favorite-food-icon,
+.food-card-overlay .warly-icon {
+	position: absolute;
+	bottom: 0;
+}
+.food-card-overlay .favorite-food-icon {
+	right: 10px;
+}
+.food-card-overlay .warly-icon {
+	right: 60px;
+}
+.food-card-overlay .favorite-food-icon img,
+.food-card-overlay .warly-icon img {
+	width: 50px;
+}
+/**********************
+*											*
+*			Animations			*
+*											*
+**********************/
 
-
-
-/* animations */
 .animated-bg {
 	animation: animated-bg 60s linear infinite;
 }
@@ -359,7 +444,11 @@ header {
   transition: opacity 500ms ease-in;
 }
 
-/* Media */
+/********************
+*										*
+*			Viewport			*
+*										*
+********************/
 
 @media screen and (max-width: 575px) {
 	.logo-text {
@@ -405,9 +494,38 @@ header {
 	.food-card-overlay .food-name {
 		font-size: 48px;
 	}
+	.overlay-container {
+		top: 20px;
+		width: 90vw;
+		min-width: 300px;
+	}
+	.food-card-overlay .food-icon-value {
+		font-size: 32px;
+		top: 10px;
+		left: 0;
+	}
+	.food-card-overlay .food-icon img {
+		width: 42px;
+	}
+	.food-card-overlay .ingredient-icon,
+	.food-card-overlay .ingredient-icon img,
+	.food-card-overlay .ingredient-restriction,
+	.food-card-overlay .ingredient-restriction img {
+		min-width: 54px;
+		min-height: 54px;
+	}
+	.food-card-overlay .ingredient-icon .food-icon-frame {
+		width: auto;
+		height: 54px;
+	}
 }
 
-		/* bootstrap override for desktop web: */
+/**************************
+*													*
+*		Bootstrap Overrides		*
+*													*
+**************************/
+
 @media (min-width: 1200px) {
 	body .container, .container-lg, .container-md, .container-sm, .container-xl {
 		max-width: 80%;

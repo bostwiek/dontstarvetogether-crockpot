@@ -907,8 +907,8 @@
 	"ismeat": true,
 	"img": "./images/crockpot/turkeydinner.png",
 	"recipes": [
-		["drumstick", "drumstick", "meats", "veggies"],
-		["drumstick", "drumstick", "meats", "fruits"]
+		["drumstick", "drumstick", "meats", "any"],
+		["drumstick", "drumstick", "monstermeat", "berries"]
 	],
 	"restrictions": [
 		"egg", "honey", "electricmilk", "twigs"
