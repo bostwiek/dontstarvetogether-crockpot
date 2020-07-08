@@ -491,13 +491,11 @@ header {
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.food-card-overlay {
+		top: 1vh;
+	}
 	.food-card-overlay .food-name {
 		font-size: 48px;
-	}
-	.overlay-container {
-		top: 20px;
-		width: 90vw;
-		min-width: 300px;
 	}
 	.food-card-overlay .food-icon-value {
 		font-size: 32px;
