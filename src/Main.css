@@ -312,15 +312,15 @@ header {
 	box-sizing: border-box;
 	background-color: rgba(0,0,0,0.75)
 }
-.food-card-overlay {
+.overlay-container .food-card-overlay {
 	position: relative;
 	width: 80%;
 	min-width: 300px;
 	max-width: 440px;
+	min-height: 600px;
 	max-height: 1080px;
 	margin: 5vh auto 0;
 	background-color: #ffffff;
-	max-height: 100vh; /* this could cause issues later */
 	padding-bottom: 60px;
 }
 .food-card-overlay .overlay-spacer {
@@ -521,7 +521,8 @@ header {
 		height: auto;
 	}
 	.food-icon-value {
-		font-size: 16px;
+		top: 4px;
+		font-size: 20px;
 		line-height: 24px;
 	}
 	.food-card-overlay {
