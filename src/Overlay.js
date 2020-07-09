@@ -18,16 +18,125 @@ const frameStyle = {
 }
 
 class Overlay extends React.Component {
+	
+	////////////////////////////
+	//												//
+	//	Ingredients Go Here 	//
+	//												//
+	////////////////////////////
+
+	checkRecipes = (recipes) => {
+
+		if(!recipes) {
+			return;
+		} else {
+
+			const items = [];
+
+			for (const [key, value] of recipes.entries()) {
+				items.push(
+					<div className="row ingredient-container" key={key}>
+						<div className="col-3 ingredient-icon" style={frameStyle}>
+							<img src={require(`./images/ingredients/${value[0]}.png`)} alt={value[0]} />
+						</div>
+						<div className="col-3 ingredient-icon" style={frameStyle}>
+							<img src={require(`./images/ingredients/${value[1]}.png`)} alt={value[1]} />
+						</div>
+						<div className="col-3 ingredient-icon" style={frameStyle}>
+							<img src={require(`./images/ingredients/${value[2]}.png`)} alt={value[2]} />
+						</div>
+						<div className="col-3 ingredient-icon" style={frameStyle}>
+							<img src={require(`./images/ingredients/${value[3]}.png`)} alt={value[3]} />
+						</div>
+					</div>
+				)
+			}
+			return(
+				<>
+					{items}
+				</>
+			)
+		}
+	}
+
+
+	////////////////////////////
+	//												//
+	//	Recipe Restrictions 	//
+	//												//
+	////////////////////////////
+
+	checkFoodRestrictions = (foodRestrictions) => {
+
+		if(!foodRestrictions || foodRestrictions[0] === 'none') {
+			return;
+		} else {
+
+			const items = [];
+
+			for (const [key, value] of foodRestrictions.entries()) {
+				items.push(
+					<div className="col-3 ingredient-restriction" key={key}>
+						<img src={imgFrame} className="food-icon-frame" alt="frame" />
+						<img src={iconDonot} className="food-icon-donot" alt="restriction icon" />
+						<img src={require(`./images/ingredients/${value}.png`)} className="food-icon-restriction" alt={value} />
+					</div>
+				)
+			}
+			return(
+				<>
+					{items}
+				</>
+			)
+		}
+	}
+
+	////////////////////////////////
+	//														//
+	//			Favorite Dish +   		//
+	//	Warly Recipe containers		//
+	//														//
+	////////////////////////////////
+
+	checkFavoriteFood = (favoriteSurvivor) => {
+		if(favoriteSurvivor !== '') {
+			return(
+				<div className="favorite-food-container">
+					<div className="favorite-food-icon">
+						<img src={require(`./images/portraits/${favoriteSurvivor}_Portrait.png`)} alt={favoriteSurvivor} />
+					</div>
+					<img src={iconFavorite} className="favorite-icon" alt="Favorite icon" />
+				</div>
+			)
+		}
+	}
+
+	checkWarlyRecipe = (warlyFood) => {
+		
+		if(warlyFood === true) {
+			return(
+				<div className="warly-icon-container">
+					<div className="warly-icon">
+						<img src={warlyPortrait} alt="Warly icon" />
+					</div>
+					<img src={iconAsterisk} className="asterisk-icon" alt="Asterisk icon" />
+				</div>
+			)
+		}
+
+	}
+
+
 
 	render() {
 
 		if(this.props.visible !== false) {
 
 			return(
+
 				<div className="overlay-container" onClick={this.props.cardClicked}>
-					<div className="food-card-overlay container">
 
-
+					<div className="food-card-overlay container" onClick={()=>{return false;}}>
 						<div className="row">
 							<div className="col">
 								<div className="food-name">{this.props.foodName}</div>
@@ -82,49 +191,17 @@ class Overlay extends React.Component {
 
 						<div className="overlay-spacer"></div>
 
-						<div className="row ingredient-container">
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[0]}.png`)} alt={this.props.foodRecipes[0]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[1]}.png`)} alt={this.props.foodRecipes[1]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[2]}.png`)} alt={this.props.foodRecipes[2]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[3]}.png`)} alt={this.props.foodRecipes[3]} />
-							</div>
-						</div>
-
-						<div className="row ingredient-container">
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[0]}.png`)} alt={this.props.foodRecipes[0]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[1]}.png`)} alt={this.props.foodRecipes[1]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[2]}.png`)} alt={this.props.foodRecipes[2]} />
-							</div>
-							<div className="col-3 ingredient-icon" style={frameStyle}>
-								<img src={require(`./images/ingredients/${this.props.foodRecipes[3]}.png`)} alt={this.props.foodRecipes[3]} />
-							</div>
-						</div>
-
+						{this.checkRecipes(this.props.foodRecipes)}
+							
 						<div className="row ingredient-restriction-container">
-							<div className="ingredient-icon col-3">
-								<img src={imgFrame} className="food-icon-frame" alt="frame" />
-								<img src={iconDonot} className="food-icon-donot" alt="restriction icon" />
-								<img src={require(`./images/ingredients/${this.props.foodRestrictions}.png`)} className="food-icon-restriction" alt={this.props.foodRestrictions} />
-							</div>
+							{this.checkFoodRestrictions(this.props.foodRestrictions)}
 						</div>
-
+						
 						<div className="overlay-spacer"></div>
 
 						<div className="row">
 							<div className="col-1"></div>
-							<div className="col-10">
+							<div className="col-10 notes-container">
 								<span className="food-notes">
 									{this.props.foodNotes}
 								</span>
@@ -135,20 +212,10 @@ class Overlay extends React.Component {
 						<div className="overlay-spacer"></div>
 
 						<div className="row portrait-row">
-							
-							<div className="warly-icon-container">
-								<div className="warly-icon">
-									<img src={warlyPortrait} alt="Warly icon" />
-								</div>
-								<img src={iconAsterisk} className="asterisk-icon" alt="Asterisk icon" />
-							</div>
 
-							<div className="favorite-food-container">
-								<div className="favorite-food-icon">
-									<img src={require(`./images/portraits/Wilson_Portrait.png`)} alt="Wilson icon" />
-								</div>
-								<img src={iconFavorite} className="favorite-icon" alt="Favorite icon" />
-							</div>
+							{this.checkFavoriteFood(this.props.foodFavorite)}}
+
+							{this.checkWarlyRecipe(this.props.foodWarly)}
 
 						</div>
 

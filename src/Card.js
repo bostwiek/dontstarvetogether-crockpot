@@ -97,9 +97,12 @@ class Card extends React.Component {
 		let foodNameClass;
 		(this.props.foodName.length > 18) ? foodNameClass = 'small-text' : foodNameClass = '';
 
+		let cardID = 'food-card-' + this.props.keyValue;
+
 		return(
 
-			<div className="food-card" onClick={this.props.cardClicked}>
+			<div className="food-card">
+				<div className="food-card-cover" id={this.props.keyValue} onClick={this.props.cardClicked}></div>
 				<div className="row-top">
 
 					<div className="row-half row-left">
@@ -163,10 +166,6 @@ class Card extends React.Component {
 				<div className="row-bot text-right">
 					{this.checkFoodRestrictions(this.props.foodRestrictions)}
 				</div>
-
-				{/* <div className="row-bot text-left">
-					<span className="food-notes">{this.props.foodNotes}</span>
-				</div> */}
 
 			</div>
 		)

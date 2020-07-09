@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 import Card from './Card';
 
@@ -25,7 +26,8 @@ class Main extends React.Component {
 			sortBy: 'alpha-desc',
 			containsMeat: 'either',
 			warlyRecipes: 'either',
-			showOverlay: false
+			showOverlay: true,
+			currentRecipe: ''
 		}
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
@@ -71,8 +73,47 @@ class Main extends React.Component {
 	//													//
 	//////////////////////////////
 
-	cardClicked = () => {
+	cardClicked = e => {
+
 		this.setState({ showOverlay: !this.state.showOverlay });
+
+		let clickedID;
+		
+		if(e.target.id) {
+			clickedID = e.target.id;
+			ReactDOM.render(
+				<React.StrictMode>
+					<Overlay
+						foodName={food[clickedID].name}
+						foodImg={food[clickedID].img}
+						foodHp={food[clickedID].hp}
+						foodHunger={food[clickedID].hunger}
+						foodSanity={food[clickedID].sanity}
+						foodRot={food[clickedID].rot}
+						foodRecipes={food[clickedID].recipes}
+						foodRestrictions={food[clickedID].restrictions}
+						foodIsMeat={food[clickedID].ismeat}
+						foodNotes={food[clickedID].notes}
+						foodFavorite={food[clickedID].favorite}
+						foodWarly={food[clickedID].warly}
+						cardClicked={this.cardClicked}
+						key={food[clickedID]}
+						visible={this.state.showOverlay}
+					/>
+				</React.StrictMode>,
+				document.getElementById('overlay')
+			);
+		} else {
+			ReactDOM.render(
+				<React.StrictMode>
+					<Overlay
+						visible={this.state.showOverlay}
+					/>
+				</React.StrictMode>,
+				document.getElementById('overlay')
+			);
+		}
+
 	}
 
 	render() {
@@ -119,21 +160,7 @@ class Main extends React.Component {
 				<div className="bg animated-bg" style={bgStyle}></div>
 				<div className="bg-gradient"></div>
 				
-				<Overlay
-					foodName={'Fist Full of Jam'}
-					foodImg={'./images/crockpot/guacamole.png'}
-					foodHp={69}
-					foodHunger={420}
-					foodSanity={25}
-					foodRot={10}
-					foodRecipes={["lesserglowberry", "lesserglowberry", "fruits", "any"]}
-					foodRestrictions={'twigs'}
-					foodIsMeat={true}
-					foodNotes={'Very good for health recovery, butter is better on it\'s own though. Two sticks or monster meats recommended as fillers. Wobster must be alive. Maxwell\'s favorite dish.'}
-					cardClicked={this.cardClicked}
-					key={0}
-					visible={this.state.showOverlay}
-				/>
+				<div id="overlay"></div>
 
 				<header>
 					<div className="logo">
@@ -184,8 +211,8 @@ class Main extends React.Component {
 							<br />
 							<select id="warly-recipes" onChange={this.sortWarlyRecipes}>
 								<option value="either">Show</option>
-								<option value="yes">Only</option>
 								<option value="no">Hide</option>
+								<option value="yes">Only</option>
 							</select>
 						</div>
 
@@ -222,14 +249,18 @@ class Main extends React.Component {
 											foodIsMeat={food[key].ismeat}
 											foodNotes = {food[key].notes}
 											cardClicked={this.cardClicked}
+											keyValue={key}
 											key={key}
 										/>
 									);
-
 									
 									// checks SEARCH input first to filter out items
 									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
+										// we make it here if we have at LEAST one result
+
+										// clear state.recipes and previous array if new keys
+										
 										// Switch for Warly-specific, and Meat/non-meat-specific recipes
 										switch(this.state.warlyRecipes) {
 
@@ -280,7 +311,7 @@ class Main extends React.Component {
 											}
 										}
 									} else {
-										// fallback for when object does not match search query
+										// we end up here if there are 0 results for filters
 										return;
 									}
 								}
