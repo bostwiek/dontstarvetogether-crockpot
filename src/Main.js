@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Card from './Card';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import './Main.css';
+
+import Overlay from './Overlay';
+import Card from './Card';
 
 import food from './food';
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
-import Overlay from './Overlay';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -26,8 +26,7 @@ class Main extends React.Component {
 			sortBy: 'alpha-desc',
 			containsMeat: 'either',
 			warlyRecipes: 'either',
-			showOverlay: true,
-			currentRecipe: ''
+			showOverlay: true
 		}
 		this.searchUpdate = this.searchUpdate.bind(this);
 		this.sortByUpdate = this.sortByUpdate.bind(this);
@@ -76,11 +75,9 @@ class Main extends React.Component {
 	cardClicked = e => {
 
 		this.setState({ showOverlay: !this.state.showOverlay });
-
-		let clickedID;
 		
 		if(e.target.id) {
-			clickedID = e.target.id;
+			let clickedID = e.target.id;
 			ReactDOM.render(
 				<React.StrictMode>
 					<Overlay
@@ -96,9 +93,9 @@ class Main extends React.Component {
 						foodNotes={food[clickedID].notes}
 						foodFavorite={food[clickedID].favorite}
 						foodWarly={food[clickedID].warly}
+						visible={this.state.showOverlay}
 						cardClicked={this.cardClicked}
 						key={food[clickedID]}
-						visible={this.state.showOverlay}
 					/>
 				</React.StrictMode>,
 				document.getElementById('overlay')
@@ -179,24 +176,33 @@ class Main extends React.Component {
 					</div>
 
 					<div className="food-category-container">
-						<div className="food-category float-left">
-							<span>Sort By...</span>
-							<br />
-							<select id="sort-by" onChange={this.sortByUpdate}>
-								<option value="alpha-desc">Alphabetically A to Z</option>
-								<option value="alpha-asc">Alphabetically Z to A</option>
-								<option value="hunger-desc">Hunger (descending)</option>
-								<option value="hunger-asc">Hunger (ascending)</option>
-								<option value="health-desc">Health (descending)</option>
-								<option value="health-asc">Health (ascending)</option>
-								<option value="sanity-desc">Sanity (descending)</option>
-								<option value="sanity-asc">Sanity (ascending)</option>
-								<option value="rot-desc">Spoil Time (descending)</option>
-								<option value="rot-asc">Spoil Time (ascending)</option>
-							</select>
-						</div>
 
-						<div className="food-category">
+							{/* 
+							********************************************************************
+								This breaks what card displays, disabling for now:
+										short explanation - rearranging changes the item in
+										spot 1 but not the object in 1st spot of array in food.json
+							********************************************************************
+
+								<div className="food-category float-left">
+									<span>Sort By...</span>
+									<br />
+									<select id="sort-by" onChange={this.sortByUpdate}>
+										<option value="alpha-desc">Alphabetically A to Z</option>
+										<option value="alpha-asc">Alphabetically Z to A</option>
+										<option value="hunger-desc">Hunger (descending)</option>
+										<option value="hunger-asc">Hunger (ascending)</option>
+										<option value="health-desc">Health (descending)</option>
+										<option value="health-asc">Health (ascending)</option>
+										<option value="sanity-desc">Sanity (descending)</option>
+										<option value="sanity-asc">Sanity (ascending)</option>
+										<option value="rot-desc">Spoil Time (descending)</option>
+										<option value="rot-asc">Spoil Time (ascending)</option>
+									</select>
+								</div>
+								*/}
+
+						<div className="food-category float-left">
 							<span>Contains Meat</span>
 							<br />
 							<select id="contains-meat" onChange={this.sortContainsMeat}>
@@ -313,7 +319,7 @@ class Main extends React.Component {
 									} else {
 										// we end up here if there are 0 results for filters
 										return;
-									}
+									} return;
 								}
 							)
 					

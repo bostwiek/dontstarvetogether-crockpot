@@ -26,7 +26,7 @@
 		"ismeat": false,
 			"img": "./images/crockpot/asparagazpacho.png",
 		"recipes": [
-			["asparagus", "veggies", "any", "any"],
+			["asparagus", "vegetables", "any", "any"],
 			["asparagus", "carrot", "redcap", "redcap"]
 		],
 		"restrictions": [],
@@ -47,11 +47,68 @@
 			["morsel", "monstermeat", "tallbirdegg", "any"]
 		],
 		"restrictions": [
-			"veggies"
+			"vegetables"
 		],
 		"notes": "Decent all round food with high stats and rot time. Wilson's favorite dish.",
 		"warly": false,
 		"favorite": "Wilson"
+  },
+  {
+		"name": "Barnacle Linguine",
+		"hp": 10,
+		"hunger": 75,
+		"sanity": 20,
+		"rot": 6,
+		"ismeat": true,
+			"img": "./images/crockpot/barnaclelinguine.png",
+		"recipes": [
+			["barnacle", "barnacle", "vegetables", "vegetables"],
+			["barnacle", "barnacle", "carrot", "redcap"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Decent stats aside from a short spoil time.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"name": "Barnacle Nigiri",
+		"hp": 40,
+		"hunger": 37.5,
+		"sanity": 5,
+		"rot": 10,
+		"ismeat": true,
+			"img": "./images/crockpot/barnaclenigiri.png",
+		"recipes": [
+			["barnacle", "seaweed", "egg", "any"],
+			["barnacle", "seaweed", "egg", "ice"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Pierogies with harder to obtain ingredients, and a shorter spoil time. I honestly have no idea if you can cook these with twigs - need to test.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"name": "Barnacle Pita",
+		"hp": 20,
+		"hunger": 37.5,
+		"sanity": 5,
+		"rot": 15,
+		"ismeat": true,
+			"img": "./images/crockpot/barnaclepita.png",
+		"recipes": [
+			["barnacle", "vegetables", "any", "any"],
+			["barnacle", "vegetables", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Klei copied the stats for Butter Muffin, and swapped Butterfly Wings for Barnacles. Contains meat, so it's a butter muffin Wigfrid can eat.",
+		"warly": false,
+		"favorite": ""
   },
   {
 		"name": "Banana Pop",
@@ -73,6 +130,25 @@
 		"favorite": "Wendy"
   },
   {
+	"name": "Beefy Greens",
+		"hp": 40,
+		"hunger": 75,
+		"sanity": 5,
+		"rot": 6,
+		"ismeat": true,
+			"img": "./images/crockpot/beefygreens.png",
+		"recipes": [
+			["leafymeat", "vegetables", "vegetables", "vegetables"],
+			["leafymeat", "lichen", "carrot", "redcap"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Great stats aside from the short spoil time. Contains meat.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
 	"name": "Bone Bouillon",
 		"hp": 32,
 		"hunger": 150,
@@ -87,11 +163,10 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Excellent hunger and health recovery dish if you have the bone shards. Bonus points for cannibalism! Warly-specific.",
+		"notes": "Excellent hunger and health recovery dish if you have extra bone shards and an onion. Bonus points for cannibalism! Warly-specific.",
 		"warly": true,
 		"favorite": ""
-  },
-  
+  },  
   {
 		"name": "Butter Muffin",
 		"hp": 20,
@@ -101,7 +176,7 @@
 		"ismeat": false,
 			"img": "./images/crockpot/buttermuffin.png",
 		"recipes": [
-			["butterflywings", "veggies", "any", "any"],
+			["butterflywings", "vegetables", "any", "any"],
 			["butterflywings", "redcap", "twigs", "twigs"]
 		],
 		"restrictions": [
@@ -277,7 +352,7 @@
 			["berries", "berries", "berries", "berries"]
 		],
 		"restrictions": [
-			"meats", "veggies", "twigs"
+			"meats", "vegetables", "twigs"
 		],
 		"notes": "Low value food. Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this.",
 		"warly": false,
@@ -292,7 +367,7 @@
 		"ismeat": false,
 			"img": "./images/crockpot/flowersalad.png",
 		"recipes": [
-			["cactusflower", "veggies", "any", "any"]
+			["cactusflower", "vegetables", "any", "any"]
 		],
 		"restrictions": [
 			"meats", "fruits", "egg", "twigs", "honey"
@@ -329,7 +404,7 @@
 		"ismeat": true,
 			"img": "./images/crockpot/froggiebunwich.png",
 		"recipes": [
-			["froglegs", "veggies", "any", "any"],
+			["froglegs", "vegetables", "any", "any"],
 			["froglegs", "carrot", "twigs", "twigs"]
 		],
 		"restrictions": [
@@ -352,9 +427,9 @@
 			["durian", "durian", "durian", "twigs"]
 		],
 		"restrictions": [
-			"dragonfruit", "meats", "veggies"
+			"dragonfruit", "meats", "vegetables"
 		],
-		"notes": "Low value food, do note cook this.",
+		"notes": "Low value food, avoid cooking unless you're desperate for health.",
 		"warly": false,
 		"favorite": ""
   },
@@ -482,7 +557,7 @@
 			["butter", "honey", "ice", "any"]
 		],
 		"restrictions": [
-			"meats", "egg", "veggies", "twigs"
+			"meats", "egg", "vegetables", "twigs"
 		],
 		"notes": "Best sanity recovery item in the game, low stats across the board otherwise. Good use of electric milk. Webber's favorite dish.",
 		"warly": false,
@@ -508,6 +583,25 @@
 		"favorite": ""
   },
   {
+		"name": "Jelly Salad",
+		"hp": 0,
+		"hunger": 37.5,
+		"sanity": 50,
+		"rot": 6,
+		"ismeat": true,
+			"img": "./images/crockpot/jellysalad.png",
+		"recipes": [
+			["leafymeat", "leafymeat", "honey", "honey"],
+			["leafymeat", "leafymeat", "royaljelly", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Exceptional recipe for sanity recovery, Wickerbottom mains rejoice.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
 		"name": "Kabobs",
 		"hp": 3,
 		"hunger": 37.5,
@@ -523,6 +617,25 @@
 			"fishes", "moleworm", "twigs", "twigs"
 		],
 		"notes": "Low value food, do not cook this.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"name": "Leafy Meatloaf",
+		"hp": 8,
+		"hunger": 37.5,
+		"sanity": 5,
+		"rot": 20,
+		"ismeat": true,
+			"img": "./images/crockpot/leafymeatloaf.png",
+		"recipes": [
+			["leafymeat", "leafymeat", "any", "any"],
+			["leafymeat", "leafymeat", "any", "any"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Low value food with high priority, avoid cooking this. You get this for cooking 2 Leafy Meat for a meat recipe (Honey Ham, Meaty Stew, Bacon and Eggs, etc.).",
 		"warly": false,
 		"favorite": ""
   },
@@ -634,7 +747,7 @@
 			["watermelon", "ice", "twigs", "twigs"]
 		],
 		"restrictions": [
-			"meats", "veggies", "egg"
+			"meats", "vegetables", "egg"
 		],
 		"notes": "Low value food. Okay sanity restoration, poor stats otherwise.",
 		"warly": false,
@@ -706,7 +819,7 @@
 		"ismeat": true,
 			"img": "./images/crockpot/pierogi.png",
 		"recipes": [
-			["meats", "egg", "veggies", "any"],
+			["meats", "egg", "vegetables", "any"],
 			["monstermeat", "egg", "carrot", "ice"]
 		],
 		"restrictions": [
@@ -782,8 +895,8 @@
 		"ismeat": false,
 			"img": "./images/crockpot/ratatouille.png",
 		"recipes": [
-			["veggies", "any", "any", "any"],
-			["veggies", "ice", "ice", "ice"]
+			["vegetables", "any", "any", "any"],
+			["vegetables", "ice", "ice", "ice"]
 		],
 		"restrictions": [
 			"meats", "dragonfruit", "twigs", "butterflywings"
@@ -827,7 +940,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Make Surf 'n Turf instead. Requires 1.5x fish meat.",
+		"notes": "Make Surf 'n Turf instead. Requires 1.5x fish meat (Freshwater Fish are 0.5x).",
 		"warly": false,
 		"favorite": ""
   },
@@ -840,7 +953,7 @@
 		"ismeat": true,
 			"img": "./images/crockpot/spicychili.png",
 		"recipes": [
-			["meats", "meats", "veggies", "veggies"],
+			["meats", "meats", "vegetables", "vegetables"],
 			["monstermeat", "freshwaterfish", "lichen", "lichen"],
 		["monstermeat", "froglegs", "carrot", "carrot"]
 		],
@@ -860,7 +973,7 @@
 		"ismeat": false,
 			"img": "./images/crockpot/stuffedeggplant.png",
 		"recipes": [
-			["eggplant", "veggies", "any", "any"],
+			["eggplant", "vegetables", "any", "any"],
 			["eggplant", "lichen", "twigs", "twigs"],
 		["eggplant", "carrot", "berries", "berries"]
 		],
@@ -868,6 +981,25 @@
 			"none"
 		],
 		"notes": "Low value food, just cook and eat eggplant raw instead.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"name": "Stuffed Fish Heads",
+		"hp": 20,
+		"hunger": 75,
+		"sanity": 0,
+		"rot": 3,
+		"ismeat": true,
+			"img": "./images/crockpot/stuffedfishheads.png",
+		"recipes": [
+			["barnacle", "freshwaterfish", "freshwaterfish", "any"],
+			["barnacle", "eel", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Decent stats with the lowest spoil time in the game. 1.0 fish required (Freshwater Fish are 0.5x)",
 		"warly": false,
 		"favorite": ""
   },
@@ -942,7 +1074,7 @@
 
 		],
 		"restrictions": [
-			"meats", "veggies", "egg", "butter"
+			"meats", "vegetables", "egg", "butter"
 		],
 		"notes": "Great early-game health recovery food. Walter's favorite dish.",
 		"warly": false,
@@ -996,8 +1128,8 @@
 		"ismeat": false,
 			"img": "./images/crockpot/vegetablestinger.png",
 		"recipes": [
-			["asparagus", "veggies", "veggies", "ice"],
-			["toma", "veggies", "veggies", "ice"],
+			["asparagus", "vegetables", "vegetables", "ice"],
+			["toma", "vegetables", "vegetables", "ice"],
 		["asparagus", "carrot", "redcap", "ice"]
 		],
 		"restrictions": [
@@ -1006,6 +1138,25 @@
 		"notes": "Decent sanity restoration item with long rot time, probably best use of asparagus or toma. Winona's favorite dish.",
 		"warly": false,
 		"favorite": "Winona"
+  },
+  {
+		"name": "Veggie Burger",
+		"hp": 30,
+		"hunger": 37.5,
+		"sanity": 33,
+		"rot": 6,
+		"ismeat": true,
+			"img": "./images/crockpot/veggieburger.png",
+		"recipes": [
+			["leafymeat", "onion", "vegetables", "any"],
+			["leafymeat", "onion", "carrot", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Solid recovery item with a short spoil time. This somehow does actually contain meat.",
+		"warly": false,
+		"favorite": ""
   },
   {
 		"name": "Volt Goat Chaud-Froid",

@@ -110,7 +110,7 @@ header {
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	max-width: 500px;
+	max-width: 280px;
 	height: 120px;
 	color: #fff;
 }
@@ -330,11 +330,14 @@ header {
 	width: 80%;
 	min-width: 300px;
 	max-width: 440px;
-	min-height: 600px;
 	max-height: 1080px;
-	margin: 5vh auto 15px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-radius: 10px;
 	background-color: #ffffff;
-	padding-bottom: 60px;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .food-card-overlay .overlay-spacer {
 	margin: 0;
@@ -407,14 +410,19 @@ header {
 	font-size: 1em;
 }
 .portrait-row {
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+	height: 60px;
+	margin: 0 auto;
+}
+.portrait-container-abs {
 	position: absolute;
 	bottom: 10px;
 	left: 0;
 	right: 0;
 	width: 100%;
 	min-width: 300px;
-	height: 60px;
-	margin: 0 auto;
 }
 .food-card-overlay .favorite-food-container,
 .food-card-overlay .warly-icon-container {
@@ -546,11 +554,6 @@ header {
 		top: 4px;
 		font-size: 20px;
 		line-height: 24px;
-	}
-	.overlay-container .food-card-overlay {
-		top: 10px;
-		margin: 0 auto 10px;
-		min-height: 400px;
 	}
 	.food-card-overlay .food-name {
 		font-size: 48px;

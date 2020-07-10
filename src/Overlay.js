@@ -1,16 +1,14 @@
 import React from 'react'
 
+import OverlayBottom from './OverlayBottom'
+
 import iconHealth from './images/icons/health.png'
 import iconHunger from './images/icons/hunger.png'
 import iconSanity from './images/icons/sanity.png'
 import iconRot from './images/icons/rot.png'
 import iconDonot from './images/icons/donot.png'
-import iconFavorite from './images/icons/heart.png'
-import iconAsterisk from './images/icons/asterisk.png'
 
 import imgFrame from './images/ingredients/frame.png'
-
-import warlyPortrait from './images/portraits/Warly_Portrait.png'
 
 const frameStyle = {
 	backgroundSize: "cover",
@@ -90,43 +88,6 @@ class Overlay extends React.Component {
 			)
 		}
 	}
-
-	////////////////////////////////
-	//														//
-	//			Favorite Dish +   		//
-	//	Warly Recipe containers		//
-	//														//
-	////////////////////////////////
-
-	checkFavoriteFood = (favoriteSurvivor) => {
-		if(favoriteSurvivor !== '') {
-			return(
-				<div className="favorite-food-container">
-					<div className="favorite-food-icon">
-						<img src={require(`./images/portraits/${favoriteSurvivor}_Portrait.png`)} alt={favoriteSurvivor} />
-					</div>
-					<img src={iconFavorite} className="favorite-icon" alt="Favorite icon" />
-				</div>
-			)
-		}
-	}
-
-	checkWarlyRecipe = (warlyFood) => {
-		
-		if(warlyFood === true) {
-			return(
-				<div className="warly-icon-container">
-					<div className="warly-icon">
-						<img src={warlyPortrait} alt="Warly icon" />
-					</div>
-					<img src={iconAsterisk} className="asterisk-icon" alt="Asterisk icon" />
-				</div>
-			)
-		}
-
-	}
-
-
 
 	render() {
 
@@ -209,15 +170,10 @@ class Overlay extends React.Component {
 							<div className="col-1"></div>
 						</div>
 
-						<div className="overlay-spacer"></div>
-
-						<div className="row portrait-row">
-
-							{this.checkFavoriteFood(this.props.foodFavorite)}}
-
-							{this.checkWarlyRecipe(this.props.foodWarly)}
-
-						</div>
+						<OverlayBottom 
+							foodFavorite={this.props.foodFavorite}
+							foodWarly={this.props.foodWarly}
+						/>
 
 					</div>
 

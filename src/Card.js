@@ -5,7 +5,6 @@ import iconHunger from './images/icons/hunger.png'
 import iconSanity from './images/icons/sanity.png'
 import iconRot from './images/icons/rot.png'
 import iconDonot from './images/icons/donot.png'
-import iconFavorite from './images/icons/heart.png'
 
 import imgFrame from './images/ingredients/frame.png'
 
@@ -96,8 +95,6 @@ class Card extends React.Component {
 		//												(fixes some mobile viewport issues)
 		let foodNameClass;
 		(this.props.foodName.length > 18) ? foodNameClass = 'small-text' : foodNameClass = '';
-
-		let cardID = 'food-card-' + this.props.keyValue;
 
 		return(
 
