@@ -75,34 +75,41 @@ class Main extends React.Component {
 	//////////////////////////////
 
 	cardClicked = e => {
-
-		this.setState({ showOverlay: !this.state.showOverlay });
 		
 		if(e.target.id) {
 			let clickedID = e.target.id;
-			ReactDOM.render(
-				<React.StrictMode>
-					<Overlay
-						foodName={food[clickedID].name}
-						foodImg={food[clickedID].img}
-						foodHp={food[clickedID].hp}
-						foodHunger={food[clickedID].hunger}
-						foodSanity={food[clickedID].sanity}
-						foodRot={food[clickedID].rot}
-						foodRecipes={food[clickedID].recipes}
-						foodRestrictions={food[clickedID].restrictions}
-						foodIsMeat={food[clickedID].ismeat}
-						foodNotes={food[clickedID].notes}
-						foodFavorite={food[clickedID].favorite}
-						foodWarly={food[clickedID].warly}
-						visible={this.state.showOverlay}
-						cardClicked={this.cardClicked}
-						key={food[clickedID]}
-					/>
-				</React.StrictMode>,
-				document.getElementById('overlay')
-			);
+
+			// allows for scrolling on card overlay
+			if(clickedID !== 'food-overlay-cover') {
+
+				this.setState({ showOverlay: !this.state.showOverlay });
+
+				ReactDOM.render(
+					<React.StrictMode>
+						<Overlay
+							foodName={food[clickedID].name}
+							foodImg={food[clickedID].img}
+							foodHp={food[clickedID].hp}
+							foodHunger={food[clickedID].hunger}
+							foodSanity={food[clickedID].sanity}
+							foodRot={food[clickedID].rot}
+							foodRecipes={food[clickedID].recipes}
+							foodRestrictions={food[clickedID].restrictions}
+							foodIsMeat={food[clickedID].ismeat}
+							foodNotes={food[clickedID].notes}
+							foodFavorite={food[clickedID].favorite}
+							foodWarly={food[clickedID].warly}
+							visible={this.state.showOverlay}
+							cardClicked={this.cardClicked}
+							key={food[clickedID]}
+						/>
+					</React.StrictMode>,
+					document.getElementById('overlay')
+				);
+			}
 		} else {
+
+		this.setState({ showOverlay: !this.state.showOverlay });
 			ReactDOM.render(
 				<React.StrictMode>
 					<Overlay

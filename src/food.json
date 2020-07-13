@@ -11,10 +11,12 @@
 			["asparagus", "vegetables", "any", "any"],
 			["asparagus", "carrot", "redcap", "redcap"]
 		],
-		"restrictions": [],
-			"notes": "Gives immunity to overheating for 5 minutes. Warly-specific.",
-			"warly": true,
-			"favorite": ""
+		"restrictions": [
+			"none"
+		],
+		"notes": "Gives immunity to overheating for 5 minutes. Warly-specific.",
+		"warly": true,
+		"favorite": ""
   },
   {
 		"name": "Asparagus Soup",
@@ -463,7 +465,9 @@
 		"recipes": [
 			["nightmarefuel", "nightmarefuel", "onion", "potato"]
 		],
-		"restrictions": [],
+		"restrictions": [
+			"none"
+		],
 			"notes": "Swaps health and sanity values. Warly-specific.",
 			"warly": true,
 			"favorite": ""

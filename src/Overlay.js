@@ -66,7 +66,7 @@ class Overlay extends React.Component {
 
 	checkFoodRestrictions = (foodRestrictions) => {
 
-		if(!foodRestrictions || foodRestrictions[0] === 'none') {
+		if(foodRestrictions[0] === 'none') {
 			return;
 		} else {
 
@@ -82,9 +82,9 @@ class Overlay extends React.Component {
 				)
 			}
 			return(
-				<>
+				<div className="row ingredient-restriction-container">
 					{items}
-				</>
+				</div>
 			)
 		}
 	}
@@ -98,6 +98,7 @@ class Overlay extends React.Component {
 				<div className="overlay-container" onClick={this.props.cardClicked}>
 
 					<div className="food-card-overlay container">
+						<div id="food-overlay-cover"></div>
 						<div className="row">
 							<div className="col">
 								<div className="food-name">{this.props.foodName}</div>
@@ -156,9 +157,7 @@ class Overlay extends React.Component {
 
 						{this.checkRecipes(this.props.foodRecipes)}
 							
-						<div className="row ingredient-restriction-container">
-							{this.checkFoodRestrictions(this.props.foodRestrictions)}
-						</div>
+						{this.checkFoodRestrictions(this.props.foodRestrictions)}
 						
 						<div className="overlay-spacer"></div>
 
