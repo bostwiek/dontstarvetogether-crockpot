@@ -633,7 +633,7 @@ header {
 	}
 	.food-card-overlay .food-icon-value {
 		font-size: 24px;
-		top: 0px;
+		top: 4px;
 	}
 	.food-card-overlay .food-notes {
 		font-size: 0.8em;
