@@ -168,7 +168,7 @@ class Main extends React.Component {
 				
 				<CSSTransition
 					in={!this.state.showOverlay}
-					timeout={300}
+					timeout={250}
 					classNames="fade"
 				>
 					<div id="overlay"></div>
