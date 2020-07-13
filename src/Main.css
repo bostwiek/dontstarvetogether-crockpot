@@ -614,9 +614,10 @@ header {
 /* Mobile Landscape: */
 @media screen and (max-height: 575px) {
 	.overlay-container .food-card-overlay {
-		top: 10px;
+		top: 10%;
 		transform: translateY(0);
 		margin-bottom: 10px;
+		max-width: 320px;
 	}
 	.food-card-overlay .food-name {
 		font-size: 36px;
@@ -631,12 +632,29 @@ header {
 		width: 32px;
 	}
 	.food-card-overlay .food-icon-value {
-		font-size: 22px;
-		top: 6px;
+		font-size: 24px;
+		top: 0px;
 	}
 	.food-card-overlay .food-notes {
 		font-size: 0.8em;
 	}
+	.food-card-overlay .ingredient-container,
+	.food-card-overlay .ingredient-restriction-container {
+		max-width: 160px;
+		min-height: 40px;
+	}
+	.food-card-overlay .ingredient-icon,
+	.food-card-overlay .ingredient-restriction,
+	.food-card-overlay .ingredient-restriction img {
+		max-width: 40px;
+		max-height: 40px;
+	}
+	.food-card-overlay .ingredient-icon img {
+		max-width: 40px;
+		min-height: 40px;
+		max-height: 40px;
+	}
+	
 }
 
 /**************************
