@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { CSSTransition } from 'react-transition-group';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
@@ -7,6 +8,7 @@ import './Main.css';
 
 import Overlay from './Overlay';
 import Card from './Card';
+import Footer from './Footer';
 
 import food from './food';
 
@@ -157,12 +159,18 @@ class Main extends React.Component {
 				<div className="bg animated-bg" style={bgStyle}></div>
 				<div className="bg-gradient"></div>
 				
-				<div id="overlay"></div>
+				<CSSTransition
+					in={!this.state.showOverlay}
+					timeout={300}
+					classNames="fade"
+				>
+					<div id="overlay"></div>
+				</CSSTransition>
 
 				<header>
 					<div className="logo">
 						<span className="logo-subtext">Don't Starve Together</span>
-						<span className="logo-text">All Things Crockpot {this.state.showOverlay}</span>
+						<span className="logo-text">All Things Crockpot</span>
 						<img src={logo} alt='Crockpot Logo' />
 					</div>
 				</header>
@@ -264,8 +272,6 @@ class Main extends React.Component {
 									if(food[key].name.toLowerCase().includes(this.state.search.toLowerCase())){
 
 										// we make it here if we have at LEAST one result
-
-										// clear state.recipes and previous array if new keys
 										
 										// Switch for Warly-specific, and Meat/non-meat-specific recipes
 										switch(this.state.warlyRecipes) {
@@ -315,17 +321,22 @@ class Main extends React.Component {
 												}
 												break;
 											}
+
+											default: {
+												return false;
+											}
 										}
 									} else {
 										// we end up here if there are 0 results for filters
-										return;
-									} return;
+										return false;
+									} return false;
 								}
 							)
 					
 						}
 
 					</div>
+					<Footer />
 				</div>
 
 			</>

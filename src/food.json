@@ -1,5 +1,22 @@
 [
   {
+	"name": "Asparagazpacho",
+		"hp": 3,
+		"hunger": 25,
+		"sanity": 10,
+		"rot": 15,
+		"ismeat": false,
+			"img": "./images/crockpot/asparagazpacho.png",
+		"recipes": [
+			["asparagus", "vegetables", "any", "any"],
+			["asparagus", "carrot", "redcap", "redcap"]
+		],
+		"restrictions": [],
+			"notes": "Gives immunity to overheating for 5 minutes. Warly-specific.",
+			"warly": true,
+			"favorite": ""
+  },
+  {
 		"name": "Asparagus Soup",
 		"hp": 20,
 		"hunger": 18.75,
@@ -17,23 +34,6 @@
 		"warly": false,
 		"favorite": ""
 },
-  {
-	"name": "Asparagazpacho",
-		"hp": 3,
-		"hunger": 25,
-		"sanity": 10,
-		"rot": 15,
-		"ismeat": false,
-			"img": "./images/crockpot/asparagazpacho.png",
-		"recipes": [
-			["asparagus", "vegetables", "any", "any"],
-			["asparagus", "carrot", "redcap", "redcap"]
-		],
-		"restrictions": [],
-			"notes": "Gives immunity to overheating for 5 minutes. Warly-specific.",
-			"warly": true,
-			"favorite": ""
-  },
   {
 		"name": "Bacon and Eggs",
 		"hp": 20,

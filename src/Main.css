@@ -39,6 +39,12 @@ select option {
 	color: #fff;
 	background-color: #000
 }
+footer {
+	font-size: 0.8em;
+	text-align: center;
+	color: #fff;
+	padding: 15px 0;
+}
 
 /************************
 *												*
@@ -311,6 +317,10 @@ header {
 *												*
 ************************/
 
+#overlay {
+	position: relative;
+	z-index: 9999;
+}
 .overlay-container {
 	position: fixed;
 	top: 0;
@@ -404,7 +414,7 @@ header {
 }
 .food-card-overlay .notes-container {
 	padding: 15px 0;
-	margin: 0 auto;
+	margin: 15px auto;
 }
 .food-card-overlay .food-notes {
 	font-size: 1em;
@@ -489,19 +499,25 @@ header {
 	margin: 0;
 }
 
-.card-enter {
+.fade-enter {
   opacity: 0;
 }
-.card-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+.fade-enter-active {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
 }
-.card-exit {
+.fade-enter-done {
+	opacity: 1;
+}
+.fade-exit {
   opacity: 1;
 }
-.card-exit-active {
-  opacity: 0;
-  transition: opacity 500ms ease-in;
+.fade-exit-active {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
+}
+.fade-exit-done {
+	opacity: 0;
 }
 
 /********************
@@ -584,6 +600,17 @@ header {
 	.food-card-overlay .ingredient-restriction-container,
 	.food-card-overlay .ingredient-restriction {
 		min-height: 40px;
+	}
+}
+/* Mobile Landscape: */
+@media screen and (max-height: 575px) {
+	.overlay-container .food-card-overlay {
+		top: 10px;
+		transform: translateY(0);
+		margin-bottom: 10px;
+	}
+	.food-card-overlay .food-notes {
+		font-size: 0.8em;
 	}
 }
 
