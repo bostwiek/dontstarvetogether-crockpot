@@ -10,7 +10,7 @@ class OverlayBottom extends React.Component {
 	
 	////////////////////////////////
 	//														//
-	//			Favorite Dish +   		//
+	//			Favorite Dish +				//
 	//	Warly Recipe containers		//
 	//														//
 	////////////////////////////////

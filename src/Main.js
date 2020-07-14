@@ -11,6 +11,7 @@ import Card from './Card';
 import Footer from './Footer';
 
 import food from './food';
+import foodUnsorted from './foodUnsorted';
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
@@ -80,28 +81,30 @@ class Main extends React.Component {
 			let clickedID = e.target.id;
 
 			// allows for scrolling on card overlay
-			if(clickedID !== 'food-overlay-cover') {
+			if(clickedID >= 0) {
 
 				this.setState({ showOverlay: !this.state.showOverlay });
 
+				// pulling from foodUnsorted to display proper recipe if
+				// sort by function has been used [based on array key / id clicked]
 				ReactDOM.render(
 					<React.StrictMode>
 						<Overlay
-							foodName={food[clickedID].name}
-							foodImg={food[clickedID].img}
-							foodHp={food[clickedID].hp}
-							foodHunger={food[clickedID].hunger}
-							foodSanity={food[clickedID].sanity}
-							foodRot={food[clickedID].rot}
-							foodRecipes={food[clickedID].recipes}
-							foodRestrictions={food[clickedID].restrictions}
-							foodIsMeat={food[clickedID].ismeat}
-							foodNotes={food[clickedID].notes}
-							foodFavorite={food[clickedID].favorite}
-							foodWarly={food[clickedID].warly}
+							foodName={foodUnsorted[clickedID].name}
+							foodImg={foodUnsorted[clickedID].img}
+							foodHp={foodUnsorted[clickedID].hp}
+							foodHunger={foodUnsorted[clickedID].hunger}
+							foodSanity={foodUnsorted[clickedID].sanity}
+							foodRot={foodUnsorted[clickedID].rot}
+							foodRecipes={foodUnsorted[clickedID].recipes}
+							foodRestrictions={foodUnsorted[clickedID].restrictions}
+							foodIsMeat={foodUnsorted[clickedID].ismeat}
+							foodNotes={foodUnsorted[clickedID].notes}
+							foodFavorite={foodUnsorted[clickedID].favorite}
+							foodWarly={foodUnsorted[clickedID].warly}
 							visible={this.state.showOverlay}
 							cardClicked={this.cardClicked}
-							key={food[clickedID]}
+							key={foodUnsorted[clickedID]}
 						/>
 					</React.StrictMode>,
 					document.getElementById('overlay')
@@ -186,36 +189,35 @@ class Main extends React.Component {
 
 					<div className="search-container">						
 						<div className="input-group">
-							<input type="text" maxLength="99" id="search-recipe" className="form-control" placeholder="Search..." onChange={this.searchUpdate} />
+							<input
+								type="text"
+								maxLength="99"
+								id="search-recipe"
+								className="form-control"
+								placeholder="Search..."
+								onChange={this.searchUpdate}
+							/>
 						</div>
 					</div>
 
 					<div className="food-category-container">
 
-							{/* 
-							********************************************************************
-								This breaks what card displays, disabling for now:
-										short explanation - rearranging changes the item in
-										spot 1 but not the object in 1st spot of array in food.json
-							********************************************************************
-
-								<div className="food-category float-left">
-									<span>Sort By...</span>
-									<br />
-									<select id="sort-by" onChange={this.sortByUpdate}>
-										<option value="alpha-desc">Alphabetically A to Z</option>
-										<option value="alpha-asc">Alphabetically Z to A</option>
-										<option value="hunger-desc">Hunger (descending)</option>
-										<option value="hunger-asc">Hunger (ascending)</option>
-										<option value="health-desc">Health (descending)</option>
-										<option value="health-asc">Health (ascending)</option>
-										<option value="sanity-desc">Sanity (descending)</option>
-										<option value="sanity-asc">Sanity (ascending)</option>
-										<option value="rot-desc">Spoil Time (descending)</option>
-										<option value="rot-asc">Spoil Time (ascending)</option>
-									</select>
-								</div>
-								*/}
+						<div className="food-category">
+							<span>Sort By...</span>
+							<br />
+							<select id="sort-by" onChange={this.sortByUpdate}>
+								<option value="alpha-desc">Alphabetically A to Z</option>
+								<option value="alpha-asc">Alphabetically Z to A</option>
+								<option value="hunger-desc">Hunger (descending)</option>
+								<option value="hunger-asc">Hunger (ascending)</option>
+								<option value="health-desc">Health (descending)</option>
+								<option value="health-asc">Health (ascending)</option>
+								<option value="sanity-desc">Sanity (descending)</option>
+								<option value="sanity-asc">Sanity (ascending)</option>
+								<option value="rot-desc">Spoil Time (descending)</option>
+								<option value="rot-asc">Spoil Time (ascending)</option>
+							</select>
+						</div>
 
 						<div className="food-category float-left">
 							<span>Contains Meat</span>
@@ -269,8 +271,8 @@ class Main extends React.Component {
 											foodRestrictions={food[key].restrictions}
 											foodIsMeat={food[key].ismeat}
 											foodNotes = {food[key].notes}
+											foodID={food[key].id}
 											cardClicked={this.cardClicked}
-											keyValue={key}
 											key={key}
 										/>
 									);

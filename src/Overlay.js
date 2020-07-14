@@ -133,7 +133,7 @@ class Overlay extends React.Component {
 									<div className="row">
 										<div className="col-6 food-icon-container no-padding">
 											<div className="food-icon">
-												<img src={iconSanity} alt="Sanity Icon"  />
+												<img src={iconSanity} alt="Sanity Icon" />
 												<span className="food-icon-value">
 													{this.props.foodSanity}
 												</span>
@@ -141,7 +141,7 @@ class Overlay extends React.Component {
 										</div>
 										<div className="col-6 food-icon-container no-padding">
 											<div className="food-icon">
-												<img src={iconRot} alt="Rot Icon"  />
+												<img src={iconRot} alt="Rot Icon" />
 												<span className="food-icon-value">
 													{this.props.foodRot}
 												</span>
@@ -162,13 +162,13 @@ class Overlay extends React.Component {
 						<div className="overlay-spacer"></div>
 
 						<div className="row">
-							<div className="col-1 no-padding"></div>
-							<div className="col-10 notes-container no-padding">
+							<div className="col-2 no-padding"></div>
+							<div className="col-8 notes-container">
 								<span className="food-notes">
 									{this.props.foodNotes}
 								</span>
 							</div>
-							<div className="col-1 no-padding"></div>
+							<div className="col-2 no-padding"></div>
 						</div>
 
 						<OverlayBottom 

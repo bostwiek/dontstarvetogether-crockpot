@@ -425,9 +425,11 @@ header {
 	height: 65px;
 }
 .food-card-overlay .notes-container {
-	padding: 15px 0;
+	padding: 10px 0;
 	margin: 15px auto;
 	max-width: 320px;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #e0e0e0;
 }
 .food-card-overlay .food-notes {
 	font-size: 1em;
@@ -589,7 +591,6 @@ header {
 	}
 	.food-card-overlay .food-icon-value {
 		font-size: 32px;
-		top: 12px;
 		left: 0;
 	}
 	.food-card-overlay .food-icon img {

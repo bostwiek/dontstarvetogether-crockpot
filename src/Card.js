@@ -99,7 +99,7 @@ class Card extends React.Component {
 		return(
 
 			<div className="food-card">
-				<div className="food-card-cover" id={this.props.keyValue} onClick={this.props.cardClicked}></div>
+				<div className="food-card-cover" id={this.props.foodID} onClick={this.props.cardClicked}></div>
 				<div className="row-top">
 
 					<div className="row-half row-left">
@@ -131,14 +131,14 @@ class Card extends React.Component {
 						<div className="row-btm">
 							<div className="food-icon-container">
 								<div className="food-icon">
-									<img src={iconSanity} alt="Sanity Icon"  />
+									<img src={iconSanity} alt="Sanity Icon" />
 									<span className="food-icon-value">
 										{this.props.foodSanity}
 									</span>
 								</div>
 
 								<div className="food-icon">
-									<img src={iconRot} alt="Rot Icon"  />
+									<img src={iconRot} alt="Rot Icon" />
 									<span className="food-icon-value">
 										{this.props.foodRot}
 									</span>
