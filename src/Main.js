@@ -180,7 +180,7 @@ class Main extends React.Component {
 				<header>
 					<div className="logo">
 						<span className="logo-subtext">Don't Starve Together</span>
-						<span className="logo-text">All Things Crockpot</span>
+						<span className="logo-text">Crockpot Recipes</span>
 						<img src={logo} alt='Crockpot Logo' />
 					</div>
 				</header>
