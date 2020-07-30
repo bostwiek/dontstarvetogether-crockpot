@@ -12,6 +12,8 @@ Filterable by searching name, containing or not containing meat, Warly-specific 
 
 # Install & Run instructions
 
-Clone this repo and in command-line tool of choice run
+Clone this repo and, in command-line tool of choice, run:
+
 `npm install`
+
 `npm start`!
