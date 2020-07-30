@@ -16,4 +16,4 @@ Clone this repo and, in command-line tool of choice, run:
 
 `npm install`
 
-`npm start`!
+`npm start`
