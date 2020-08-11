@@ -1,4 +1,4 @@
-# Don't Starve Together Crockpot Recipe Guide
+# Don't Starve Together Crock Pot Recipe Guide
 
 Live version here: https://dontstarvetogether-crockpot.netlify.app/
 
