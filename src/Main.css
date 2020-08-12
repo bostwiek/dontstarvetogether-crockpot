@@ -334,6 +334,7 @@ header {
 	height: 100vh;
 	margin: 0 auto;
 	box-sizing: border-box;
+	color: #000000;	
 	background-color: rgba(0,0,0,0.75);
 	overflow: auto;
 		/* overflow: auto saved me so much work */
