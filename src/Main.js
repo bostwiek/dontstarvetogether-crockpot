@@ -11,7 +11,7 @@ import Card from './Card';
 import Footer from './Footer';
 
 import food from './food';
-import foodUnsorted from './foodUnsorted';
+
 
 import logo from './images/icons/crockpot.png';
 import background from './images/bg/4.png';
@@ -19,6 +19,9 @@ import background from './images/bg/4.png';
 const bgStyle = {
 	backgroundImage: `url(${background})`
 }
+
+// lodash handles sorting
+var _ = require('lodash');
 
 class Main extends React.Component {
 
@@ -85,42 +88,45 @@ class Main extends React.Component {
 
 				this.setState({ showOverlay: !this.state.showOverlay });
 
+				// use magical lodash sorting method to handle correct ID clicked
+				const foodSorted = _.sortBy(food, 'id')
+
 				// pulling from foodUnsorted to display proper recipe if
 				// sort by function has been used [based on array key / id clicked]
 				ReactDOM.render(
 					<React.StrictMode>
 						<Overlay
-							foodName={foodUnsorted[clickedID].name}
-							foodImg={foodUnsorted[clickedID].img}
-							foodHp={foodUnsorted[clickedID].hp}
-							foodHunger={foodUnsorted[clickedID].hunger}
-							foodSanity={foodUnsorted[clickedID].sanity}
-							foodRot={foodUnsorted[clickedID].rot}
-							foodRecipes={foodUnsorted[clickedID].recipes}
-							foodRestrictions={foodUnsorted[clickedID].restrictions}
-							foodIsMeat={foodUnsorted[clickedID].ismeat}
-							foodNotes={foodUnsorted[clickedID].notes}
-							foodFavorite={foodUnsorted[clickedID].favorite}
-							foodWarly={foodUnsorted[clickedID].warly}
+							foodName={foodSorted[clickedID].name}
+							foodImg={foodSorted[clickedID].img}
+							foodHp={foodSorted[clickedID].hp}
+							foodHunger={foodSorted[clickedID].hunger}
+							foodSanity={foodSorted[clickedID].sanity}
+							foodRot={foodSorted[clickedID].rot}
+							foodRecipes={foodSorted[clickedID].recipes}
+							foodRestrictions={foodSorted[clickedID].restrictions}
+							foodIsMeat={foodSorted[clickedID].ismeat}
+							foodNotes={foodSorted[clickedID].notes}
+							foodFavorite={foodSorted[clickedID].favorite}
+							foodWarly={foodSorted[clickedID].warly}
 							visible={this.state.showOverlay}
 							cardClicked={this.cardClicked}
-							key={foodUnsorted[clickedID]}
+							key={foodSorted[clickedID]}
 						/>
 					</React.StrictMode>,
 					document.getElementById('overlay')
 				);
 			}
 		} else {
-
-		this.setState({ showOverlay: !this.state.showOverlay });
-			ReactDOM.render(
-				<React.StrictMode>
-					<Overlay
-						visible={this.state.showOverlay}
-					/>
-				</React.StrictMode>,
-				document.getElementById('overlay')
-			);
+			// hide overlay as fallback
+			this.setState({ showOverlay: !this.state.showOverlay });
+				ReactDOM.render(
+					<React.StrictMode>
+						<Overlay
+							visible={this.state.showOverlay}
+						/>
+					</React.StrictMode>,
+					document.getElementById('overlay')
+				);
 		}
 
 	}
@@ -245,6 +251,10 @@ class Main extends React.Component {
 
 					<br />
 
+					<p className="text-center" style={{'font-size':'0.8em'}}>
+							* select a recipe to see more details *
+					</p>
+
 					<div className="card-container">
 
 						{	
@@ -255,8 +265,10 @@ class Main extends React.Component {
 							//													//
 							//////////////////////////////
 
+							
 							Object.keys(food).map(
 								(key, value) => {
+								
 
 									// store JSX object of food card to return later
 									const foodCardJSX = (

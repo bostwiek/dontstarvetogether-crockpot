@@ -10,11 +10,12 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #000000;
+	color: #ffffff;
 	background: #000000;
 }
 .text-left { text-align: left; }
 .text-right {	text-align: right; }
+.text-center {	text-align: center; }
 .float-left { float: left; }
 .float-right { float: right; }
 .clear { clear: both; }
@@ -121,7 +122,6 @@ header {
 	text-align: center;
 	width: 100%;
 	max-width: 280px;
-	height: 120px;
 	color: #fff;
 }
 .food-category {
@@ -137,7 +137,6 @@ header {
 .search-container {
 	display: block;
 	margin: 20px auto 0;
-	height: 70px;
 	font-family: 'belisa_plumilla_manualregular';
 	text-align: center;
 }
