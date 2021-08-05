@@ -967,8 +967,8 @@
 		"ismeat": false,
 			"img": "./images/crockpot/salsafresca.png",
 		"recipes": [
-			["toma", "garlic", "any", "any"],
-			["toma", "garlic", "ice", "ice"]
+			["toma", "onion", "any", "any"],
+			["toma", "onion", "ice", "ice"]
 		],
 		"restrictions": [
 			"meats", "egg", "twigs"
