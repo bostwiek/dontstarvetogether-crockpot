@@ -299,7 +299,7 @@
 		"warly": false,
 		"favorite": ""
   },
-  {
+	{
 		"id": 15,
 		"name": "Fish Cordon Bleu",
 		"hp": 20,
@@ -1280,6 +1280,87 @@
 			"none"
 		],
 		"notes": "Either you done goofed, or you're trolling someone.",
+		"warly": false,
+		"favorite": ""
+  },
+	
+	{
+		"id": 64,
+		"name": "Figatoni",
+		"hp": 30,
+		"hunger": 56.25,
+		"sanity": 15,
+		"rot": 6,
+		"ismeat": false,
+			"img": "./images/crockpot/figatoni.png",
+		"recipes": [
+			["fig", "vegetables", "vegetables", "any"],
+			["fig", "seaweed", "seaweed", "twigs"]
+		],
+		"restrictions": [
+			"meats"
+		],
+		"notes": "High hunger vegetarian dish.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 65,
+		"name": "Figgy Frogwich",
+		"hp": 8,
+		"hunger": 18.75,
+		"sanity": 15,
+		"rot": 15,
+		"ismeat": true,
+			"img": "./images/crockpot/figgyfrogwich.png",
+		"recipes": [
+			["fig", "froglegs", "any", "any"],
+			["fig", "froglegs", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 66,
+		"name": "Figkabab",
+		"hp": 20,
+		"hunger": 25,
+		"sanity": 15,
+		"rot": 15,
+		"ismeat": true,
+			"img": "./images/crockpot/figkabab.png",
+		"recipes": [
+			["fig", "meats", "twigs", "any"],
+			["fig", "meats", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Nearly identical to jerky.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 67,
+		"name": "Fig-Stuffed Trunk",
+		"hp": 60,
+		"hunger": 56.25,
+		"sanity": 0,
+		"rot": 10,
+		"ismeat": true,
+			"img": "./images/crockpot/figstuffedtrunk.png",
+		"recipes": [
+			["fig", "koalefanttrunks", "any", "any"],
+			["fig", "koalefanttrunks", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Fruit in a meat-sock? Delicious.",
 		"warly": false,
 		"favorite": ""
   }

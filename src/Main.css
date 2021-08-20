@@ -9,7 +9,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: , 'Open Sans', sans-serif;
 	color: #ffffff;
 	background: #000000;
 }
@@ -430,6 +430,8 @@ header {
 	max-width: 320px;
 	border-top: 1px solid #dcdcdc;
 	border-bottom: 1px solid #e0e0e0;
+	color: #515151;
+	text-align: center;
 }
 .food-card-overlay .food-notes {
 	font-size: 1em;
