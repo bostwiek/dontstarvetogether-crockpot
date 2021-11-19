@@ -9,7 +9,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 }
 body {
-	font-family: , 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
 	background: #000000;
 }
@@ -65,11 +65,11 @@ footer {
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
-	background-size: auto auto;
+	background-size: 100% auto;
 	background-position: center center;
 	background-color: #000;
-	background-repeat: repeat;
-	opacity: 0.1;
+	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 .bg-gradient {
 	position: absolute;
@@ -99,6 +99,7 @@ header {
 	display: block;
 	width: 140px;
 	margin: 0 auto;
+	opacity: 0.6;
 }
 .logo-text {
 	display: block;
@@ -620,6 +621,9 @@ header {
 }
 /* Mobile Landscape: */
 @media screen and (max-height: 575px) {
+	.bg {
+		background-size: auto 100%;
+	}
 	.overlay-container .food-card-overlay {
 		top: 10%;
 		transform: translateY(0);
@@ -670,7 +674,10 @@ header {
 *													*
 **************************/
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {	
+	.bg {
+		background-size: 1200px auto;
+	}
 	body .container, .container-lg, .container-md, .container-sm, .container-xl {
 		max-width: 80%;
 	}

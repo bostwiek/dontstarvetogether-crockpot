@@ -1363,5 +1363,43 @@
 		"notes": "Fruit in a meat-sock? Delicious.",
 		"warly": false,
 		"favorite": ""
+  },
+  {
+		"id": 68,
+		"name": "Frozen Banana Daiquiri",
+		"hp": 30,
+		"hunger": 18.75,
+		"sanity": 15,
+		"rot": 10,
+		"ismeat": false,
+			"img": "./images/crockpot/frozenbananadaiquiri.png",
+		"recipes": [
+			["banana", "ice", "ice", "ice"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Gives immunity to overheating.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 69,
+		"name": "Bunny Stew",
+		"hp": 20,
+		"hunger": 37.5,
+		"sanity": 5,
+		"rot": 6,
+		"ismeat": true,
+			"img": "./images/crockpot/bunnystew.png",
+		"recipes": [
+			["morsel", "ice", "ice", "ice"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Gives immunity to freezing.",
+		"warly": false,
+		"favorite": ""
   }
 ]

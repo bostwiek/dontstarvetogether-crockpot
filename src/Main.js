@@ -14,7 +14,7 @@ import food from './food';
 
 
 import logo from './images/icons/crockpot.png';
-import background from './images/bg/4.png';
+import background from './images/bg/5.jpg';
 
 const bgStyle = {
 	backgroundImage: `url(${background})`
@@ -172,7 +172,7 @@ class Main extends React.Component {
 		return(
 			<>
 
-				<div className="bg animated-bg" style={bgStyle}></div>
+				<div className="bg" style={bgStyle}></div>
 				<div className="bg-gradient"></div>
 				
 				<CSSTransition
@@ -252,7 +252,7 @@ class Main extends React.Component {
 					<br />
 
 					<p className="text-center" style={{'font-size':'0.8em'}}>
-							* select a recipe to see more details *
+							* click a recipe to see more details *
 					</p>
 
 					<div className="card-container">
