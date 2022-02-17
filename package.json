@@ -9,7 +9,7 @@
     "animate.css": "^4.1.0",
     "bootstrap": "^4.4.1",
     "heroku": "^7.41.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",

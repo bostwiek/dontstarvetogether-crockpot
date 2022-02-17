@@ -251,7 +251,7 @@ class Main extends React.Component {
 
 					<br />
 
-					<p className="text-center" style={{'font-size':'0.8em'}}>
+					<p className="text-center" style={{'fontSize':'0.8em'}}>
 							* click a recipe to see more details *
 					</p>
 

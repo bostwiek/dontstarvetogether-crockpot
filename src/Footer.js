@@ -6,13 +6,16 @@ class Footer extends React.Component {
 			<footer className="row">
 				<div className="col-1 no-padding"></div>
 				<div className="col-10 no-padding">
-					&copy; bostwiek 2020-2021
+					&copy; bostwiek 2020-2022
 					<br />
 					Please send any update requests or bugs to bostwiek@gmail.com
 					<br />
 					Project hosted on github <a href="https://github.com/bostwiek/dontstarvetogether-crockpot">here</a>
 					<br />
-					
+					<div style={{'opacity': '0'}}>
+						<span></span>
+						<strong></strong>
+					</div>
 				</div>
 				<div className="col-1 no-padding"></div>
 			</footer>
