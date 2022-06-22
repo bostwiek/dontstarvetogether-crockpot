@@ -109,12 +109,12 @@
 			"img": "./images/crockpot/barnaclenigiri.png",
 		"recipes": [
 			["barnacle", "seaweed", "egg", "any"],
-			["barnacle", "seaweed", "egg", "ice"]
+			["barnacle", "seaweed", "egg", "twigs"]
 		],
 		"restrictions": [
 			"none"
 		],
-		"notes": "Pierogies with harder to obtain ingredients, and a shorter spoil time. I honestly have no idea if you can cook these with twigs - need to test.",
+		"notes": "Pierogies o' the sea.",
 		"warly": false,
 		"favorite": ""
   },
