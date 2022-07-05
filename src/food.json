@@ -1401,5 +1401,25 @@
 		"notes": "Gives immunity to freezing.",
 		"warly": false,
 		"favorite": ""
+  },
+  {
+		"id": 70,
+		"name": "Banana Shake",
+		"hp": 8,
+		"hunger": 25,
+		"sanity": 33,
+		"rot": 15,
+		"ismeat": false,
+			"img": "./images/crockpot/bananashake.png",
+		"recipes": [
+			["banana", "banana", "any", "any"],
+			["banana", "banana", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "For when you're going \"Bananas\". Avoid using ice, as it results in a chance to get other Banana recipes.",
+		"warly": false,
+		"favorite": ""
   }
 ]
