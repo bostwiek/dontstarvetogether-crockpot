@@ -1421,5 +1421,85 @@
 		"notes": "For when you're going \"Bananas\". Avoid using ice, as it results in a chance to get other Banana recipes.",
 		"warly": false,
 		"favorite": ""
+  },
+  {
+		"id": 71,
+		"name": "Amberosia",
+		"hp": "-",
+		"hunger": "-",
+		"sanity": "-",
+		"rot": "-",
+		"ismeat": false,
+			"img": "./images/crockpot/amberosia.png",
+		"recipes": [
+			["collecteddust", "any", "any", "any"],
+			["collecteddust", "twigs", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Non-consumable, feed to Dust Moths for thulecite",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 72,
+		"name": "Milkmade Hat",
+		"hp": "0",
+		"hunger": "187.5",
+		"sanity": "0",
+		"rot": "0",
+		"ismeat": false,
+			"img": "./images/crockpot/milkmadehat.png",
+		"recipes": [
+			["nakednostrils", "kelpfronds", "dairy", "any"],
+			["nakednostrils", "kelpfronds", "butter", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Restores 3.9 Hunger every 5 seconds while equipped. Slowly drains sanity on everyone except Wurt.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 73,
+		"name": "Mushy Cake",
+		"hp": "0",
+		"hunger": "25",
+		"sanity": "10",
+		"rot": "15",
+		"ismeat": false,
+			"img": "./images/crockpot/mushycake.png",
+		"recipes": [
+			["moonshroom", "redcap", "bluecap", "greencap"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Massively increases sleep resistance.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 74,
+		"name": "Soothing Tea",
+		"hp": "3",
+		"hunger": "0",
+		"sanity": "15+",
+		"rot": "3",
+		"ismeat": false,
+			"img": "./images/crockpot/soothingtea.png",
+		"recipes": [
+			["forgetmelots", "honey", "ice", "ice"],
+			["forgetmelots", "honey", "honey", "ice"],
+			["forgetmelots", "forgetmelots", "honey", "ice"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Restores an additional 30 sanity over 1 minute. Also increases heat for a short time.",
+		"warly": false,
+		"favorite": ""
   }
 ]
