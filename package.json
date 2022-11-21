@@ -13,7 +13,7 @@
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.4.1",
     "webfontloader": "^1.6.28"
