@@ -1076,7 +1076,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Okay for health restoration, otherwise avoid cooking this.",
+		"notes": "Okay for health restoration.",
 		"warly": false,
 		"favorite": ""
   },
@@ -1499,6 +1499,106 @@
 			"none"
 		],
 		"notes": "Restores an additional 30 sanity over 1 minute. Also increases heat for a short time.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 75,
+		"name": "Breakfast Skillet",
+		"hp": "20",
+		"hunger": "37.5",
+		"sanity": "5",
+		"rot": "20",
+		"ismeat": true,
+			"img": "./images/crockpot/breakfastskillet.png",
+		"recipes": [
+			["egg", "vegetables", "any", "any"],
+			["egg", "carrot", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"meats", "dairy"
+		],
+		"notes": "Eggy pierogi.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 76,
+		"name": "Plain Omelette",
+		"hp": "3",
+		"hunger": "50",
+		"sanity": "5",
+		"rot": "20",
+		"ismeat": true,
+			"img": "./images/crockpot/plainomelette.png",
+		"recipes": [
+			["egg", "egg", "egg", "any"],
+			["egg", "egg", "egg", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "It's just eggs.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 77,
+		"name": "Tall Scotch Eggs",
+		"hp": "60",
+		"hunger": "150",
+		"sanity": "5",
+		"rot": "15",
+		"ismeat": true,
+			"img": "./images/crockpot/tallscotcheggs.png",
+		"recipes": [
+			["tallbirdegg", "vegetables", "any", "any"],
+			["tallbirdegg", "carrot", "twigs", "twigs"]
+		],
+		"restrictions": [
+			"none"
+		],
+		"notes": "Wow!",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 78,
+		"name": "Beefalo Treats",
+		"hp": "75",
+		"hunger": "25",
+		"sanity": "0",
+		"rot": "10",
+		"ismeat": false,
+			"img": "./images/crockpot/beefalotreats.png",
+		"recipes": [
+			["twigs", "forgetmelots", "birchnut", "any"],
+			["twigs", "forgetmelots", "birchnut", "ice"]
+		],
+		"restrictions": [
+			"meats"
+		],
+		"notes": "Can only be eaten by beefalo.",
+		"warly": false,
+		"favorite": ""
+  },
+  {
+		"id": 79,
+		"name": "Steamed Twigs",
+		"hp": "15",
+		"hunger": "100",
+		"sanity": "0",
+		"rot": "10",
+		"ismeat": false,
+			"img": "./images/crockpot/steamedtwigs.png",
+		"recipes": [
+			["twigs", "twigs", "twigs", "any"],
+			["boneshards", "voltgoathorn", "twigs", "ice"]
+		],
+		"restrictions": [
+			"meats", "egg", "dairy", "nightmarefuel"
+		],
+		"notes": "Can only be eaten by beefalo.",
 		"warly": false,
 		"favorite": ""
   }
