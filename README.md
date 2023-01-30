@@ -6,7 +6,7 @@ Having trouble remember all the recipes in Don't Starve Together? Well so does e
 
 Built using json, react, and a passion for not starving
 
-Contains all the crockpot foods currently in Don't Starve Together (as of August, 2020).
+Contains all the crockpot foods currently in Don't Starve Together (as of January, 2023).
 
 Filterable by searching name, containing or not containing meat, Warly-specific recipes, and sortable by alphabetical, hunger, health, sanity, or rot time, both ascending and descending.
 
