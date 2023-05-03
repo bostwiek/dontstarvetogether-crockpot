@@ -1,12 +1,14 @@
 import React from 'react'
 
+const currentYear = new Date().getFullYear();
+
 class Footer extends React.Component {
 	render() {
 		return(
 			<footer className="row">
 				<div className="col-1 no-padding"></div>
 				<div className="col-10 no-padding">
-					&copy; bostwiek 2020-2022
+					&copy; bostwiek 2020-{currentYear}
 					<br />
 					Please send any update requests or bugs to bostwiek@gmail.com
 					<br />
