@@ -210,7 +210,7 @@
 		"recipes": [
 			["fishes", "seaweed", "seaweed", "any"],
 			["freshwaterfish", "freshwaterfish", "seaweed", "seaweed"],
-		["eel", "seaweed", "seaweed", "twigs"]
+			["eel", "seaweed", "seaweed", "twigs"]
 		],
 		"restrictions": [
 			"none"
@@ -989,7 +989,7 @@
 		"recipes": [
 			["eel", "fishes", "any", "any"],
 			["eel", "eel", "eel", "twigs"],
-		["eel", "fishmorsel", "fishmorsel", "fishmorsel"]
+			["eel", "fishmorsel", "fishmorsel", "fishmorsel"]
 		],
 		"restrictions": [
 			"none"
@@ -1010,7 +1010,7 @@
 		"recipes": [
 			["meats", "meats", "vegetables", "vegetables"],
 			["monstermeat", "freshwaterfish", "lichen", "lichen"],
-		["monstermeat", "froglegs", "carrot", "carrot"]
+			["monstermeat", "froglegs", "carrot", "carrot"]
 		],
 		"restrictions": [
 			"none"
@@ -1031,7 +1031,7 @@
 		"recipes": [
 			["eggplant", "vegetables", "any", "any"],
 			["eggplant", "lichen", "twigs", "twigs"],
-		["eggplant", "carrot", "berries", "berries"]
+			["eggplant", "carrot", "berries", "berries"]
 		],
 		"restrictions": [
 			"none"
@@ -1118,7 +1118,7 @@
 		],
 		"notes": "Low value food, do not cook this.",
 		"warly": false,
-		"favorite": ""
+		"favorite": "Wanda"
   },
   {
 		"id": 56,
@@ -1173,12 +1173,12 @@
 		"recipes": [
 			["eel", "lichen", "any", "any"],
 			["eel", "lichen", "twigs", "twigs"],
-		["eel", "lichen", "monstermeat", "monstermeat"]
+			["eel", "lichen", "monstermeat", "monstermeat"]
 		],
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, do not cook this.",
+		"notes": "Low value food, Wanda's favorite dish.",
 		"warly": false,
 		"favorite": ""
   },
@@ -1194,7 +1194,7 @@
 		"recipes": [
 			["asparagus", "vegetables", "vegetables", "ice"],
 			["toma", "vegetables", "vegetables", "ice"],
-		["asparagus", "carrot", "redcap", "ice"]
+			["asparagus", "carrot", "redcap", "ice"]
 		],
 		"restrictions": [
 			"none"

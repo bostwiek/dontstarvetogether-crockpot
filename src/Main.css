@@ -281,6 +281,10 @@ header {
 	line-height: 1.3em;
 	vertical-align: middle;
 }
+.food-card .food-name span {
+	position: relative;
+	z-index: 9998;
+}
 .food-icon-container {
 	display: block;
 	margin: 0 auto;
@@ -632,6 +636,8 @@ header {
 	}
 	.food-card-overlay .food-name {
 		font-size: 36px;
+	}
+	.food-card-overlay .food-name {
 	}
 	.food-card-overlay .food-img {
 		max-width: 64px;

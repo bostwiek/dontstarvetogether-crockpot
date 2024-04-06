@@ -79,6 +79,8 @@ class Main extends React.Component {
 	//////////////////////////////
 
 	cardClicked = e => {
+
+		console.log(e);
 		
 		if(e.target.id) {
 			let clickedID = e.target.id;

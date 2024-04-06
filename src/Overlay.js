@@ -98,7 +98,6 @@ class Overlay extends React.Component {
 				<div className="overlay-container" onClick={this.props.cardClicked}>
 
 					<div className="food-card-overlay container">
-						<div id="food-overlay-cover"></div>
 						<div className="row">
 							<div className="col">
 								<div className="food-name">{this.props.foodName}</div>
