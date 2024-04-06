@@ -282,8 +282,8 @@ header {
 	vertical-align: middle;
 }
 .food-card .food-name span {
-	position: relative;
-	z-index: 9998;
+	/* position: relative;
+	z-index: 9998; */
 }
 .food-icon-container {
 	display: block;
