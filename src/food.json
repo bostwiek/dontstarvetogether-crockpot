@@ -34,7 +34,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Low value food, Asparagus better used in Vegetable Stinger",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
 },
@@ -255,7 +255,7 @@
 		"restrictions": [
 			"twigs", "meats"
 		],
-		"notes": "Low value food, just cook and eat the two potato for more hp and hunger.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -355,7 +355,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, fish and corn both have more useful recipes.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -375,7 +375,7 @@
 		"restrictions": [
 			"meats", "vegetables", "twigs"
 		],
-		"notes": "Low value food. Unless you're Wurt, or you've got tons of spoiled berries, avoid cooking this.",
+		"notes": "Unless you're Wurt, or you've got tons of spoiled berries, avoid making this.",
 		"warly": false,
 		"favorite": ""
   },
@@ -454,7 +454,7 @@
 		"restrictions": [
 			"dragonfruit", "meats", "vegetables"
 		],
-		"notes": "Low value food, avoid cooking unless you're desperate for health.",
+		"notes": "Low value food, okay health restoration.",
 		"warly": false,
 		"favorite": ""
   },
@@ -513,7 +513,7 @@
 		"restrictions": [
 			"fruits"
 		],
-		"notes": "Low value food, do not cook this.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -553,7 +553,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Low value food, not recommended unless you're playing as Woodie. Woodie's favorite dish.",
+		"notes": "Okay health restoration, Woodie's favorite dish.",
 		"warly": false,
 		"favorite": "Woodie"
   },
@@ -653,7 +653,7 @@
 		"restrictions": [
 			"fishes", "moleworm", "twigs", "twigs"
 		],
-		"notes": "Low value food, do not cook this.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -673,7 +673,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food with high priority, avoid cooking this. You get this for cooking 2 Leafy Meat for a meat recipe (Honey Ham, Meaty Stew, Bacon and Eggs, etc.).",
+		"notes": "Low value food with high priority, avoid cooking this. You get this for cooking 2 Leafy Meat for a meat recipe.",
 		"warly": false,
 		"favorite": ""
   },
@@ -793,7 +793,7 @@
 		"restrictions": [
 			"meats", "vegetables", "egg"
 		],
-		"notes": "Low value food. Okay sanity restoration, poor stats otherwise.",
+		"notes": "Low value food, okay sanity restoration.",
 		"warly": false,
 		"favorite": ""
   },
@@ -833,7 +833,7 @@
 		"restrictions": [
 			"twigs"
 		],
-		"notes": "Webber should have this as his second-favorite food since he is two souls, Klei pls. Single player stats are different (restores hp and sanity). Warly-specific.",
+		"notes": "Webber should have this as his second-favorite dish since he is two souls, Klei pls. Single player stats are different (restores hp and sanity). Warly-specific.",
 		"warly": true,
 		"favorite": ""
   },
@@ -933,7 +933,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, pumpkins have much better uses.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -1015,7 +1015,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, do not cook this unless you're Willow. Willow's favorite dish.",
+		"notes": "Low value food, Willow's favorite dish.",
 		"warly": false,
 		"favorite": "Willow"
   },
@@ -1036,7 +1036,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, just cook and eat eggplant raw instead.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
@@ -1116,7 +1116,7 @@
 		"restrictions": [
 			"meats"
 		],
-		"notes": "Low value food, do not cook this.",
+		"notes": "Low value food, Wanda's favorite dish.",
 		"warly": false,
 		"favorite": "Wanda"
   },
@@ -1178,7 +1178,7 @@
 		"restrictions": [
 			"none"
 		],
-		"notes": "Low value food, Wanda's favorite dish.",
+		"notes": "Low value food.",
 		"warly": false,
 		"favorite": ""
   },
