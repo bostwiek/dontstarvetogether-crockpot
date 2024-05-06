@@ -1601,5 +1601,23 @@
 		"notes": "Can only be eaten by beefalo.",
 		"warly": false,
 		"favorite": ""
+  },
+  {
+		"id": 80,
+		"name": "Stuffed Night Cap",
+		"hp": "-20",
+		"hunger": "18.75",
+		"sanity": "-15",
+		"rot": "15",
+		"ismeat": true,
+			"img": "./images/crockpot/stuffednightcap.png",
+		"recipes": [
+			["moonshroom", "moonshroom", "monsterfoods", "any"],
+			["moonshroom", "moonshroom", "monstermeat", "twigs"]
+		],
+		"restrictions": [],
+		"notes": "Anything that eats this will take a short nap.",
+		"warly": false,
+		"favorite": ""
   }
 ]
