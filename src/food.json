@@ -48,13 +48,13 @@
 		"ismeat": true,
 			"img": "./images/crockpot/baconandeggs.png",
 		"recipes": [
-			["meats", "meats", "egg", "egg"],
-			["morsel", "monstermeat", "tallbirdegg", "any"]
+			["meat", "morsel", "egg", "egg"],
+			["morsel", "morsel", "morsel", "tallbirdegg"]
 		],
 		"restrictions": [
 			"vegetables"
 		],
-		"notes": "Decent all round food with high stats and rot time. Wilson's favorite dish.",
+		"notes": "Requires 3 small meat and 2 small egg (so 1 large meat recommended). Wilson's favorite dish.",
 		"warly": false,
 		"favorite": "Wilson"
   },
