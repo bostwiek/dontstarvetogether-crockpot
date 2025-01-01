@@ -9,8 +9,7 @@
 		"ismeat": false,
 			"img": "./images/crockpot/asparagazpacho.png",
 		"recipes": [
-			["asparagus", "vegetables", "any", "any"],
-			["asparagus", "carrot", "redcap", "redcap"]
+			["asparagus", "asparagus", "ice", "ice"]
 		],
 		"restrictions": [
 			"none"
@@ -29,10 +28,11 @@
 		"ismeat": false,
 			"img": "./images/crockpot/asparagussoup.png",
 		"recipes": [
-			["asparagus", "asparagus", "ice", "ice"]
+			["asparagus", "vegetables", "any", "any"],
+			["asparagus", "carrot", "carrot", "carrot"]
 		],
 		"restrictions": [
-			"twigs"
+			"twigs", "meat", "fishes"
 		],
 		"notes": "Low value food.",
 		"warly": false,
