@@ -1295,7 +1295,7 @@
 			"img": "./images/crockpot/figatoni.png",
 		"recipes": [
 			["fig", "vegetables", "vegetables", "any"],
-			["fig", "seaweed", "seaweed", "twigs"]
+			["fig", "carrot", "carrot", "twigs"]
 		],
 		"restrictions": [
 			"meats"
