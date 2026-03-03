@@ -1528,7 +1528,7 @@
 		"hp": "3",
 		"hunger": "50",
 		"sanity": "5",
-		"rot": "20",
+		"rot": "10",
 		"ismeat": true,
 			"img": "./images/crockpot/plainomelette.png",
 		"recipes": [
